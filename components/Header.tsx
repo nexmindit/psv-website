@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
@@ -64,52 +66,122 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-8">
             <Link
               href="/"
-              className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors uppercase text-sm relative group"
+              className={`font-semibold transition-colors uppercase text-sm relative group ${
+                pathname === "/"
+                  ? "text-[#D4AF37]"
+                  : "text-gray-900 hover:text-[#D4AF37]"
+              }`}
             >
               หน้าแรก{" "}
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#D4AF37] transition-all group-hover:w-full group-hover:left-0" />
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                  pathname === "/"
+                    ? "w-full"
+                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
             <Link
               href="/services"
-              className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors uppercase text-sm relative group"
+              className={`font-semibold transition-colors uppercase text-sm relative group ${
+                pathname === "/services"
+                  ? "text-[#D4AF37]"
+                  : "text-gray-900 hover:text-[#D4AF37]"
+              }`}
             >
               บริการรับถมที่{" "}
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#D4AF37] transition-all group-hover:w-full group-hover:left-0" />
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                  pathname === "/services"
+                    ? "w-full"
+                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
             <Link
               href="/shop"
-              className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors uppercase text-sm relative group"
+              className={`font-semibold transition-colors uppercase text-sm relative group ${
+                pathname === "/shop"
+                  ? "text-[#D4AF37]"
+                  : "text-gray-900 hover:text-[#D4AF37]"
+              }`}
             >
               สินค้าของเรา{" "}
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#D4AF37] transition-all group-hover:w-full group-hover:left-0" />
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                  pathname === "/shop"
+                    ? "w-full"
+                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
             <Link
               href="/about"
-              className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors uppercase text-sm relative group"
+              className={`font-semibold transition-colors uppercase text-sm relative group ${
+                pathname === "/about"
+                  ? "text-[#D4AF37]"
+                  : "text-gray-900 hover:text-[#D4AF37]"
+              }`}
             >
               เกี่ยวกับเรา{" "}
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#D4AF37] transition-all group-hover:w-full group-hover:left-0" />
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                  pathname === "/about"
+                    ? "w-full"
+                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
             <Link
               href="/portfolio"
-              className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors uppercase text-sm relative group"
+              className={`font-semibold transition-colors uppercase text-sm relative group ${
+                pathname === "/portfolio"
+                  ? "text-[#D4AF37]"
+                  : "text-gray-900 hover:text-[#D4AF37]"
+              }`}
             >
               ผลงานและลูกค้า{" "}
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#D4AF37] transition-all group-hover:w-full group-hover:left-0" />
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                  pathname === "/portfolio"
+                    ? "w-full"
+                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
             <Link
               href="/blog"
-              className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors uppercase text-sm relative group"
+              className={`font-semibold transition-colors uppercase text-sm relative group ${
+                pathname === "/blog"
+                  ? "text-[#D4AF37]"
+                  : "text-gray-900 hover:text-[#D4AF37]"
+              }`}
             >
               เกร็ดความรู้{" "}
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#D4AF37] transition-all group-hover:w-full group-hover:left-0" />
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                  pathname === "/blog"
+                    ? "w-full"
+                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
             <Link
               href="/contact"
-              className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors uppercase text-sm relative group"
+              className={`font-semibold transition-colors uppercase text-sm relative group ${
+                pathname === "/contact"
+                  ? "text-[#D4AF37]"
+                  : "text-gray-900 hover:text-[#D4AF37]"
+              }`}
             >
               ติดต่อเรา{" "}
-              <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#D4AF37] transition-all group-hover:w-full group-hover:left-0" />
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                  pathname === "/contact"
+                    ? "w-full"
+                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
           </nav>
 
@@ -188,49 +260,77 @@ export default function Header() {
             <div className="flex flex-col gap-4">
               <Link
                 href="/"
-                className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
+                className={`font-semibold transition-colors ${
+                  pathname === "/"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 หน้าแรก
               </Link>
               <Link
                 href="/services"
-                className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
+                className={`font-semibold transition-colors ${
+                  pathname === "/services"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 บริการรับถมที่
               </Link>
               <Link
                 href="/shop"
-                className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
+                className={`font-semibold transition-colors ${
+                  pathname === "/shop"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 สินค้าของเรา
               </Link>
               <Link
                 href="/about"
-                className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
+                className={`font-semibold transition-colors ${
+                  pathname === "/about"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 เกี่ยวกับเรา
               </Link>
               <Link
                 href="/portfolio"
-                className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
+                className={`font-semibold transition-colors ${
+                  pathname === "/portfolio"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 ผลงานและลูกค้า
               </Link>
               <Link
                 href="/blog"
-                className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
+                className={`font-semibold transition-colors ${
+                  pathname === "/blog"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 เกร็ดความรู้
               </Link>
               <Link
                 href="/contact"
-                className="font-semibold text-gray-900 hover:text-[#D4AF37] transition-colors"
+                className={`font-semibold transition-colors ${
+                  pathname === "/contact"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 ติดต่อเรา

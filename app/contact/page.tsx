@@ -226,7 +226,7 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
                     placeholder="กรุณากรอกชื่อ-นามสกุล"
                   />
                 </div>
@@ -243,7 +243,7 @@ export default function ContactPage() {
                     id="phone"
                     name="phone"
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
                     placeholder="กรุณากรอกเบอร์โทรศัพท์"
                   />
                 </div>
@@ -260,7 +260,7 @@ export default function ContactPage() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                  className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
                   placeholder="กรุณากรอกอีเมล"
                 />
               </div>
@@ -276,7 +276,7 @@ export default function ContactPage() {
                   id="subject"
                   name="subject"
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                  className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
                 >
                   <option value="">เลือกหัวข้อ</option>
                   <option value="quote">ขอใบเสนอราคา</option>
@@ -298,7 +298,7 @@ export default function ContactPage() {
                   name="message"
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors resize-none"
                   placeholder="กรุณากรอกข้อความ"
                 ></textarea>
               </div>
