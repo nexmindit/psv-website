@@ -23,9 +23,9 @@ type Product = {
 
 export default function CategoryPage({
   params,
-}: {
+}: Readonly<{
   params: Promise<{ category: string }>;
-}) {
+}>) {
   const { category } = use(params);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -354,14 +354,6 @@ export default function CategoryPage({
                   </svg>
                 </button>
               </div>
-            </div>
-
-            {/* Cart */}
-            <div className="mb-8">
-              <h3 className="text-lg font-bold mb-4 text-gray-900">
-                ตะกร้าสินค้า
-              </h3>
-              <p className="text-gray-600">No products in the cart.</p>
             </div>
 
             {/* Categories */}
