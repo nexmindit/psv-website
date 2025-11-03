@@ -1,0 +1,594 @@
+import Image from "next/image";
+import { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "ติดต่อเรา - PSV Group",
+  description:
+    "ติดต่อ PSV Group บริการวัสดุก่อสร้างและรับถมที่ มีสาขาให้บริการ 3 แห่ง สายไหม รังสิต สำโรง พร้อมแผนที่และช่องทางติดต่อ",
+};
+
+export default function ContactPage() {
+  const branches = [
+    {
+      name: "สาขา สายไหม",
+      address: "สายไหม กรุงเทพมหานคร",
+      phone: "098-408-7225",
+      mobile: "081-816-7719",
+      hours: "ทุกวัน 08:00-17:00 น.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.0!2d100.69386!3d13.925622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2268a66ffedc3574!2zMTPCsDU1JzMyLjIiTiAxMDDCsDQxJzM3LjkiRQ!5e0!3m2!1sth!2sth!4v1234567890",
+      directMapUrl:
+        "https://www.google.com/maps?ll=13.925622,100.69386&z=13&t=m&hl=th&gl=TH&mapclient=embed&cid=2479237003536925300",
+      isHeadOffice: true,
+    },
+    {
+      name: "สาขา รังสิต",
+      address:
+        "55/29 หมู่ที่ 11 ถนนหทัยราษฏร์ ตำบลลาดสวาย อำเภอลำลูกกา จ.ปทุมธานี 12150",
+      phone: "098-408-7225",
+      mobile: "081-816-7719",
+      hours: "ทุกวัน 08:00-17:00 น.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.0!2d100.398319!3d13.810896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ4JzM5LjIiTiAxMDDCsDIzJzU0LjAiRQ!5e0!3m2!1sth!2sth!4v1234567890",
+      directMapUrl:
+        "https://www.google.com/maps?ll=13.810896,100.398319&z=10&t=m&hl=th&gl=TH&mapclient=embed&saddr&daddr=ทางทรายพระหมสุวรรณ+พีเอสวี,+บ้านใหม่,+เลขที่70/2+หมู่5+ถนนเลียบคลองรังสิต+ตำบลบ้านใหม่+อำเภอเมือง,+เมือง,+ปทุมธานี+12000&dirflg=d",
+      isHeadOffice: false,
+    },
+    {
+      name: "สาขา สำโรง",
+      address: "ศูนย์ขายส่ง ซ.วัดมหาวงษ์ สำโรงใต้ สมุทรปราการ",
+      phone: "062-888-2170",
+      mobile: "081-716-7719",
+      hours: "ทุกวัน 08:00-17:00 น.",
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.0!2d100.501865!3d13.77502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ2JzMwLjEiTiAxMDDCsDMwJzA2LjciRQ!5e0!3m2!1sth!2sth!4v1234567890",
+      directMapUrl:
+        "https://www.google.com/maps?ll=13.77502,100.501865&z=11&t=m&hl=th&gl=TH&mapclient=embed&saddr&daddr=ทางทรายพระหมสุวรรณ+พีเอสวี,+บ้านใหม่,+เลขที่70/2+หมู่5+ถนนเลียบคลองรังสิต+ตำบลบ้านใหม่+อำเภอเมือง,+เมือง,+ปทุมธานี+12000&dirflg=d",
+      isHeadOffice: false,
+      isNew: true,
+    },
+  ];
+
+  return (
+    <div className="bg-white">
+      {/* Hero Banner */}
+      <img
+        src="/psv_banner.png"
+        alt="PSV Group - ติดต่อเรา"
+        className="w-full h-full"
+      />
+
+      {/* Branches Section with Maps */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-12">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              สาขาของเรา
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              เรามี 3 สาขาพร้อมให้บริการทั่วกรุงเทพและปริมณฑล
+            </p>
+            <div className="w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
+          </div>
+
+          <div className="space-y-12">
+            {branches.map((branch, index) => (
+              <div
+                key={branch.name}
+                className="bg-white rounded-lg border-2 border-(--psv-border) overflow-hidden"
+              >
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                  {/* Branch Info */}
+                  <div className="p-8 flex flex-col justify-center">
+                    <div className="mb-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        {branch.isHeadOffice && (
+                          <span className="inline-block px-3 py-1 bg-(--color-gold) text-white rounded-full text-xs font-semibold">
+                            สำนักงานใหญ่
+                          </span>
+                        )}
+                        {branch.isNew && (
+                          <span className="inline-block px-3 py-1 bg-green-500 text-white rounded-full text-xs font-semibold">
+                            สาขาใหม่
+                          </span>
+                        )}
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                        {branch.name}
+                      </h3>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3">
+                        <svg
+                          className="w-5 h-5 text-(--color-gold) mt-0.5 shrink-0"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1 text-sm">
+                            ที่อยู่
+                          </h4>
+                          <p className="text-gray-600 text-sm">
+                            {branch.address}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <svg
+                          className="w-5 h-5 text-(--color-gold) mt-0.5 shrink-0"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1 text-sm">
+                            โทรศัพท์
+                          </h4>
+                          <p className="text-gray-600 text-sm">
+                            {branch.phone}
+                          </p>
+                          <p className="text-gray-600 text-sm">
+                            {branch.mobile}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <svg
+                          className="w-5 h-5 text-(--color-gold) mt-0.5 shrink-0"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1 text-sm">
+                            เวลาทำการ
+                          </h4>
+                          <p className="text-gray-600 text-sm">
+                            {branch.hours}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="pt-4">
+                        <a
+                          href={branch.directMapUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-(--color-primary) text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+                        >
+                          เปิดใน Google Maps
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Google Maps Embed */}
+                  <div className="h-full min-h-[400px] bg-gray-200">
+                    <iframe
+                      src={branch.mapUrl}
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0, minHeight: "400px" }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title={`แผนที่ ${branch.name}`}
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-12">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                ส่งข้อความถึงเรา
+              </h2>
+              <p className="text-gray-600 text-lg">
+                กรอกแบบฟอร์มด้านล่าง เราจะติดต่อกลับโดยเร็วที่สุด
+              </p>
+              <div className="w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
+            </div>
+
+            <form className="bg-gray-50 rounded-lg border-2 border-(--psv-border) p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
+                    ชื่อ-นามสกุล <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                    placeholder="กรุณากรอกชื่อ-นามสกุล"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
+                    เบอร์โทรศัพท์ <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                    placeholder="กรุณากรอกเบอร์โทรศัพท์"
+                  />
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-semibold text-gray-900 mb-2"
+                >
+                  อีเมล
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                  placeholder="กรุณากรอกอีเมล"
+                />
+              </div>
+
+              <div className="mb-6">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-semibold text-gray-900 mb-2"
+                >
+                  หัวข้อ <span className="text-red-500">*</span>
+                </label>
+                <select
+                  id="subject"
+                  name="subject"
+                  required
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors"
+                >
+                  <option value="">เลือกหัวข้อ</option>
+                  <option value="quote">ขอใบเสนอราคา</option>
+                  <option value="service">สอบถามบริการ</option>
+                  <option value="product">สอบถามสินค้า</option>
+                  <option value="other">อื่นๆ</option>
+                </select>
+              </div>
+
+              <div className="mb-6">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-semibold text-gray-900 mb-2"
+                >
+                  ข้อความ <span className="text-red-500">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows={6}
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-(--color-primary) transition-colors resize-none"
+                  placeholder="กรุณากรอกข้อความ"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-(--color-gold) text-white py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+              >
+                ส่งข้อความ
+              </button>
+
+              <p className="text-sm text-gray-500 text-center mt-4">
+                เราจะติดต่อกลับภายใน 24 ชั่วโมง
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Info Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-12">
+          <div className="text-center mb-12">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              ติดต่อเรา
+            </h1>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              มีทีมงานให้คำปรึกษาเรื่อง ทราย ดิน หิน ลูกรัง
+              หรือสอบถามเพิ่มเติมโดยทีมงานมืออาชีพ
+            </p>
+            <div className="w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Image */}
+            <div className="relative h-[500px] rounded-lg overflow-hidden border-2 border-(--psv-border)">
+              <Image
+                src="/psv_hero.png"
+                alt="PSV Group - ติดต่อเรา"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Contact Information */}
+            <div className="flex flex-col justify-center space-y-8">
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  บริษัท พีเอสวี กรุ๊ป จำกัด
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  พร้อมให้คำปรึกษา คำนวณพื้นที่ ปริมาณของสินค้า ที่ใช้ในการถมที่
+                  มากกว่า 30 ปี
+                </p>
+              </div>
+
+              {/* Quick Contact Cards */}
+              <div className="grid grid-cols-1 gap-4">
+                <a
+                  href="tel:098-408-7725"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors"
+                >
+                  <div className="w-12 h-12 bg-(--color-primary) rounded-lg flex items-center justify-center shrink-0">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-sm text-gray-600 mb-1">โทรศัพท์</div>
+                    <div className="font-semibold text-gray-900">
+                      098-408-7725
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href="http://line.me/ti/p/~@psv.group"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#00B900] transition-colors"
+                >
+                  <div className="w-12 h-12 bg-[#00B900] rounded-lg flex items-center justify-center shrink-0">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-sm text-gray-600 mb-1">
+                      Line Official
+                    </div>
+                    <div className="font-semibold text-gray-900">
+                      @psv.group
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/PSVGroup.Sand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#1877F2] transition-colors"
+                >
+                  <div className="w-12 h-12 bg-[#1877F2] rounded-lg flex items-center justify-center shrink-0">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                  </div>
+                  <div className="text-left">
+                    <div className="text-sm text-gray-600 mb-1">Facebook</div>
+                    <div className="font-semibold text-gray-900">
+                      PSV Group Sand
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-12">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              บริการของเรา
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              เรามีบริการครบวงจรเพื่ออำนวยความสะดวกให้กับลูกค้า
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Free Delivery */}
+            <div className="bg-white rounded-lg border-2 border-(--psv-border) p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  className="w-6 h-6 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">ส่งฟรี</h3>
+              <p className="text-gray-600">
+                สั่งซื้อ 3 คิวขึ้นไป ส่งฟรีในระยะทาง 10 กม.
+              </p>
+            </div>
+
+            {/* Barricade Service */}
+            <div className="bg-white rounded-lg border-2 border-(--psv-border) p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  className="w-6 h-6 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                ยก/เรียงกระสอบ
+              </h3>
+              <p className="text-gray-600">
+                บริการยกและเรียงกระสอบทรายด้วยทีมงานมืออาชีพ
+              </p>
+            </div>
+
+            {/* Land Preparation */}
+            <div className="bg-white rounded-lg border-2 border-(--psv-border) p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  className="w-6 h-6 text-yellow-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                ปรับพื้นที่/ถมที่
+              </h3>
+              <p className="text-gray-600">
+                บริการปรับพื้นที่และถมที่ด้วยแรงงานและเครื่องจักร
+              </p>
+            </div>
+
+            {/* Budget Gardening */}
+            <div className="bg-white rounded-lg border-2 border-(--psv-border) p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  className="w-6 h-6 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                จัดสวนราคาประหยัด
+              </h3>
+              <p className="text-gray-600">
+                บริการจัดสวนแบบประหยัด คุ้มค่า เหมาะกับทุกงบประมาณ
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Line QR Code Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-12">
+          <div className="bg-gray-50 rounded-lg border-2 border-(--psv-border) p-8 max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              ติดต่อผ่าน Line Official Account
+            </h2>
+            <p className="text-gray-600 mb-6">
+              สแกน QR Code เพื่อเพิ่มเพื่อนและสอบถามข้อมูล
+            </p>
+            <div className="bg-white p-8 rounded-lg border-2 border-(--psv-border) inline-block">
+              <div className="w-64 h-64 bg-gray-200 flex items-center justify-center mx-auto mb-4">
+                <span className="text-gray-500">Line QR Code</span>
+                {/* Replace with actual QR code image */}
+                {/* <Image src="/line-qr-code.png" alt="Line QR Code" width={256} height={256} /> */}
+              </div>
+              <p className="font-semibold text-gray-900">ID: @psv.group</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+            ต้องการสอบถามหรือขอใบเสนอราคา?
+          </h2>
+          <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
+            ทีมงานของเราพร้อมให้คำปรึกษาและตอบทุกคำถามของคุณ
+          </p>
+          <a
+            href="http://line.me/ti/p/~@psv.group"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#00B900] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#00A000] transition-all hover:scale-105 shadow-lg"
+          >
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+            </svg>
+            ติดต่อเราผ่าน Line
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
