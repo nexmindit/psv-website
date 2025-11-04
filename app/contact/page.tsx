@@ -61,12 +61,12 @@ export default function ContactPage() {
 
       {/* Branches Section with Maps */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               สาขาของเรา
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               เรามี 3 สาขาพร้อมให้บริการทั่วกรุงเทพและปริมณฑล
             </p>
             <div className="w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
@@ -80,9 +80,9 @@ export default function ContactPage() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Branch Info */}
-                  <div className="p-8 flex flex-col justify-center">
+                  <div className="p-4 sm:p-6 lg:p-8 flex flex-col justify-center">
                     <div className="mb-4">
-                      <div className="flex items-center gap-2 mb-2">
+                      <div className="flex items-center gap-2 mb-2 flex-wrap">
                         {branch.isHeadOffice && (
                           <span className="inline-block px-3 py-1 bg-(--color-gold) text-white rounded-full text-xs font-semibold">
                             สำนักงานใหญ่
@@ -94,7 +94,7 @@ export default function ContactPage() {
                           </span>
                         )}
                       </div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                         {branch.name}
                       </h3>
                     </div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                           href={branch.directMapUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block bg-(--color-primary) text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+                          className="inline-block bg-(--color-primary) text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base font-semibold hover:opacity-90 transition-opacity duration-200"
                         >
                           เปิดใน Google Maps
                         </a>
@@ -179,12 +179,12 @@ export default function ContactPage() {
                   </div>
 
                   {/* Google Maps Embed */}
-                  <div className="h-full min-h-[400px] bg-gray-200">
+                  <div className="h-64 sm:h-80 lg:h-full lg:min-h-[400px] bg-gray-200">
                     <iframe
                       src={branch.mapUrl}
                       width="100%"
                       height="100%"
-                      style={{ border: 0, minHeight: "400px" }}
+                      style={{ border: 0, minHeight: "256px" }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
@@ -200,21 +200,21 @@ export default function ContactPage() {
 
       {/* Contact Info Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               ติดต่อเรา
             </h1>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               มีทีมงานให้คำปรึกษาเรื่อง ทราย ดิน หิน ลูกรัง
               หรือสอบถามเพิ่มเติมโดยทีมงานมืออาชีพ
             </p>
             <div className="w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
             {/* Image */}
-            <div className="relative h-[500px] rounded-lg overflow-hidden border-2 border-(--psv-border)">
+            <div className="relative h-64 sm:h-80 lg:h-[500px] rounded-lg overflow-hidden border-2 border-(--psv-border)">
               <Image
                 src="/psv_hero.png"
                 alt="PSV Group - ติดต่อเรา"
@@ -224,26 +224,26 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Information */}
-            <div className="flex flex-col justify-center space-y-8">
+            <div className="flex flex-col justify-center space-y-6 sm:space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
                   บริษัท พีเอสวี กรุ๊ป จำกัด
                 </h2>
-                <p className="text-gray-600 mb-6">
+                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
                   พร้อมให้คำปรึกษา คำนวณพื้นที่ ปริมาณของสินค้า ที่ใช้ในการถมที่
                   มากกว่า 30 ปี
                 </p>
               </div>
 
               {/* Quick Contact Cards */}
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 gap-3 sm:gap-4">
                 <a
                   href="tel:098-408-7725"
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors"
                 >
-                  <div className="w-12 h-12 bg-(--color-primary) rounded-lg flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-(--color-primary) rounded-lg flex items-center justify-center shrink-0">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -251,8 +251,8 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="text-left">
-                    <div className="text-sm text-gray-600 mb-1">โทรศัพท์</div>
-                    <div className="font-semibold text-gray-900">
+                    <div className="text-xs sm:text-sm text-gray-600 mb-1">โทรศัพท์</div>
+                    <div className="text-sm sm:text-base font-semibold text-gray-900">
                       098-408-7725
                     </div>
                   </div>
@@ -262,11 +262,11 @@ export default function ContactPage() {
                   href="http://line.me/ti/p/~@psv.group"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#00B900] transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#00B900] transition-colors"
                 >
-                  <div className="w-12 h-12 bg-[#00B900] rounded-lg flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00B900] rounded-lg flex items-center justify-center shrink-0">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -274,10 +274,10 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="text-left">
-                    <div className="text-sm text-gray-600 mb-1">
+                    <div className="text-xs sm:text-sm text-gray-600 mb-1">
                       Line Official
                     </div>
-                    <div className="font-semibold text-gray-900">
+                    <div className="text-sm sm:text-base font-semibold text-gray-900">
                       @psv.group
                     </div>
                   </div>
@@ -287,11 +287,11 @@ export default function ContactPage() {
                   href="https://www.facebook.com/PSVGroup.Sand"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#1877F2] transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#1877F2] transition-colors"
                 >
-                  <div className="w-12 h-12 bg-[#1877F2] rounded-lg flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#1877F2] rounded-lg flex items-center justify-center shrink-0">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -299,8 +299,8 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="text-left">
-                    <div className="text-sm text-gray-600 mb-1">Facebook</div>
-                    <div className="font-semibold text-gray-900">
+                    <div className="text-xs sm:text-sm text-gray-600 mb-1">Facebook</div>
+                    <div className="text-sm sm:text-base font-semibold text-gray-900">
                       PSV Group Sand
                     </div>
                   </div>
@@ -313,48 +313,40 @@ export default function ContactPage() {
 
       {/* Line QR Code Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-12">
-          <div className="bg-gray-50 rounded-lg border-2 border-(--psv-border) p-8 max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="bg-gray-50 rounded-lg border-2 border-(--psv-border) p-4 sm:p-6 lg:p-8 max-w-2xl mx-auto text-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
               ติดต่อผ่าน Line Official Account
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-sm sm:text-base text-gray-600 mb-6">
               สแกน QR Code เพื่อเพิ่มเพื่อนและสอบถามข้อมูล
             </p>
-            <div className="bg-white p-8 rounded-lg border-2 border-(--psv-border) inline-block">
-              <div className="w-64 h-64 bg-gray-200 flex items-center justify-center mx-auto mb-4">
-                <span className="text-gray-500">Line QR Code</span>
+            <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-lg border-2 border-(--psv-border) inline-block max-w-full">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 bg-gray-200 flex items-center justify-center mx-auto mb-4">
                 {/* Replace with actual QR code image */}
-                {/* <Image src="/line-qr-code.png" alt="Line QR Code" width={256} height={256} /> */}
+                
+                <Image src="/line_qr.png" alt="Line QR Code" width={256} height={256} />
               </div>
-              <p className="font-semibold text-gray-900">ID: @psv.group</p>
+              <a
+                href="https://line.me/ti/p/~@psv.group"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#00B900] text-white px-6 py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-[#00A000] transition-all hover:scale-105 shadow-md"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+                </svg>
+                เพิ่มเพื่อน
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            ต้องการสอบถามหรือขอใบเสนอราคา?
-          </h2>
-          <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
-            ทีมงานของเราพร้อมให้คำปรึกษาและตอบทุกคำถามของคุณ
-          </p>
-          <a
-            href="http://line.me/ti/p/~@psv.group"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[#00B900] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#00A000] transition-all hover:scale-105 shadow-lg"
-          >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
-            </svg>
-            ติดต่อเราผ่าน Line
-          </a>
-        </div>
-      </section>
     </div>
   );
 }
