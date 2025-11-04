@@ -83,7 +83,7 @@ export default function Header() {
                 }`}
               />
             </Link>
-            
+
             {/* Services Dropdown */}
             <div
               className="relative group"
@@ -113,13 +113,14 @@ export default function Header() {
                 </svg>
                 <span
                   className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
-                    pathname === "/services" || pathname.startsWith("/services/")
+                    pathname === "/services" ||
+                    pathname.startsWith("/services/")
                       ? "w-full"
                       : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
                   }`}
                 />
               </div>
-              
+
               {/* Dropdown Menu with hover bridge */}
               <div
                 className={`absolute left-0 top-full pt-2 w-56 transition-all duration-200 ${
@@ -176,13 +177,14 @@ export default function Header() {
                 </svg>
                 <span
                   className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
-                    pathname === "/products" || pathname.startsWith("/products/")
+                    pathname === "/products" ||
+                    pathname.startsWith("/products/")
                       ? "w-full"
                       : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
                   }`}
                 />
               </div>
-              
+
               {/* Dropdown Menu with hover bridge */}
               <div
                 className={`absolute left-0 top-full pt-2 w-56 transition-all duration-200 ${
@@ -339,13 +341,14 @@ export default function Header() {
               >
                 หน้าแรก
               </Link>
-              
+
               {/* Mobile Services Dropdown */}
               <div className="flex flex-col">
                 <button
                   onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                   className={`font-semibold transition-colors flex items-center justify-between ${
-                    pathname === "/services" || pathname.startsWith("/services/")
+                    pathname === "/services" ||
+                    pathname.startsWith("/services/")
                       ? "text-[#D4AF37]"
                       : "text-gray-900 hover:text-[#D4AF37]"
                   }`}
@@ -400,13 +403,14 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              
+
               {/* Mobile Products Dropdown */}
               <div className="flex flex-col">
                 <button
                   onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
                   className={`font-semibold transition-colors flex items-center justify-between ${
-                    pathname === "/products" || pathname.startsWith("/products/")
+                    pathname === "/products" ||
+                    pathname.startsWith("/products/")
                       ? "text-[#D4AF37]"
                       : "text-gray-900 hover:text-[#D4AF37]"
                   }`}
@@ -461,7 +465,7 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              
+
               <Link
                 href="/about"
                 className={`font-semibold transition-colors ${

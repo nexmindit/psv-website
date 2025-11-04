@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "ติดต่อเรา - PSV Group",
@@ -251,7 +250,9 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="text-left">
-                    <div className="text-xs sm:text-sm text-gray-600 mb-1">โทรศัพท์</div>
+                    <div className="text-xs sm:text-sm text-gray-600 mb-1">
+                      โทรศัพท์
+                    </div>
                     <div className="text-sm sm:text-base font-semibold text-gray-900">
                       098-408-7725
                     </div>
@@ -299,7 +300,9 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="text-left">
-                    <div className="text-xs sm:text-sm text-gray-600 mb-1">Facebook</div>
+                    <div className="text-xs sm:text-sm text-gray-600 mb-1">
+                      Facebook
+                    </div>
                     <div className="text-sm sm:text-base font-semibold text-gray-900">
                       PSV Group Sand
                     </div>
@@ -324,8 +327,13 @@ export default function ContactPage() {
             <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-lg border-2 border-(--psv-border) inline-block max-w-full">
               <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 bg-gray-200 flex items-center justify-center mx-auto mb-4">
                 {/* Replace with actual QR code image */}
-                
-                <Image src="/line_qr.png" alt="Line QR Code" width={256} height={256} />
+
+                <Image
+                  src="/line_qr.png"
+                  alt="Line QR Code"
+                  width={256}
+                  height={256}
+                />
               </div>
               <a
                 href="https://line.me/ti/p/~@psv.group"
@@ -346,7 +354,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

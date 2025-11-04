@@ -132,14 +132,6 @@ export default function SoilPage() {
     },
   ];
 
-  // ลูกค้าของเรา
-  const clients = [
-    { name: "Client 1", logo: "/client1.png" },
-    { name: "Client 2", logo: "/client2.png" },
-    { name: "Client 3", logo: "/client3.png" },
-    { name: "Client 4", logo: "/client4.png" },
-  ];
-
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
     "/delivery1.jpg",
@@ -158,18 +150,11 @@ export default function SoilPage() {
 
   return (
     <div className="bg-white">
-      {/* Section 1: Hero Banner */}
-      <section className="relative w-full">
-        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
-          <Image
-            src="/psv_banner.png"
-            alt="PSV Group - ดิน"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-      </section>
+      <img
+        src="/psv_banner.png"
+        alt="PSV Group Banner"
+        className="w-full h-full"
+      />
 
       {/* Section 2: ประเภทดิน (8 cards: 3 แถวบน + 2 แถวกลาง + 3 แถวล่าง) */}
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
@@ -182,15 +167,15 @@ export default function SoilPage() {
               วัสดุก่อสร้างคุณภาพสูง ผลิตเองจากบ่อดินบ่อทราย
               พร้อมจัดส่งทั้งกรุงเทพและปริมณฑล
             </p>
-            <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-[var(--color-gold)] mx-auto"></div>
+            <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
           {/* First row: 3 cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
-            {soilTypes.slice(0, 3).map((soil, index) => (
+            {soilTypes.slice(0, 3).map((soil) => (
               <div
-                key={index}
-                className="rounded-lg overflow-hidden border-2 border-[var(--psv-border)] shadow-sm hover:shadow-md transition-shadow duration-300"
+                key={soil.name}
+                className="rounded-lg overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div className="relative h-64 sm:h-72 md:h-80 w-full">
                   <Image
@@ -206,10 +191,10 @@ export default function SoilPage() {
 
           {/* Second row: 2 cards (centered) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
-            {soilTypes.slice(3, 5).map((soil, index) => (
+            {soilTypes.slice(3, 5).map((soil) => (
               <div
-                key={index}
-                className="rounded-lg overflow-hidden border-2 border-[var(--psv-border)] shadow-sm hover:shadow-md transition-shadow duration-300"
+                key={soil.name}
+                className="rounded-lg overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div className="relative h-64 sm:h-72 md:h-80 w-full">
                   <Image
@@ -226,7 +211,7 @@ export default function SoilPage() {
       </section>
 
       {/* Section 3: การนำไปใช้งาน (3 cards) */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-12 md:py-16 lg:py-20 bg-linear-to-b from-white to-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -235,14 +220,14 @@ export default function SoilPage() {
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
               เลือกใช้ดินให้เหมาะสมกับงานก่อสร้างของคุณ
             </p>
-            <div className="w-16 md:w-20 h-1 bg-[var(--color-gold)] mx-auto"></div>
+            <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {constructionSoilTypes.map((soil, index) => (
+            {constructionSoilTypes.map((soil) => (
               <div
-                key={index}
-                className={`relative bg-gradient-to-br ${soil.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
+                key={soil.title}
+                className={`relative bg-linear-to-br ${soil.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
               >
                 {/* Decorative background pattern */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
@@ -259,19 +244,16 @@ export default function SoilPage() {
                 </p>
 
                 {/* Divider */}
-                <div className="w-12 h-1 bg-[var(--color-gold)] mb-6 opacity-80"></div>
+                <div className="w-12 h-1 bg-(--color-gold) mb-6 opacity-80"></div>
 
                 {/* Features list */}
                 <ul className="space-y-3 relative z-10">
-                  {soil.features.map((feature, idx) => (
+                  {soil.features.map((feature) => (
                     <li
-                      key={idx}
+                      key={feature}
                       className="flex items-start text-sm sm:text-base leading-relaxed"
-                      style={{
-                        animationDelay: `${idx * 0.1}s`,
-                      }}
                     >
-                      <span className="text-[var(--color-gold)] mr-2 mt-1 flex-shrink-0">
+                      <span className="text-(--color-gold) mr-2 mt-1 shrink-0">
                         ✓
                       </span>
                       <span>{feature}</span>
@@ -280,7 +262,7 @@ export default function SoilPage() {
                 </ul>
 
                 {/* Bottom accent */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[var(--color-gold)] to-transparent opacity-50"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
               </div>
             ))}
           </div>
@@ -297,20 +279,20 @@ export default function SoilPage() {
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               สั่งซื้อง่ายๆ เพียง 3 ขั้นตอน
             </p>
-            <div className="w-16 md:w-20 h-1 bg-[var(--color-gold)] mx-auto mt-4"></div>
+            <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
           </div>
 
           <div className="max-w-6xl mx-auto space-y-8 md:space-y-12">
-            {orderSteps.map((step, index) => (
+            {orderSteps.map((step) => (
               <div
-                key={index}
+                key={step.number}
                 className={`flex flex-col ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  step.number % 2 === 1 ? "md:flex-row" : "md:flex-row-reverse"
                 } gap-6 md:gap-8 items-center`}
               >
                 {/* Image */}
                 <div className="w-full md:w-1/2">
-                  <div className="relative h-64 sm:h-80 md:h-96 w-full rounded-lg overflow-hidden border-2 border-[var(--psv-border)]">
+                  <div className="relative h-64 sm:h-80 md:h-96 w-full rounded-lg overflow-hidden border-2 border-(--psv-border)">
                     <Image
                       src={step.image}
                       alt={step.imageAlt}
@@ -322,7 +304,7 @@ export default function SoilPage() {
 
                 {/* Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
-                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[var(--color-gold)] text-white text-xl sm:text-2xl font-bold mb-4">
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-(--color-gold) text-white text-xl sm:text-2xl font-bold mb-4">
                     {step.number}
                   </div>
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -342,7 +324,6 @@ export default function SoilPage() {
       <TestimonialsSection
         title="ลูกค้าของเรา"
         subtitle="ลูกค้าชั้นนำที่ไว้วางใจ PSV Group"
-        
         bgColor="bg-white"
       />
 
@@ -356,14 +337,14 @@ export default function SoilPage() {
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               บริการจัดส่งรวดเร็ว ทั่วกรุงเทพและปริมณฑล
             </p>
-            <div className="w-16 md:w-20 h-1 bg-[var(--color-gold)] mx-auto mt-4"></div>
+            <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
             {deliveryPhotos.map((photo, index) => (
               <div
-                key={index}
-                className="relative aspect-square rounded-lg overflow-hidden border-2 border-[var(--psv-border)] hover:border-[var(--color-primary)] transition-colors duration-300"
+                key={photo}
+                className="relative aspect-square rounded-lg overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
               >
                 <Image
                   src={photo}

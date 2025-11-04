@@ -10,33 +10,24 @@ export const metadata: Metadata = {
 };
 
 export default function LandFillingServicePage() {
-  const testimonials = [
-    {
-      company: "บริษัท อิตาเลี่ยนไทย ดีเวลลอปเม้นท์ จำกัด (มหาชน)",
-      logo: "/testimonial1.jpeg",
-    },
-    {
-      company: "บริษัท ช.การช่าง จำกัด (มหาชน)",
-      logo: "/testimonial2.jpg",
-    },
-    {
-      company: "บริษัท ชิโนไทย เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด",
-      logo: "/testimonial3.png",
-    },
-    {
-      company: "บริษัท ยูนิค เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
-      logo: "/testimonial4.jpg",
-    },
-  ];
-
   const services = [
     {
       title: "รับถมที่ดิน",
       description:
         "บริการรับถมที่ดินทุกขนาด ใช้วัสดุคุณภาพดี มีหลากหลายชนิดให้เลือก เหมาะสมกับการใช้งาน",
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+          />
         </svg>
       ),
     },
@@ -45,8 +36,18 @@ export default function LandFillingServicePage() {
       description:
         "บริการปรับระดับพื้นที่ ยกระดับที่ดิน เพื่อป้องกันน้ำท่วมหรือเตรียมพื้นที่สำหรับการก่อสร้าง",
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+          />
         </svg>
       ),
     },
@@ -55,8 +56,18 @@ export default function LandFillingServicePage() {
       description:
         "บริการอัดดินให้แน่นด้วยเครื่องจักรทันสมัย เพื่อให้พื้นที่พร้อมสำหรับการก่อสร้าง",
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          />
         </svg>
       ),
     },
@@ -83,18 +94,13 @@ export default function LandFillingServicePage() {
 
   return (
     <div className="bg-white">
-      {/* Hero Banner */}
-      <section className="relative h-[400px] md:h-[500px] bg-gray-300 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/psv_banner.png"
-            alt="PSV Group - บริการรับถมที่ดิน"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-      </section>
+      {/* Hero Banner - Service Overview */}
+
+      <img
+        src="/psv_banner.png"
+        alt="PSV Group Banner"
+        className="w-full h-full"
+      />
 
       {/* About Service Section */}
       <section className="py-16 bg-white">
@@ -106,8 +112,8 @@ export default function LandFillingServicePage() {
               </h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
                 ด้วยวัสดุที่ผลิตเองทางบริษัทจึงมีบริการรับถมที่ในกรุงเทพและปริมณฑล
-                ในราคาและคุณภาพที่ดีที่สุด ปัจจุบันเราเปิดบริการจุดขายอยู่ 3 สาขา
-                สายไหม รังสิต สำโรง
+                ในราคาและคุณภาพที่ดีที่สุด ปัจจุบันเราเปิดบริการจุดขายอยู่ 3
+                สาขา สายไหม รังสิต สำโรง
               </p>
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
                 บริษัท ผลิตวัสดุเองจากบ่อดินบ่อทรายบนเนื้อที่ 4000 ไร่
@@ -204,9 +210,9 @@ export default function LandFillingServicePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <div
-                key={index}
+                key={service.title}
                 className="bg-white rounded-lg p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
@@ -235,10 +241,10 @@ export default function LandFillingServicePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyChooseUs.map((reason, index) => (
+            {whyChooseUs.map((reason) => (
               <div
-                key={index}
-                className="bg-gray-50 p-6 rounded-lg text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
+                key={reason.title}
+                className="bg-white p-6 rounded-lg text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
@@ -271,6 +277,27 @@ export default function LandFillingServicePage() {
         subtitle="ที่ไว้วางใจและใช้บริการของเรามาอย่างต่อเนื่องมากกว่า 30 ปี"
         bgColor="bg-gray-50"
       />
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-12">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              พร้อมให้บริการคุณแล้ว
+            </h2>
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+              ติดต่อเราเพื่อขอคำปรึกษาหรือขอใบเสนอราคา
+              ทีมงานมืออาชีพพร้อมให้บริการ
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-[#D4AF37] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200 mb-3"
+            >
+              ติดต่อเรา
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Gallery Section */}
       <section className="py-16 bg-white">
