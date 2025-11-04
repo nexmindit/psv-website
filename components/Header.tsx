@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const pathname = usePathname();
 
   return (
@@ -81,40 +83,149 @@ export default function Header() {
                 }`}
               />
             </Link>
-            <Link
-              href="/services"
-              className={`font-semibold transition-colors uppercase text-sm relative group ${
-                pathname === "/services"
-                  ? "text-[#D4AF37]"
-                  : "text-gray-900 hover:text-[#D4AF37]"
-              }`}
+            
+            {/* Services Dropdown */}
+            <div
+              className="relative group"
+              onMouseEnter={() => setServicesDropdownOpen(true)}
+              onMouseLeave={() => setServicesDropdownOpen(false)}
             >
-              บริการรับถมที่{" "}
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
-                  pathname === "/services"
-                    ? "w-full"
-                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+              <Link
+                href="/services"
+                className={`font-semibold transition-colors uppercase text-sm relative flex items-center gap-1 py-2 ${
+                  pathname === "/services" || pathname.startsWith("/services/")
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
                 }`}
-              />
-            </Link>
-            <Link
-              href="/products"
-              className={`font-semibold transition-colors uppercase text-sm relative group ${
-                pathname === "/products"
-                  ? "text-[#D4AF37]"
-                  : "text-gray-900 hover:text-[#D4AF37]"
-              }`}
+              >
+                บริการ
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+                <span
+                  className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                    pathname === "/services" || pathname.startsWith("/services/")
+                      ? "w-full"
+                      : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                  }`}
+                />
+              </Link>
+              
+              {/* Dropdown Menu with hover bridge */}
+              <div
+                className={`absolute left-0 top-full pt-2 w-56 transition-all duration-200 ${
+                  servicesDropdownOpen
+                    ? "opacity-100 visible translate-y-0"
+                    : "opacity-0 invisible -translate-y-2 pointer-events-none"
+                }`}
+              >
+                <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100">
+                  <Link
+                    href="/services/land-filling"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                  >
+                    รับถมที่
+                  </Link>
+                  <Link
+                    href="/services/excavation"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                  >
+                    รับขุดดิน
+                  </Link>
+                  <Link
+                    href="/services/transportation"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                  >
+                    รับขนส่งวัสดุ
+                  </Link>
+                  <Link
+                    href="/services/consultation"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                  >
+                    ให้คำปรึกษา
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Products Dropdown */}
+            <div
+              className="relative group"
+              onMouseEnter={() => setProductsDropdownOpen(true)}
+              onMouseLeave={() => setProductsDropdownOpen(false)}
             >
-              สินค้าของเรา{" "}
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
-                  pathname === "/shop"
-                    ? "w-full"
-                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+              <Link
+                href="/products"
+                className={`font-semibold transition-colors uppercase text-sm relative flex items-center gap-1 py-2 ${
+                  pathname === "/products" || pathname.startsWith("/products/")
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
                 }`}
-              />
-            </Link>
+              >
+                สินค้าของเรา
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+                <span
+                  className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
+                    pathname === "/products" || pathname.startsWith("/products/")
+                      ? "w-full"
+                      : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
+                  }`}
+                />
+              </Link>
+              
+              {/* Dropdown Menu with hover bridge */}
+              <div
+                className={`absolute left-0 top-full pt-2 w-56 transition-all duration-200 ${
+                  productsDropdownOpen
+                    ? "opacity-100 visible translate-y-0"
+                    : "opacity-0 invisible -translate-y-2 pointer-events-none"
+                }`}
+              >
+                <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100">
+                  <Link
+                    href="/products/sand"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                  >
+                    ทราย
+                  </Link>
+                  <Link
+                    href="/products/soil"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                  >
+                    ดิน
+                  </Link>
+                  <Link
+                    href="/products/stone"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                  >
+                    หิน
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <Link
               href="/about"
               className={`font-semibold transition-colors uppercase text-sm relative group ${
@@ -254,28 +365,129 @@ export default function Header() {
               >
                 หน้าแรก
               </Link>
-              <Link
-                href="/services"
-                className={`font-semibold transition-colors ${
-                  pathname === "/services"
-                    ? "text-[#D4AF37]"
-                    : "text-gray-900 hover:text-[#D4AF37]"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                บริการรับถมที่
-              </Link>
-              <Link
-                href="/shop"
-                className={`font-semibold transition-colors ${
-                  pathname === "/shop"
-                    ? "text-[#D4AF37]"
-                    : "text-gray-900 hover:text-[#D4AF37]"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                สินค้าของเรา
-              </Link>
+              
+              {/* Mobile Services Dropdown */}
+              <div className="flex flex-col">
+                <button
+                  onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                  className={`font-semibold transition-colors flex items-center justify-between ${
+                    pathname === "/services" || pathname.startsWith("/services/")
+                      ? "text-[#D4AF37]"
+                      : "text-gray-900 hover:text-[#D4AF37]"
+                  }`}
+                >
+                  บริการ
+                  <svg
+                    className={`w-4 h-4 transition-transform ${
+                      servicesDropdownOpen ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {servicesDropdownOpen && (
+                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                    <Link
+                      href="/services/land-filling"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      รับถมที่
+                    </Link>
+                    <Link
+                      href="/services/excavation"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      รับขุดดิน
+                    </Link>
+                    <Link
+                      href="/services/transportation"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      รับขนส่งวัสดุ
+                    </Link>
+                    <Link
+                      href="/services/consultation"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      ให้คำปรึกษา
+                    </Link>
+                  </div>
+                )}
+              </div>
+              
+              {/* Mobile Products Dropdown */}
+              <div className="flex flex-col">
+                <button
+                  onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
+                  className={`font-semibold transition-colors flex items-center justify-between ${
+                    pathname === "/products" || pathname.startsWith("/products/")
+                      ? "text-[#D4AF37]"
+                      : "text-gray-900 hover:text-[#D4AF37]"
+                  }`}
+                >
+                  สินค้าของเรา
+                  <svg
+                    className={`w-4 h-4 transition-transform ${
+                      productsDropdownOpen ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {productsDropdownOpen && (
+                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                    <Link
+                      href="/products/sand"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      ทราย
+                    </Link>
+                    <Link
+                      href="/products/soil"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      ดิน
+                    </Link>
+                    <Link
+                      href="/products/stone"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      หิน
+                    </Link>
+                    <Link
+                      href="/products/aggregate"
+                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      วัสดุมวลรวม
+                    </Link>
+                  </div>
+                )}
+              </div>
+              
               <Link
                 href="/about"
                 className={`font-semibold transition-colors ${

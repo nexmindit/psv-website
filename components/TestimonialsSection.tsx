@@ -1,8 +1,9 @@
 "use client";
 
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import "@splidejs/react-splide/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/free-mode";
 
 interface Testimonial {
   company: string;
@@ -38,44 +39,53 @@ export default function TestimonialsSection({
         </div>
 
         <div className="relative max-w-7xl mx-auto">
-          <Splide
-            options={{
-                rewind: true,
-              type: "loop",
-              drag: "free",
-              focus: "center",
-              perPage: 3,
-              gap: "2rem",
-              autoScroll: autoSlide
-                ? {
-                    speed: 20,
-                    pauseOnHover: true,
-                    pauseOnFocus: true,
-                  }
-                : false,
-              breakpoints: {
-                1024: {
-                  perPage: 3,
-                  gap: "1.5rem",
-                },
-                768: {
-                  perPage: 2,
-                  gap: "1rem",
-                },
-                640: {
-                  perPage: 1,
-                  gap: "1rem",
-                },
-              },
-              pagination: false,
-              arrows: false,
+          <Swiper
+            modules={[Autoplay, FreeMode]}
+            spaceBetween={32}
+            slidesPerView={3}
+            loop={true}
+            freeMode={{
+              enabled: true,
+              momentum: true,
+              momentumRatio: 0.5,
             }}
-            extensions={{ AutoScroll }}
-            aria-label="Testimonials"
+            autoplay={
+              autoSlide
+                ? {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  }
+                : false
+            }
+            speed={3000}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+              },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+              },
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 32,
+              },
+            }}
+            className="testimonials-swiper"
           >
             {testimonials.map((testimonial, index) => (
-              <SplideSlide key={index}>
-                <div className="bg-white p-6 rounded-lg border-2 border-(--psv-border) flex flex-col items-center justify-center text-center hover:shadow-lg transition-shadow duration-300 h-full">
+              <SwiperSlide key={index}>
+                <div className="bg-white p-6 rounded-lg border-2 border-[#e6e9ef] flex flex-col items-center justify-center text-center hover:shadow-lg transition-shadow duration-300 h-full">
                   <div className="w-32 h-32 mb-4 flex items-center justify-center">
                     <img
                       src={testimonial.logo}
@@ -87,9 +97,9 @@ export default function TestimonialsSection({
                     {testimonial.company}
                   </p>
                 </div>
-              </SplideSlide>
+              </SwiperSlide>
             ))}
-          </Splide>
+          </Swiper>
 
           {/* Scroll indicator hint */}
           <div className="text-center mt-6 text-sm text-gray-400">
