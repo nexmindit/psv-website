@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 export default function Home() {
   const testimonials = [
@@ -255,39 +256,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              เคยร่วมงานกับบริษัทชั้นนำ
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              ที่ไว้วางใจและใช้วัสดุและเป็นลูกค้าของเรามานานกว่า 30 ปี
-            </p>
-            <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
-          </div>
+      <TestimonialsSection testimonials={testimonials} />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.company}
-                className="bg-white p-6 rounded-lg border-2 border-(--psv-border) flex flex-col items-center justify-center text-center"
-              >
-                <div className="w-32 h-32 mb-4 flex items-center justify-center">
-                  <img
-                    src={testimonial.logo}
-                    alt={testimonial.company}
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <p className="text-sm text-gray-700 font-medium">
-                  {testimonial.company}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
       {/* Value Proposition - Value ที่เราส่งมอบให้กับลูกค้า */}
       <section className="py-16 md:py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">

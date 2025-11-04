@@ -36,14 +36,14 @@ export default function SandPage() {
       description:
         "รายละเอียด：กระสอบทราย เป็นทรายที่บรรจุในกระสอบ เหมาะสำหรับการขนส่งและจัดเก็บ",
       image:
-        "https://psvgroupsand.com/wp-content/uploads/2022/12/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%94%E0%B8%B4%E0%B8%99-300x300.jpg",
+        "/sand/sand-bag.png",
     },
     {
       name: "กองทราย",
       description:
         "รายละเอียด：กองทราย เป็นการจัดเก็บทรายในรูปแบบกอง เหมาะสำหรับการใช้งานในพื้นที่กว้าง",
       image:
-        "https://psvgroupsand.com/wp-content/uploads/2022/12/%E0%B8%AB%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B8%A5%E0%B8%B8%E0%B8%81-300x300.jpg",
+        "/sand/sand-pile.png",
     },
     
   ];
@@ -97,24 +97,24 @@ export default function SandPage() {
       number: 1,
       title: "ติดต่อเรา",
       description:
-        "ติดต่อผ่านโทรศัพท์ Line หรือ Facebook เพื่อสอบถามข้อมูลและราคา",
-      image: "/contact-step.jpg",
+        "ติดต่อแอดมินผ่านช่องทาง Social หรือสาขาใกล้บ้านคุณเพื่อเริ่มต้นการสั่งซื้อ",
+      image: "/sand/step1.png",
       imageAlt: "ติดต่อ PSV Group",
     },
     {
       number: 2,
       title: "เลือกสินค้า",
       description:
-        "เลือกประเภทวัสดุและปริมาณที่ต้องการ ทีมงานจะแนะนำสินค้าที่เหมาะสม",
-      image: "/select-step.jpg",
+        "แจ้งรายการสินค้าที่ต้องการสั่งซื้อผ่าน Admin เพื่อให้สามารถดำเนินการได้อย่างรวดเร็ว",
+      image: "/sand/step2.png",
       imageAlt: "เลือกสินค้า PSV Group",
     },
     {
       number: 3,
       title: "รับสินค้า",
       description:
-        "รับสินค้าตามวันเวลาที่นัดหมาย พร้อมบริการจัดส่งถึงหน้างาน",
-      image: "/delivery-step.jpg",
+        "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
+      image: "/sand/step3.png",
       imageAlt: "จัดส่ง PSV Group",
     },
   ];
