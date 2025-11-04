@@ -129,30 +129,34 @@ export default function Header() {
                     : "opacity-0 invisible -translate-y-2 pointer-events-none"
                 }`}
               >
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100">
+                <div className="bg-white shadow-xl rounded-lg overflow-hidden border border-gray-200">
                   <Link
                     href="/services/land-filling"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
-                    รับถมที่
+                    <span className="relative z-10">รับถมที่</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                   <Link
                     href="/services/excavation"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
-                    รับขุดดิน
+                    <span className="relative z-10">รับขุดดิน</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                   <Link
                     href="/services/transportation"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
-                    รับขนส่งวัสดุ
+                    <span className="relative z-10">รับขนส่งวัสดุ</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                   <Link
                     href="/services/consultation"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
-                    ให้คำปรึกษา
+                    <span className="relative z-10">ให้คำปรึกษา</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                 </div>
               </div>
@@ -203,24 +207,27 @@ export default function Header() {
                     : "opacity-0 invisible -translate-y-2 pointer-events-none"
                 }`}
               >
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100">
+                <div className="bg-white shadow-xl rounded-lg overflow-hidden border border-gray-200">
                   <Link
                     href="/products/sand"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
-                    ทราย
+                    <span className="relative z-10">ทราย</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                   <Link
                     href="/products/soil"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
-                    ดิน
+                    <span className="relative z-10">ดิน</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                   <Link
                     href="/products/stone"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#446084] hover:text-white transition-colors"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
-                    หิน
+                    <span className="relative z-10">หิน</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                 </div>
               </div>
