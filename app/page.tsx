@@ -329,7 +329,7 @@ export default function Home() {
           <p className="text-center text-gray-600 mb-12">ภาพหน้างานจริง</p>
 
           {/* Gallery Grid - 4 work site photos */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {[
               { src: "/site1.jpg", alt: "Work Site 1" },
               { src: "/site2.jpg", alt: "Work Site 2" },
@@ -337,16 +337,6 @@ export default function Home() {
               { src: "/site4.jpg", alt: "Work Site 4" },
               { src: "/site1.jpg", alt: "Work Site 1" },
               { src: "/site2.jpg", alt: "Work Site 2" },
-              { src: "/site3.jpg", alt: "Work Site 3" },
-              { src: "/site4.jpg", alt: "Work Site 4" },
-              { src: "/site1.jpg", alt: "Work Site 1" },
-              { src: "/site2.jpg", alt: "Work Site 2" },
-              { src: "/site3.jpg", alt: "Work Site 3" },
-              { src: "/site4.jpg", alt: "Work Site 4" },
-              { src: "/site1.jpg", alt: "Work Site 1" },
-              { src: "/site2.jpg", alt: "Work Site 2" },
-              { src: "/site3.jpg", alt: "Work Site 3" },
-              { src: "/site4.jpg", alt: "Work Site 4" },
             ].map((image, i) => (
               <div
                 key={`gallery-${i + 1}`}
