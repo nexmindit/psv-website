@@ -52,42 +52,42 @@ export default function SandPage() {
   const constructionSandTypes = [
     {
       title: "ทรายละเอียด",
-      subtitle: "ทรายละเอียด",
+      subtitle: "Fine Sand",
+      icon: "⚪",
       features: [
-        "เลือกใช้",
-        "เหมาะสำหรับงานก่อสร้าง",
-        "การผสมคอนกรีต",
-        "เช่น ฉาบปูน",
-        "ฉาบซีเมนต์",
-        "เทคอนกรีต",
+        "เม็ดเล็ก มีความละเอียด",
+        "ผสมปูนฉาบ",
+        "ทำอิฐมวลเบา",
+        "ทำลวดลายต่างๆ",
+        "งานตกแต่งและงานศิลปะ",
       ],
-      bgColor: "bg-[#1a4d6e]", // Dark blue
+      bgGradient: "from-[#446084] to-[#5a7a9a]",
     },
     {
       title: "ทรายหยาบ",
-      subtitle: "ทรายหยาบ",
+      subtitle: "Coarse Sand",
+      icon: "�",
       features: [
-        "เลือกใช้",
-        "เหมาะสำหรับการถม",
-        "งานก่อสร้างโครงสร้าง",
-        "งานปรับพื้นที่",
-        "เช่น ปรับความราบ",
-        "ก่อนถือพื้น",
+        "เม็ดใหญ่ มีกรวดเล็กๆ",
+        "ก่อสร้างอาคาร",
+        "คอนกรีตเสริมเหล็ก",
+        "ก่อสร้างฐานราก",
+        "ก่อสร้างตึกสูง",
       ],
-      bgColor: "bg-[#2d5f7e]", // Medium blue
+      bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
     },
     {
       title: "ทรายถม",
-      subtitle: "ใช้เทพื้นคอนกรีต",
+      subtitle: "Fill Sand",
+      icon: "🟤",
       features: [
-        "เลือกใช้",
-        "เหมาะสำหรับงานเทพื้น",
-        "งานคอนกรีต",
-        "งานก่อสร้าง",
-        "เช่น งานเทพื้น",
-        "ตั้นครัว",
+        "ใกล้เคียงกับดิน",
+        "งานถมถนน",
+        "งานปรับพื้นที่",
+        "ถมรองคอนกรีต",
+        "กันน้ำท่วม",
       ],
-      bgColor: "bg-[#3d6f8e]", // Light blue
+      bgGradient: "from-[#6e8aaa] to-[#829aba]",
     },
   ];
 
@@ -232,34 +232,60 @@ export default function SandPage() {
       </section>
 
       {/* Section 3: การนำไปใช้งาน (3 cards) */}
-      <section className="py-12 md:py-16 lg:py-20">
+      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               ทราย 3 ประเภทใช้ในงานก่อสร้าง
             </h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
+              เลือกใช้ทรายให้เหมาะสมกับงานก่อสร้างของคุณ
+            </p>
             <div className="w-16 md:w-20 h-1 bg-[var(--color-gold)] mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {constructionSandTypes.map((sand, index) => (
               <div
                 key={index}
-                className={`${sand.bgColor} p-6 sm:p-8 rounded-lg text-white`}
+                className={`relative bg-gradient-to-br ${sand.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
               >
-                <h3 className="text-xl sm:text-2xl font-bold mb-2">
+                {/* Decorative background pattern */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-5 rounded-full -ml-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
+              
+                
+                {/* Title */}
+                <h3 className="text-2xl sm:text-3xl font-bold mb-2 relative z-10">
                   {sand.title}
                 </h3>
-                <p className="text-base sm:text-lg mb-4 opacity-90">
+                
+                {/* Subtitle */}
+                <p className="text-base sm:text-lg mb-6 opacity-90 font-light relative z-10">
                   {sand.subtitle}
                 </p>
-                <ul className="space-y-2">
+                
+                {/* Divider */}
+                <div className="w-12 h-1 bg-[var(--color-gold)] mb-6 opacity-80"></div>
+                
+                {/* Features list */}
+                <ul className="space-y-3 relative z-10">
                   {sand.features.map((feature, idx) => (
-                    <li key={idx} className="text-sm sm:text-base">
-                      • {feature}
+                    <li 
+                      key={idx} 
+                      className="flex items-start text-sm sm:text-base leading-relaxed"
+                      style={{ 
+                        animationDelay: `${idx * 0.1}s`,
+                      }}
+                    >
+                      <span className="text-[var(--color-gold)] mr-2 mt-1 flex-shrink-0">✓</span>
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
+
+                {/* Bottom accent */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[var(--color-gold)] to-transparent opacity-50"></div>
               </div>
             ))}
           </div>
