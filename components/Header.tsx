@@ -235,23 +235,6 @@ export default function Header() {
               />
             </Link>
             <Link
-              href="/portfolio"
-              className={`font-semibold transition-colors uppercase text-sm relative group ${
-                pathname === "/portfolio"
-                  ? "text-[#D4AF37]"
-                  : "text-gray-900 hover:text-[#D4AF37]"
-              }`}
-            >
-              ผลงานและลูกค้า{" "}
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
-                  pathname === "/portfolio"
-                    ? "w-full"
-                    : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
-                }`}
-              />
-            </Link>
-            <Link
               href="/blog"
               className={`font-semibold transition-colors uppercase text-sm relative group ${
                 pathname === "/blog"
@@ -259,7 +242,7 @@ export default function Header() {
                   : "text-gray-900 hover:text-[#D4AF37]"
               }`}
             >
-              เกร็ดความรู้{" "}
+              บทความและข่าวสาร{" "}
               <span
                 className={`absolute bottom-0 left-0 h-0.5 bg-[#D4AF37] transition-all ${
                   pathname === "/blog"
@@ -491,17 +474,6 @@ export default function Header() {
                 เกี่ยวกับเรา
               </Link>
               <Link
-                href="/portfolio"
-                className={`font-semibold transition-colors ${
-                  pathname === "/portfolio"
-                    ? "text-[#D4AF37]"
-                    : "text-gray-900 hover:text-[#D4AF37]"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                ผลงานและลูกค้า
-              </Link>
-              <Link
                 href="/blog"
                 className={`font-semibold transition-colors ${
                   pathname === "/blog"
@@ -510,7 +482,7 @@ export default function Header() {
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                เกร็ดความรู้
+                บทความและข่าวสาร
               </Link>
               <Link
                 href="/contact"
