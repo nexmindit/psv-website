@@ -90,8 +90,7 @@ export default function Header() {
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
-              <Link
-                href="/services"
+              <div
                 className={`font-semibold transition-colors uppercase text-sm relative flex items-center gap-1 py-2 ${
                   pathname === "/services" || pathname.startsWith("/services/")
                     ? "text-[#D4AF37]"
@@ -119,7 +118,7 @@ export default function Header() {
                       : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
                   }`}
                 />
-              </Link>
+              </div>
               
               {/* Dropdown Menu with hover bridge */}
               <div
@@ -154,8 +153,7 @@ export default function Header() {
               onMouseEnter={() => setProductsDropdownOpen(true)}
               onMouseLeave={() => setProductsDropdownOpen(false)}
             >
-              <Link
-                href="/products"
+              <div
                 className={`font-semibold transition-colors uppercase text-sm relative flex items-center gap-1 py-2 ${
                   pathname === "/products" || pathname.startsWith("/products/")
                     ? "text-[#D4AF37]"
@@ -183,7 +181,7 @@ export default function Header() {
                       : "w-0 left-1/2 group-hover:w-full group-hover:left-0"
                   }`}
                 />
-              </Link>
+              </div>
               
               {/* Dropdown Menu with hover bridge */}
               <div

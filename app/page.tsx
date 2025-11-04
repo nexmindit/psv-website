@@ -2,25 +2,6 @@ import Link from "next/link";
 import TestimonialsSection from "@/components/TestimonialsSection";
 
 export default function Home() {
-  const testimonials = [
-    {
-      company: "บริษัท อิตาเลี่ยนไทย ดีเวลลอปเม้นท์ จำกัด (มหาชน)",
-      logo: "/testimonial1.jpeg",
-    },
-    {
-      company: "บริษัท ช.การช่าง จำกัด (มหาชน)",
-      logo: "/testimonial2.jpg",
-    },
-    {
-      company: "บริษัท ชิโนไทย เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด",
-      logo: "/testimonial3.png",
-    },
-    {
-      company: "บริษัท ยูนิค เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
-      logo: "/testimonial4.jpg",
-    },
-  ];
-
   return (
     <div className="min-h-screen">
       {/* Hero Banner - Service Overview */}
@@ -256,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <TestimonialsSection testimonials={testimonials} />
+      <TestimonialsSection />
 
       {/* Value Proposition - Value ที่เราส่งมอบให้กับลูกค้า */}
       <section className="py-16 md:py-20 bg-gray-900 text-white">

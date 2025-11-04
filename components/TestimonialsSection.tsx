@@ -13,15 +13,35 @@ interface Testimonial {
 interface TestimonialsSectionProps {
   title?: string;
   subtitle?: string;
-  testimonials: Testimonial[];
+  testimonials?: Testimonial[];
   bgColor?: string;
   autoSlide?: boolean;
 }
 
+// Default testimonials data
+const defaultTestimonials: Testimonial[] = [
+  {
+    company: "บริษัท อิตาเลี่ยนไทย ดีเวลลอปเม้นท์ จำกัด (มหาชน)",
+    logo: "/testimonial1.jpeg",
+  },
+  {
+    company: "บริษัท ช.การช่าง จำกัด (มหาชน)",
+    logo: "/testimonial2.jpg",
+  },
+  {
+    company: "บริษัท ชิโนไทย เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด",
+    logo: "/testimonial3.png",
+  },
+  {
+    company: "บริษัท ยูนิค เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
+    logo: "/testimonial4.jpg",
+  },
+];
+
 export default function TestimonialsSection({
   title = "เคยร่วมงานกับบริษัทชั้นนำ",
   subtitle = "ที่ไว้วางใจและใช้วัสดุและเป็นลูกค้าของเรามานานกว่า 30 ปี",
-  testimonials,
+  testimonials = defaultTestimonials,
   bgColor = "bg-white",
   autoSlide = true,
 }: TestimonialsSectionProps) {
