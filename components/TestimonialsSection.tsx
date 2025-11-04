@@ -40,10 +40,11 @@ export default function TestimonialsSection({
         <div className="relative max-w-7xl mx-auto">
           <Splide
             options={{
+                rewind: true,
               type: "loop",
               drag: "free",
               focus: "center",
-              perPage: 4,
+              perPage: 3,
               gap: "2rem",
               autoScroll: autoSlide
                 ? {
