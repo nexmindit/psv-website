@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Column 1: Facebook Widget */}
-          <div>
+          <div className="w-full">
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">
               ติดตามเราบน Facebook
             </h4>
-            <div className="bg-white rounded-lg overflow-hidden h-[380px]">
+            <div className="bg-white rounded-lg overflow-hidden h-[380px] w-full">
               <div
-                className="fb-page"
+                className="fb-page w-full"
                 data-href="https://www.facebook.com/PSVGroup.Sand"
                 data-tabs="timeline"
                 data-width=""
@@ -37,13 +37,13 @@ export default function Footer() {
           </div>
 
           {/* Column 2: TikTok Widget */}
-          <div>
+          <div className="w-full">
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">
               ติดตามเราบน TikTok
             </h4>
-            <div className="bg-gray-800 rounded-lg overflow-hidden h-[380px]">
+            <div className="bg-gray-800 rounded-lg overflow-hidden h-[380px] w-full flex items-center justify-center">
               <blockquote
-                className="tiktok-embed"
+                className="tiktok-embed w-full"
                 cite="https://www.tiktok.com/@psv.sand"
                 data-unique-id="psv.sand"
                 data-embed-type="creator"
@@ -63,11 +63,11 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Latest Articles */}
-          <div>
+          <div className="w-full">
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">
               บทความล่าสุด
             </h4>
-            <div className="space-y-3 h-[380px] overflow-y-auto scrollbar-transparent">
+            <div className="space-y-3 h-[380px] overflow-y-auto scrollbar-transparent w-full">
               {[1, 2, 3, 4, 5].map((item) => (
                 <div
                   key={item}

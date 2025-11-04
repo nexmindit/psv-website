@@ -222,25 +222,6 @@ export default function SoilPage() {
               </div>
             ))}
           </div>
-
-          {/* Third row: 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {soilTypes.slice(5, 8).map((soil, index) => (
-              <div
-                key={index}
-                className="rounded-lg overflow-hidden border-2 border-[var(--psv-border)] shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                  <Image
-                    src={soil.image}
-                    alt={soil.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

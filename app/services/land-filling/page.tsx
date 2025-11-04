@@ -102,7 +102,7 @@ export default function LandFillingServicePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                รับถมที่แบบ3-4บรรทัด...
+                รับถมที่
               </h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
                 ด้วยวัสดุที่ผลิตเองทางบริษัทจึงมีบริการรับถมที่ในกรุงเทพและปริมณฑล

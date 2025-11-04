@@ -102,7 +102,7 @@ export default function GardeningServicePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                รับจัดสวนแบบ3-4บรรทัด...
+                รับจัดสวน
               </h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
                 เรามีบริการจัดสวนครบวงจร ตั้งแต่การออกแบบ จัดสวน
