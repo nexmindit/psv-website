@@ -138,7 +138,7 @@ export default function Header() {
                     <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
                   <Link
-                    href="/services/excavation"
+                    href="/services/gardening"
                     className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
                   >
                     <span className="relative z-10">รับจัดสวน</span>
