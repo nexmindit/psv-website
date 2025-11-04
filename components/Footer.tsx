@@ -17,7 +17,7 @@ export default function Footer() {
                 className="fb-page w-full"
                 data-href="https://www.facebook.com/PSVGroup.Sand"
                 data-tabs="timeline"
-                data-width=""
+                data-width="600"
                 data-height="380"
                 data-small-header="false"
                 data-adapt-container-width="true"
