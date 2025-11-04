@@ -99,9 +99,9 @@ export default function Header() {
               />
             </Link>
             <Link
-              href="/shop"
+              href="/products"
               className={`font-semibold transition-colors uppercase text-sm relative group ${
-                pathname === "/shop"
+                pathname === "/products"
                   ? "text-[#D4AF37]"
                   : "text-gray-900 hover:text-[#D4AF37]"
               }`}

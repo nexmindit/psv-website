@@ -537,32 +537,6 @@ export default function CategoryPage({
                   </p>
                 </div>
 
-                {/* Categories */}
-                <div className="mb-4">
-                  <p className="text-gray-700">
-                    <span className="font-semibold">Categories:</span>{" "}
-                    <span className="text-(--color-primary)">
-                      {selectedProduct.category}
-                    </span>
-                    ,{" "}
-                    <span className="text-(--color-primary)">
-                      {selectedProduct.subcategory}
-                    </span>
-                  </p>
-                </div>
-
-                {/* Tags */}
-                <div>
-                  <p className="text-gray-700">
-                    <span className="font-semibold">Tags:</span>{" "}
-                    {selectedProduct.tags.map((tag, idx) => (
-                      <span key={tag}>
-                        <span className="text-(--color-primary)">{tag}</span>
-                        {idx < selectedProduct.tags.length - 1 && ", "}
-                      </span>
-                    ))}
-                  </p>
-                </div>
               </div>
             </div>
           </div>
