@@ -1,6 +1,25 @@
 import Link from "next/link";
 
 export default function Home() {
+  const testimonials = [
+    {
+      company: "บริษัท อิตาเลี่ยนไทย ดีเวลลอปเม้นท์ จำกัด (มหาชน)",
+      logo: "/testimonial1.jpeg",
+    },
+    {
+      company: "บริษัท ช.การช่าง จำกัด (มหาชน)",
+      logo: "/testimonial2.jpg",
+    },
+    {
+      company: "บริษัท ชิโนไทย เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด",
+      logo: "/testimonial3.png",
+    },
+    {
+      company: "บริษัท ยูนิค เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
+      logo: "/testimonial4.jpg",
+    },
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Banner - Service Overview */}
@@ -235,33 +254,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Customer Logos Carousel - Logo 4 แถว สูคำกำใช้บริการเรา Logo */}
-      <section className="py-16 md:py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            ลูกค้าที่ไว้วางใจเรา
-          </h2>
-          <p className="text-center text-gray-600 mb-12">
-            พันธมิตรและลูกค้าที่ไว้วางใจใช้บริการของเรา
-          </p>
+      {/* Testimonials Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-12">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              เคยร่วมงานกับบริษัทชั้นนำ
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              ที่ไว้วางใจและใช้วัสดุและเป็นลูกค้าของเรามานานกว่า 30 ปี
+            </p>
+            <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
+          </div>
 
-          {/* Logo Grid - 4 logos */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {[
-              { src: "/testimonial1.jpeg", alt: "Customer 1" },
-              { src: "/testimonial2.jpg", alt: "Customer 2" },
-              { src: "/testimonial3.png", alt: "Customer 3" },
-              { src: "/testimonial4.jpg", alt: "Customer 4" },
-            ].map((logo, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {testimonials.map((testimonial) => (
               <div
-                key={`logo-${i + 1}`}
-                className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow flex items-center justify-center h-32 overflow-hidden"
+                key={testimonial.company}
+                className="bg-white p-6 rounded-lg border-2 border-(--psv-border) flex flex-col items-center justify-center text-center"
               >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="max-w-full max-h-full object-contain"
-                />
+                <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                  <img
+                    src={testimonial.logo}
+                    alt={testimonial.company}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm text-gray-700 font-medium">
+                  {testimonial.company}
+                </p>
               </div>
             ))}
           </div>
@@ -314,6 +335,18 @@ export default function Home() {
               { src: "/site2.jpg", alt: "Work Site 2" },
               { src: "/site3.jpg", alt: "Work Site 3" },
               { src: "/site4.jpg", alt: "Work Site 4" },
+              { src: "/site1.jpg", alt: "Work Site 1" },
+              { src: "/site2.jpg", alt: "Work Site 2" },
+              { src: "/site3.jpg", alt: "Work Site 3" },
+              { src: "/site4.jpg", alt: "Work Site 4" },
+              { src: "/site1.jpg", alt: "Work Site 1" },
+              { src: "/site2.jpg", alt: "Work Site 2" },
+              { src: "/site3.jpg", alt: "Work Site 3" },
+              { src: "/site4.jpg", alt: "Work Site 4" },
+              { src: "/site1.jpg", alt: "Work Site 1" },
+              { src: "/site2.jpg", alt: "Work Site 2" },
+              { src: "/site3.jpg", alt: "Work Site 3" },
+              { src: "/site4.jpg", alt: "Work Site 4" },
             ].map((image, i) => (
               <div
                 key={`gallery-${i + 1}`}
@@ -327,164 +360,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-              รถบริการ
-            </h2>
-            <p className="text-gray-600 text-lg">
-              เรามีรถบริการหลากหลายขนาดเพื่อรองรับทุกความต้องการของคุณ
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                name: "รถกระบะ",
-                capacity: "1.5 คิว",
-                description:
-                  "รถกระบะสามารถบรรทุกได้ประมาณ 1.5 คิว เหมาะสำหรับการส่งวัสดุน้อยๆ เช่นพวกกระสอบและหน้างานมีข้อจำกัดพื้นที่ในการขนส่ง",
-                image: "/truck1.jpg",
-              },
-              {
-                name: "รถหกล้อ",
-                capacity: "5 คิว (4.5-7.5 ตัน)",
-                description:
-                  "รถหกล้อบรรทุกประมาณ 5 คิว สามารถรับน้ำหนักได้ 4.5-7.5 ตัน เหมาะกับการขนทรายปริมาณน้อย และหน้างานมีพื้นที่จำกัด",
-                image: "/truck2.jpg",
-              },
-              {
-                name: "รถสิบล้อ",
-                capacity: "10 คิว (15 ตัน)",
-                description:
-                  "รถสิบล้อบรรทุกประมาณ 10 คิว สามารถรับน้ำหนักได้ 15 ตัน เหมาะกับหน้างานที่มีพื้นที่จำกัดรถพ่วงไม่สามารถกลับรถได้และใช้รถสิบล้อในการขนส่งเท่านั้น",
-                image: "/truck3.jpg",
-              },
-              {
-                name: "รถพ่วง",
-                capacity: "20 คิว (25-30 ตัน)",
-                description:
-                  "รถพ่วงสามารถบรรทุกได้ประมาณ 20 คิว สามารถรับน้ำหนักได้ประมาณ 25-30 ตัน และหน้างานไม่มีข้อจำกัดพื้นที่ในการขนส่ง ข้อดี ของรถพ่วงคือสามารถแยกสินค้าได้ 2 ชนิดในการขนส่ง",
-                image: "/truck4.jpg",
-              },
-            ].map((service) => (
-              <div
-                key={service.name}
-                className="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-all"
-              >
-                <div className="h-40 bg-gray-300 rounded-lg mb-4 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900">
-                  {service.name}
-                </h3>
-                <p className="text-[#D4AF37] font-semibold mb-3">
-                  {service.capacity}
-                </p>
-                <p className="text-gray-600 text-sm">{service.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/services"
-              className="inline-block bg-[#446084] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#354d6a] transition-colors"
-            >
-              สอบถามบริการของเรา
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Preview */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-            เกร็ดความรู้
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "กระสอบทราย ดีและราคาถูก ได้มาตราฐาน",
-                excerpt:
-                  "กระสอบทราย หรือ ทรายของเรามีคุณภาพ ได้มาตราฐานผ่านกระบวนการผลิตที่ได้คุณภาพ...",
-                date: "12 ก.พ.",
-                image: "/trivia1.jpg",
-              },
-              {
-                title: "รับถมที่ ผู้รับเหมาถมดินโดยตรงได้มาตราฐาน",
-                excerpt:
-                  "บริการรับถมที่โดยผู้เชี่ยวชาญ พร้อมทีมงานมืออาชีพและอุปกรณ์ที่ทันสมัย...",
-                date: "12 ก.พ.",
-                image: "/trivia2.jpg",
-              },
-              {
-                title: "หินทราย การเลือกใช้ทรายหินทรายในงานก่อสร้าง",
-                excerpt:
-                  "การเลือกใช้วัสดุที่เหมาะสมกับงานก่อสร้างแต่ละประเภท เป็นสิ่งสำคัญที่จะช่วยให้งานมีคุณภาพ...",
-                date: "12 ก.พ.",
-                image: "/trivia3.jpg",
-              },
-            ].map((article) => (
-              <Link
-                key={article.title}
-                href="/blog"
-                className="bg-gray-50 border-2 border-gray-300 rounded-lg hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden"
-              >
-                <div className="h-48 bg-gray-300 shrink-0 overflow-hidden">
-                  <img
-                    src={article.image}
-                    alt={article.title}
-                    className="w-full h-full object-cover transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6 grow flex flex-col">
-                  <p className="text-sm text-gray-500 mb-2">{article.date}</p>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#D4AF37] transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 grow">{article.excerpt}</p>
-                  <span className="text-[#D4AF37] font-semibold hover:underline">
-                    อ่านเพิ่มเติม →
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/blog"
-              className="inline-block bg-[#446084] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#354d6a] transition-colors"
-            >
-              อ่านบทความทั้งหมด
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Banner */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            ต้องการสอบถามหรือขอใบเสนอราคา?
-          </h2>
-          <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
-            ทีมงานของเราพร้อมให้คำปรึกษาและตอบทุกคำถามของคุณ
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-[#D4AF37] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#B8941F] transition-all hover:scale-105 shadow-lg"
-          >
-            ติดต่อเรา
-          </Link>
         </div>
       </section>
     </div>
