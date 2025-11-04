@@ -3,6 +3,8 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FacebookSDK from "@/components/FacebookSDK";
+import TikTokEmbed from "@/components/TikTokEmbed";
 
 const kanit = Kanit({
   weight: ["300", "400", "500", "600", "700"],
@@ -29,6 +31,8 @@ export default function RootLayout({
         className={`${kanit.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
+        <FacebookSDK />
+        <TikTokEmbed />
         <Header />
         <main>{children}</main>
         <Footer />
