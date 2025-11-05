@@ -15,49 +15,49 @@ export default function SoilPage() {
       name: "ดินถม",
       description:
         "รายละเอียด：ดินถม เป็นดินที่มีคุณภาพดี เหมาะสำหรับงานถมที่ดิน งานปรับพื้นที่ และงานยกระดับพื้น",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
     {
       name: "ดินลูกรัง",
       description:
         "รายละเอียด：ดินลูกรัง เป็นดินที่มีส่วนผสมของกรวดและทราย เหมาะสำหรับงานถมถนน งานลานจอดรถ และงานรองพื้น",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
     {
       name: "ดินทราย",
       description:
         "รายละเอียด：ดินทราย เป็นดินที่มีส่วนผสมของทราย เหมาะสำหรับงานปรับพื้นที่ งานทำสวน และงานก่อสร้าง",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
     {
       name: "ดินเหนียว",
       description:
         "รายละเอียด：ดินเหนียว เป็นดินที่มีความเหนียว เหมาะสำหรับงานทำเขื่อน งานกันน้ำ และงานปั้นดิน",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
     {
       name: "ดินร่วน",
       description:
         "รายละเอียด：ดินร่วน เป็นดินที่มีความอุดมสมบูรณ์ เหมาะสำหรับงานทำสวน งานเกษตรกรรม และงานปลูกต้นไม้",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
     {
       name: "ดินปลูก",
       description:
         "รายละเอียด：ดินปลูก เป็นดินที่มีการปรับปรุงคุณภาพ เหมาะสำหรับงานจัดสวน งานปลูกต้นไม้ และงานเกษตร",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
     {
       name: "ดินดำ",
       description:
         "รายละเอียด：ดินดำ เป็นดินที่มีความอุดมสมบูรณ์สูง เหมาะสำหรับงานทำสวน งานเกษตรกรรม และงานปลูกพืช",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
     {
       name: "ดินหินปูน",
       description:
         "รายละเอียด：ดินหินปูน เป็นดินที่มีส่วนผสมของหินปูน เหมาะสำหรับงานถมพื้นที่ งานก่อสร้าง และงานปรับพื้น",
-      image: "https://placehold.co/600x400",
+      image: "https://placehold.co/600x400.png",
     },
   ];
 
@@ -111,7 +111,7 @@ export default function SoilPage() {
       title: "ติดต่อเรา",
       description:
         "ติดต่อแอดมินผ่านช่องทาง Social หรือสาขาใกล้บ้านคุณเพื่อเริ่มต้นการสั่งซื้อ",
-      image: "https://placehold.co/800x600",
+      image: "https://placehold.co/800x600.png",
       imageAlt: "ติดต่อ PSV Group",
     },
     {
@@ -119,7 +119,7 @@ export default function SoilPage() {
       title: "เลือกสินค้า",
       description:
         "แจ้งรายการสินค้าที่ต้องการสั่งซื้อผ่าน Admin เพื่อให้สามารถดำเนินการได้อย่างรวดเร็ว",
-      image: "https://placehold.co/800x600",
+      image: "https://placehold.co/800x600.png",
       imageAlt: "เลือกสินค้า PSV Group",
     },
     {
@@ -127,25 +127,25 @@ export default function SoilPage() {
       title: "รับสินค้า",
       description:
         "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
-      image: "https://placehold.co/800x600",
+      image: "https://placehold.co/800x600.png",
       imageAlt: "จัดส่ง PSV Group",
     },
   ];
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
   ];
 
   return (

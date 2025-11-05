@@ -1,26 +1,44 @@
 import TestimonialsSection from "@/components/TestimonialsSection";
+import Image from "next/image";
 
 export default function Home() {
+  // Gallery images array
+  const galleryImages = [
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 1" },
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 2" },
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 3" },
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 4" },
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 5" },
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 6" },
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 7" },
+    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 8" },
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Banner - Service Overview */}
 
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group Banner"
-        className="w-full h-full"
-      />
+      <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+        <Image
+          src="/psv_banner.png"
+          alt="PSV Group Banner"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
       {/* About Brand Section - Short Story (3-4 lines) + PSV Story */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <div className="bg-gray-300 mb-4 flex items-center justify-center overflow-hidden">
-                <img
+              <div className="relative bg-gray-300 mb-4 w-full h-[300px] md:h-[400px]">
+                <Image
                   src="/psv_hero.png"
                   alt="PSV Group - Construction Materials"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -79,11 +97,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Branch 1 - Sai Mai */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <img
-                  src="https://placehold.co/600x400"
+              <div className="relative h-48 bg-gray-300">
+                <Image
+                  src="https://placehold.co/600x400.png"
                   alt="สาขา สายไหม"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-6 text-center">
@@ -99,11 +118,12 @@ export default function Home() {
 
             {/* Branch 2 - Rangsit */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <img
-                  src="https://placehold.co/600x400"
+              <div className="relative h-48 bg-gray-300">
+                <Image
+                  src="https://placehold.co/600x400.png"
                   alt="สาขา รังสิต"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-6 text-center">
@@ -119,11 +139,12 @@ export default function Home() {
 
             {/* Branch 3 - Samrong */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <img
-                  src="https://placehold.co/600x400"
+              <div className="relative h-48 bg-gray-300">
+                <Image
+                  src="https://placehold.co/600x400.png"
                   alt="สาขา สำโรง"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-6 text-center">
@@ -291,23 +312,17 @@ export default function Home() {
           <p className="text-center text-gray-600 mb-12">ภาพหน้างานจริง</p>
 
           {/* Gallery Grid - 4 work site photos */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-            {[
-              { src: "/site1.jpg", alt: "Work Site 1" },
-              { src: "/site2.jpg", alt: "Work Site 2" },
-              { src: "/site3.jpg", alt: "Work Site 3" },
-              { src: "/site4.jpg", alt: "Work Site 4" },
-              { src: "/site1.jpg", alt: "Work Site 1" },
-              { src: "/site2.jpg", alt: "Work Site 2" },
-            ].map((image, i) => (
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages.map((image, index) => (
               <div
-                key={`gallery-${i + 1}`}
-                className="relative group overflow-hidden rounded-lg aspect-square bg-gray-300"
+                key={index}
+                className="relative h-48 bg-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer"
               >
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
             ))}

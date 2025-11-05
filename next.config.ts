@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    unoptimized: true, // Disable image optimization to avoid SSL issues with external images
     remotePatterns: [
       {
         protocol: "https",
@@ -11,6 +12,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "placehold.co",
+        port: '',
         pathname: "/**",
       },
     ],

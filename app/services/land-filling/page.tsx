@@ -132,7 +132,7 @@ export default function LandFillingServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400"
+                  src="https://placehold.co/600x400.png"
                   alt="งานถมที่ 1"
                   fill
                   className="object-cover"
@@ -140,7 +140,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400"
+                  src="https://placehold.co/600x400.png"
                   alt="งานถมที่ 2"
                   fill
                   className="object-cover"
@@ -148,7 +148,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400"
+                  src="https://placehold.co/600x400.png"
                   alt="งานถมที่ 3"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400"
+                  src="https://placehold.co/600x400.png"
                   alt="งานถมที่ 4"
                   fill
                   className="object-cover"

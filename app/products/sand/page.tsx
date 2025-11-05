@@ -97,7 +97,7 @@ export default function SandPage() {
       description:
         "ติดต่อแอดมินผ่านช่องทาง Social หรือสาขาใกล้บ้านคุณเพื่อเริ่มต้นการสั่งซื้อ",
       image:
-        "https://placehold.co/800x600",
+        "https://placehold.co/800x600.png",
       imageAlt: "ติดต่อ PSV Group",
     },
     {
@@ -106,7 +106,7 @@ export default function SandPage() {
       description:
         "แจ้งรายการสินค้าที่ต้องการสั่งซื้อผ่าน Admin เพื่อให้สามารถดำเนินการได้อย่างรวดเร็ว",
       image:
-        "https://placehold.co/800x600",
+        "https://placehold.co/800x600.png",
       imageAlt: "เลือกสินค้า PSV Group",
     },
     {
@@ -115,25 +115,25 @@ export default function SandPage() {
       description:
         "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
       image:
-        "https://placehold.co/800x600",
+        "https://placehold.co/800x600.png",
       imageAlt: "จัดส่ง PSV Group",
     },
   ];
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
-    "https://placehold.co/400x400",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
+    "https://placehold.co/400x400.png",
   ];
 
   return (
