@@ -187,7 +187,7 @@ export default function BlogPage() {
   // ข่าวสารจาก PSV - Company news
   const news = [
     {
-      id: 1,
+      id: 10,
       title: "PSV Group เข้าร่วมงานสัมมนาอุตสาหกรรมก่อสร้าง 2024",
       excerpt:
         "บริษัทฯ ได้รับเกียรติเข้าร่วมงานสัมมนาอุตสาหกรรมก่อสร้างครั้งใหญ่",
@@ -196,7 +196,7 @@ export default function BlogPage() {
       category: "กิจกรรม",
     },
     {
-      id: 2,
+      id: 11,
       title: "เปิดสาขาใหม่ สาขาสำโรง พร้อมให้บริการแล้ว",
       excerpt: "ขยายการให้บริการครอบคลุมพื้นที่สมุทรปราการและพื้นที่ใกล้เคียง",
       image: "https://placehold.co/400x300.png",
@@ -204,7 +204,7 @@ export default function BlogPage() {
       category: "ข่าวบริษัท",
     },
     {
-      id: 3,
+      id: 12,
       title: "PSV Group รับรางวัลผู้ประกอบการดีเด่น ประจำปี 2023",
       excerpt: "ได้รับการยอมรับในด้านคุณภาพและบริการที่ดีเยี่ยม",
       image: "https://placehold.co/400x300.png",
@@ -212,7 +212,7 @@ export default function BlogPage() {
       category: "รางวัล",
     },
     {
-      id: 4,
+      id: 13,
       title: "กิจกรรมจิตอาสาปลูกป่าเฉลิมพระเกียรติ",
       excerpt: "ทีมงาน PSV ร่วมกิจกรรมปลูกป่าเพื่อสิ่งแวดล้อม",
       image: "https://placehold.co/400x300.png",
@@ -220,7 +220,7 @@ export default function BlogPage() {
       category: "CSR",
     },
     {
-      id: 5,
+      id: 14,
       title: "ยกระดับคุณภาพสินค้า ด้วยเครื่องจักรใหม่",
       excerpt: "นำเข้าเครื่องจักรทันสมัยเพื่อผลิตวัสดุคุณภาพสูง",
       image: "https://placehold.co/400x300.png",
@@ -228,7 +228,7 @@ export default function BlogPage() {
       category: "นวัตกรรม",
     },
     {
-      id: 6,
+      id: 15,
       title: "ขอบคุณลูกค้า ฉลองครบรอบ 30 ปี",
       excerpt: "มอบส่วนลดพิเศษเนื่องในโอกาสครบรอบ 30 ปี",
       image: "https://placehold.co/400x300.png",
@@ -236,7 +236,7 @@ export default function BlogPage() {
       category: "โปรโมชั่น",
     },
     {
-      id: 7,
+      id: 16,
       title: "อบรมพนักงาน เพื่อการบริการที่ดียิ่งขึ้น",
       excerpt: "จัดอบรมทีมงานเพื่อพัฒนาทักษะการให้บริการ",
       image: "https://placehold.co/400x300.png",
@@ -244,7 +244,7 @@ export default function BlogPage() {
       category: "พัฒนาบุคลากร",
     },
     {
-      id: 8,
+      id: 17,
       title: "PSV Group ผ่านมาตรฐาน ISO 9001:2015",
       excerpt: "ได้รับการรับรองมาตรฐานระบบบริหารคุณภาพ",
       image: "https://placehold.co/400x300.png",
@@ -252,7 +252,7 @@ export default function BlogPage() {
       category: "ข่าวบริษัท",
     },
     {
-      id: 9,
+      id: 18,
       title: "สนับสนุนกีฬาชุมชน พัฒนาเยาวชนท้องถิ่น",
       excerpt: "เป็นผู้สนับสนุนการแข่งขันกีฬาระดับชุมชน",
       image: "https://placehold.co/400x300.png",
