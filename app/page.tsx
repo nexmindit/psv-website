@@ -16,18 +16,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Banner - Service Overview */}
-
-      <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
-        <Image
-          src="/psv_banner.png"
-          alt="PSV Group Banner"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
-
+      <img
+        src="/psv_banner.png"
+        alt="PSV Group Banner"
+        className="w-full h-full"
+      />
       {/* About Brand Section - Short Story (3-4 lines) + PSV Story */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-12">
@@ -312,7 +305,7 @@ export default function Home() {
           <p className="text-center text-gray-600 mb-12">ภาพหน้างานจริง</p>
 
           {/* Gallery Grid - 4 work site photos */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
               <div
                 key={index}
