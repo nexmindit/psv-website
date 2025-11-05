@@ -19,7 +19,7 @@ const ArticleCard = ({
 }) => (
   <Link
     href={`/blog/${article.id}`}
-    className="group bg-white rounded-lg overflow-hidden border-2 border-(--psv-border) hover:shadow-xl transition-all duration-300"
+    className="group bg-gray-50 rounded-lg overflow-hidden border-2 border-(--psv-border) hover:shadow-xl transition-all duration-300"
   >
     <div className="relative h-[300px] bg-gray-300 overflow-hidden">
       <Image
@@ -314,7 +314,7 @@ export default function BlogPage() {
       </section>
 
       {/* ข่าวสารจาก PSV Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
