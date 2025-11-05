@@ -473,6 +473,17 @@ export default function Header() {
               </div>
 
               <Link
+                href="/about"
+                className={`font-semibold transition-colors ${
+                  pathname === "/about"
+                    ? "text-[#D4AF37]"
+                    : "text-gray-900 hover:text-[#D4AF37]"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                เกี่ยวกับเรา
+              </Link>
+              <Link
                 href="/blog"
                 className={`font-semibold transition-colors ${
                   pathname === "/blog"
