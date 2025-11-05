@@ -132,7 +132,7 @@ export default function LandFillingServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/8B4513?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานถมที่ 1"
                   fill
                   className="object-cover"
@@ -140,7 +140,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/A0522D?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานถมที่ 2"
                   fill
                   className="object-cover"
@@ -148,7 +148,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/D2691E?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานถมที่ 3"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/CD853F?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานถมที่ 4"
                   fill
                   className="object-cover"
@@ -189,7 +189,7 @@ export default function LandFillingServicePage() {
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={`https://placehold.co/800x800/${item.color}`}
+                  src={`https://placehold.co/800x800`}
                   alt={`ตัวอย่างงานถมที่ ${item.id}`}
                   fill
                   className="object-cover"
@@ -332,7 +332,7 @@ export default function LandFillingServicePage() {
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden group"
               >
                 <Image
-                  src={`https://placehold.co/400x400/${item.color}`}
+                  src={`https://placehold.co/400x400`}
                   alt={`ผลงานถมที่ ${item.id}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"

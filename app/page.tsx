@@ -81,7 +81,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 bg-gray-300 flex items-center justify-center">
                 <img
-                  src="https://placehold.co/600x400/446084?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="สาขา สายไหม"
                   className="w-full h-full object-cover"
                 />
@@ -101,7 +101,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 bg-gray-300 flex items-center justify-center">
                 <img
-                  src="https://placehold.co/600x400/D4AF37?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="สาขา รังสิต"
                   className="w-full h-full object-cover"
                 />
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 bg-gray-300 flex items-center justify-center">
                 <img
-                  src="https://placehold.co/600x400/8B4513?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="สาขา สำโรง"
                   className="w-full h-full object-cover"
                 />

@@ -132,7 +132,7 @@ export default function GardeningServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/4A7C4E?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานจัดสวน 1"
                   fill
                   className="object-cover"
@@ -140,7 +140,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/6B8E23?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานจัดสวน 2"
                   fill
                   className="object-cover"
@@ -148,7 +148,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/228B22?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานจัดสวน 3"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400/32CD32?text=600x400"
+                  src="https://placehold.co/600x400"
                   alt="งานจัดสวน 4"
                   fill
                   className="object-cover"
@@ -189,7 +189,7 @@ export default function GardeningServicePage() {
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={`https://placehold.co/800x800/${item.color}`}
+                  src={`https://placehold.co/800x800`}
                   alt={`ตัวอย่างงานจัดสวน ${item.id}`}
                   fill
                   className="object-cover"
@@ -311,7 +311,7 @@ export default function GardeningServicePage() {
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden group"
               >
                 <Image
-                  src={`https://placehold.co/400x400/${item.color}`}
+                  src={`https://placehold.co/400x400`}
                   alt={`ผลงานจัดสวน ${item.id}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
