@@ -44,7 +44,7 @@ export default function TestimonialsSection({
   testimonials = defaultTestimonials,
   bgColor = "bg-white",
   autoSlide = true,
-}: TestimonialsSectionProps) {
+}: Readonly<TestimonialsSectionProps>) {
   return (
     <section className={`py-16 ${bgColor}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
@@ -52,9 +52,7 @@ export default function TestimonialsSection({
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {title}
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            {subtitle}
-          </p>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">{subtitle}</p>
           <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
         </div>
 

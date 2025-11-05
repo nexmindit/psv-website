@@ -132,7 +132,7 @@ export default function LandFillingServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/landfill1.jpg"
+                  src="https://placehold.co/600x400/8B4513?text=600x400"
                   alt="งานถมที่ 1"
                   fill
                   className="object-cover"
@@ -140,7 +140,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/landfill2.jpg"
+                  src="https://placehold.co/600x400/A0522D?text=600x400"
                   alt="งานถมที่ 2"
                   fill
                   className="object-cover"
@@ -148,7 +148,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/landfill3.jpg"
+                  src="https://placehold.co/600x400/D2691E?text=600x400"
                   alt="งานถมที่ 3"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/landfill4.jpg"
+                  src="https://placehold.co/600x400/CD853F?text=600x400"
                   alt="งานถมที่ 4"
                   fill
                   className="object-cover"
@@ -179,14 +179,18 @@ export default function LandFillingServicePage() {
 
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item) => (
+            {[
+              { id: 1, color: "8B4513" },
+              { id: 2, color: "A0522D" },
+              { id: 3, color: "CD853F" },
+            ].map((item) => (
               <div
-                key={item}
+                key={item.id}
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={`/landfill-case-${item}.jpg`}
-                  alt={`ตัวอย่างงานถมที่ ${item}`}
+                  src={`https://placehold.co/800x800/${item.color}`}
+                  alt={`ตัวอย่างงานถมที่ ${item.id}`}
                   fill
                   className="object-cover"
                 />
@@ -313,14 +317,23 @@ export default function LandFillingServicePage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+            {[
+              { id: 1, color: "A0522D" },
+              { id: 2, color: "8B4513" },
+              { id: 3, color: "CD853F" },
+              { id: 4, color: "D2691E" },
+              { id: 5, color: "8B7355" },
+              { id: 6, color: "C19A6B" },
+              { id: 7, color: "9C661F" },
+              { id: 8, color: "B87333" },
+            ].map((item) => (
               <div
-                key={item}
+                key={item.id}
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden group"
               >
                 <Image
-                  src={`/landfill-work-${item}.jpg`}
-                  alt={`ผลงานถมที่ ${item}`}
+                  src={`https://placehold.co/400x400/${item.color}`}
+                  alt={`ผลงานถมที่ ${item.id}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -332,3 +345,4 @@ export default function LandFillingServicePage() {
     </div>
   );
 }
+

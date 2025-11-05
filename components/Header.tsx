@@ -11,9 +11,12 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header
+      className="sticky top-0 z-50 bg-white shadow-md"
+      suppressHydrationWarning
+    >
       {/* Top Bar */}
-      <div className="bg-gray-900 text-white py-2">
+      <div className="bg-gray-900 text-white py-2" suppressHydrationWarning>
         <div className="container mx-auto px-4 flex justify-end items-center text-sm">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
@@ -53,7 +56,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4" suppressHydrationWarning>
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -65,7 +68,10 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav
+            className="hidden lg:flex items-center gap-8"
+            suppressHydrationWarning
+          >
             <Link
               href="/"
               className={`font-semibold transition-colors uppercase text-sm relative group ${
@@ -466,17 +472,6 @@ export default function Header() {
                 )}
               </div>
 
-              <Link
-                href="/about"
-                className={`font-semibold transition-colors ${
-                  pathname === "/about"
-                    ? "text-[#D4AF37]"
-                    : "text-gray-900 hover:text-[#D4AF37]"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                เกี่ยวกับเรา
-              </Link>
               <Link
                 href="/blog"
                 className={`font-semibold transition-colors ${

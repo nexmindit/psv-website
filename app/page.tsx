@@ -1,4 +1,3 @@
-import Link from "next/link";
 import TestimonialsSection from "@/components/TestimonialsSection";
 
 export default function Home() {
@@ -81,7 +80,11 @@ export default function Home() {
             {/* Branch 1 - Sai Mai */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <span className="text-gray-600">สาขา Image</span>
+                <img
+                  src="https://placehold.co/600x400/446084?text=600x400"
+                  alt="สาขา สายไหม"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-2xl font-bold text-[#446084] mb-3">
@@ -97,7 +100,11 @@ export default function Home() {
             {/* Branch 2 - Rangsit */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <span className="text-gray-600">สาขา Image</span>
+                <img
+                  src="https://placehold.co/600x400/D4AF37?text=600x400"
+                  alt="สาขา รังสิต"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-2xl font-bold text-[#446084] mb-3">
@@ -113,7 +120,11 @@ export default function Home() {
             {/* Branch 3 - Samrong */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <span className="text-gray-600">สาขา Image</span>
+                <img
+                  src="https://placehold.co/600x400/8B4513?text=600x400"
+                  alt="สาขา สำโรง"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-2xl font-bold text-[#446084] mb-3">

@@ -15,49 +15,49 @@ export default function SoilPage() {
       name: "ดินถม",
       description:
         "รายละเอียด：ดินถม เป็นดินที่มีคุณภาพดี เหมาะสำหรับงานถมที่ดิน งานปรับพื้นที่ และงานยกระดับพื้น",
-      image: "/soil/soil-fill.jpg",
+      image: "https://placehold.co/600x400/8B4513?text=600x400",
     },
     {
       name: "ดินลูกรัง",
       description:
         "รายละเอียด：ดินลูกรัง เป็นดินที่มีส่วนผสมของกรวดและทราย เหมาะสำหรับงานถมถนน งานลานจอดรถ และงานรองพื้น",
-      image: "/soil/soil-laterite.jpg",
+      image: "https://placehold.co/600x400/A0522D?text=600x400",
     },
     {
       name: "ดินทราย",
       description:
         "รายละเอียด：ดินทราย เป็นดินที่มีส่วนผสมของทราย เหมาะสำหรับงานปรับพื้นที่ งานทำสวน และงานก่อสร้าง",
-      image: "/soil/soil-sandy.jpg",
+      image: "https://placehold.co/600x400/D2691E?text=600x400",
     },
     {
       name: "ดินเหนียว",
       description:
         "รายละเอียด：ดินเหนียว เป็นดินที่มีความเหนียว เหมาะสำหรับงานทำเขื่อน งานกันน้ำ และงานปั้นดิน",
-      image: "/soil/soil-clay.jpg",
+      image: "https://placehold.co/600x400/8B7355?text=600x400",
     },
     {
       name: "ดินร่วน",
       description:
         "รายละเอียด：ดินร่วน เป็นดินที่มีความอุดมสมบูรณ์ เหมาะสำหรับงานทำสวน งานเกษตรกรรม และงานปลูกต้นไม้",
-      image: "/soil/soil-loam.jpg",
+      image: "https://placehold.co/600x400/654321?text=600x400",
     },
     {
       name: "ดินปลูก",
       description:
         "รายละเอียด：ดินปลูก เป็นดินที่มีการปรับปรุงคุณภาพ เหมาะสำหรับงานจัดสวน งานปลูกต้นไม้ และงานเกษตร",
-      image: "/soil/soil-planting.jpg",
+      image: "https://placehold.co/600x400/8B6914?text=600x400",
     },
     {
       name: "ดินดำ",
       description:
         "รายละเอียด：ดินดำ เป็นดินที่มีความอุดมสมบูรณ์สูง เหมาะสำหรับงานทำสวน งานเกษตรกรรม และงานปลูกพืช",
-      image: "/soil/soil-black.jpg",
+      image: "https://placehold.co/600x400/2F1F1A?text=600x400",
     },
     {
       name: "ดินหินปูน",
       description:
         "รายละเอียด：ดินหินปูน เป็นดินที่มีส่วนผสมของหินปูน เหมาะสำหรับงานถมพื้นที่ งานก่อสร้าง และงานปรับพื้น",
-      image: "/soil/soil-limestone.jpg",
+      image: "https://placehold.co/600x400/C4A582?text=600x400",
     },
   ];
 
@@ -111,7 +111,7 @@ export default function SoilPage() {
       title: "ติดต่อเรา",
       description:
         "ติดต่อแอดมินผ่านช่องทาง Social หรือสาขาใกล้บ้านคุณเพื่อเริ่มต้นการสั่งซื้อ",
-      image: "/soil/step1.png",
+      image: "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "ติดต่อ PSV Group",
     },
     {
@@ -119,7 +119,7 @@ export default function SoilPage() {
       title: "เลือกสินค้า",
       description:
         "แจ้งรายการสินค้าที่ต้องการสั่งซื้อผ่าน Admin เพื่อให้สามารถดำเนินการได้อย่างรวดเร็ว",
-      image: "/soil/step2.png",
+      image: "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "เลือกสินค้า PSV Group",
     },
     {
@@ -127,25 +127,25 @@ export default function SoilPage() {
       title: "รับสินค้า",
       description:
         "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
-      image: "/soil/step3.png",
+      image: "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "จัดส่ง PSV Group",
     },
   ];
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    "/delivery1.jpg",
-    "/delivery2.jpg",
-    "/delivery3.jpg",
-    "/delivery4.jpg",
-    "/delivery5.jpg",
-    "/delivery6.jpg",
-    "/delivery7.jpg",
-    "/delivery8.jpg",
-    "/delivery9.jpg",
-    "/delivery10.jpg",
-    "/delivery11.jpg",
-    "/delivery12.jpg",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
   ];
 
   return (
@@ -360,3 +360,4 @@ export default function SoilPage() {
     </div>
   );
 }
+

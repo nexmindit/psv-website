@@ -96,7 +96,8 @@ export default function SandPage() {
       title: "ติดต่อเรา",
       description:
         "ติดต่อแอดมินผ่านช่องทาง Social หรือสาขาใกล้บ้านคุณเพื่อเริ่มต้นการสั่งซื้อ",
-      image: "/sand/step1.png",
+      image:
+        "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "ติดต่อ PSV Group",
     },
     {
@@ -104,7 +105,8 @@ export default function SandPage() {
       title: "เลือกสินค้า",
       description:
         "แจ้งรายการสินค้าที่ต้องการสั่งซื้อผ่าน Admin เพื่อให้สามารถดำเนินการได้อย่างรวดเร็ว",
-      image: "/sand/step2.png",
+      image:
+        "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "เลือกสินค้า PSV Group",
     },
     {
@@ -112,25 +114,26 @@ export default function SandPage() {
       title: "รับสินค้า",
       description:
         "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
-      image: "/sand/step3.png",
+      image:
+        "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "จัดส่ง PSV Group",
     },
   ];
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    "/delivery1.jpg",
-    "/delivery2.jpg",
-    "/delivery3.jpg",
-    "/delivery4.jpg",
-    "/delivery5.jpg",
-    "/delivery6.jpg",
-    "/delivery7.jpg",
-    "/delivery8.jpg",
-    "/delivery9.jpg",
-    "/delivery10.jpg",
-    "/delivery11.jpg",
-    "/delivery12.jpg",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
   ];
 
   return (
@@ -364,3 +367,5 @@ export default function SandPage() {
     </div>
   );
 }
+
+

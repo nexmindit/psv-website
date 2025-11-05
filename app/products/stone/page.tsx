@@ -15,49 +15,49 @@ export default function StonePage() {
       name: "หินคลุก",
       description:
         "รายละเอียด：หินคลุก เป็นหินที่มีขนาดหลากหลาย เหมาะสำหรับงานถมพื้นที่ งานรองฐานถนน และงานปรับพื้นที่",
-      image: "/stone/stone-crushed.jpg",
+      image: "https://placehold.co/600x400/808080?text=600x400",
     },
     {
       name: "หินฝุ่น",
       description:
         "รายละเอียด：หินฝุ่น เป็นหินที่มีขนาดละเอียด เหมาะสำหรับงานปรับพื้นที่ งานรองพื้นคอนกรีต และงานทำถนน",
-      image: "/stone/stone-dust.jpg",
+      image: "https://placehold.co/600x400/A9A9A9?text=600x400",
     },
     {
       name: "หิน 3/4",
       description:
         "รายละเอียด：หิน 3/4 นิ้ว เป็นหินที่มีขนาดกลาง เหมาะสำหรับงานคอนกรีต งานก่อสร้างอาคาร และงานโครงสร้าง",
-      image: "/stone/stone-three-quarter.jpg",
+      image: "https://placehold.co/600x400/696969?text=600x400",
     },
     {
       name: "หิน 1 นิ้ว",
       description:
         "รายละเอียด：หิน 1 นิ้ว เป็นหินที่มีขนาดใหญ่ เหมาะสำหรับงานคอนกรีตคุณภาพสูง งานก่อสร้างตึก และงานโครงสร้างหนัก",
-      image: "/stone/stone-one-inch.jpg",
+      image: "https://placehold.co/600x400/778899?text=600x400",
     },
     {
       name: "หินเกล็ด",
       description:
         "รายละเอียด：หินเกล็ด เป็นหินที่มีรูปแบบแบน เหมาะสำหรับงานตกแต่ง งานปูพื้น และงานจัดสวน",
-      image: "/stone/stone-flake.jpg",
+      image: "https://placehold.co/600x400/B0C4DE?text=600x400",
     },
     {
       name: "หินตกแต่ง",
       description:
         "รายละเอียด：หินตกแต่ง เป็นหินที่มีสีสันสวยงาม เหมาะสำหรับงานจัดสวน งานตกแต่งภูมิทัศน์ และงานตกแต่งอาคาร",
-      image: "/stone/stone-decorative.jpg",
+      image: "https://placehold.co/600x400/CD853F?text=600x400",
     },
     {
       name: "หินขาว",
       description:
         "รายละเอียด：หินขาว เป็นหินสีขาวสวยงาม เหมาะสำหรับงานตกแต่ง งานจัดสวน และงานตกแต่งภูมิทัศน์",
-      image: "/stone/stone-white.jpg",
+      image: "https://placehold.co/600x400/F5F5F5?text=600x400",
     },
     {
       name: "หินดำ",
       description:
         "รายละเอียด：หินดำ เป็นหินสีดำสวยงาม เหมาะสำหรับงานตกแต่ง งานจัดสวน และงานตกแต่งภูมิทัศน์",
-      image: "/stone/stone-black.jpg",
+      image: "https://placehold.co/600x400/2F4F4F?text=600x400",
     },
   ];
 
@@ -111,7 +111,7 @@ export default function StonePage() {
       title: "ติดต่อเรา",
       description:
         "ติดต่อแอดมินผ่านช่องทาง Social หรือสาขาใกล้บ้านคุณเพื่อเริ่มต้นการสั่งซื้อ",
-      image: "/stone/step1.png",
+      image: "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "ติดต่อ PSV Group",
     },
     {
@@ -119,7 +119,7 @@ export default function StonePage() {
       title: "เลือกสินค้า",
       description:
         "แจ้งรายการสินค้าที่ต้องการสั่งซื้อผ่าน Admin เพื่อให้สามารถดำเนินการได้อย่างรวดเร็ว",
-      image: "/stone/step2.png",
+      image: "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "เลือกสินค้า PSV Group",
     },
     {
@@ -127,25 +127,25 @@ export default function StonePage() {
       title: "รับสินค้า",
       description:
         "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
-      image: "/stone/step3.png",
+      image: "https://placehold.co/800x600/446084?text=800x600",
       imageAlt: "จัดส่ง PSV Group",
     },
   ];
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    "/delivery1.jpg",
-    "/delivery2.jpg",
-    "/delivery3.jpg",
-    "/delivery4.jpg",
-    "/delivery5.jpg",
-    "/delivery6.jpg",
-    "/delivery7.jpg",
-    "/delivery8.jpg",
-    "/delivery9.jpg",
-    "/delivery10.jpg",
-    "/delivery11.jpg",
-    "/delivery12.jpg",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
+    "https://placehold.co/400x400/e6e9ef?text=400x400",
   ];
 
   return (
@@ -360,3 +360,4 @@ export default function StonePage() {
     </div>
   );
 }
+

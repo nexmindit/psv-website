@@ -132,7 +132,7 @@ export default function GardeningServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/garden1.jpg"
+                  src="https://placehold.co/600x400/4A7C4E?text=600x400"
                   alt="งานจัดสวน 1"
                   fill
                   className="object-cover"
@@ -140,7 +140,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/garden2.jpg"
+                  src="https://placehold.co/600x400/6B8E23?text=600x400"
                   alt="งานจัดสวน 2"
                   fill
                   className="object-cover"
@@ -148,7 +148,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/garden3.jpg"
+                  src="https://placehold.co/600x400/228B22?text=600x400"
                   alt="งานจัดสวน 3"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/garden4.jpg"
+                  src="https://placehold.co/600x400/32CD32?text=600x400"
                   alt="งานจัดสวน 4"
                   fill
                   className="object-cover"
@@ -179,14 +179,18 @@ export default function GardeningServicePage() {
 
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item) => (
+            {[
+              { id: 1, color: "2E8B57" },
+              { id: 2, color: "3CB371" },
+              { id: 3, color: "66CDAA" },
+            ].map((item) => (
               <div
-                key={item}
+                key={item.id}
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={`/garden-case-${item}.jpg`}
-                  alt={`ตัวอย่างงานจัดสวน ${item}`}
+                  src={`https://placehold.co/800x800/${item.color}`}
+                  alt={`ตัวอย่างงานจัดสวน ${item.id}`}
                   fill
                   className="object-cover"
                 />
@@ -292,14 +296,23 @@ export default function GardeningServicePage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+            {[
+              { id: 1, color: "90EE90" },
+              { id: 2, color: "98FB98" },
+              { id: 3, color: "8FBC8F" },
+              { id: 4, color: "3CB371" },
+              { id: 5, color: "2E8B57" },
+              { id: 6, color: "228B22" },
+              { id: 7, color: "006400" },
+              { id: 8, color: "556B2F" },
+            ].map((item) => (
               <div
-                key={item}
+                key={item.id}
                 className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden group"
               >
                 <Image
-                  src={`/garden-work-${item}.jpg`}
-                  alt={`ผลงานจัดสวน ${item}`}
+                  src={`https://placehold.co/400x400/${item.color}`}
+                  alt={`ผลงานจัดสวน ${item.id}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -387,3 +400,4 @@ export default function GardeningServicePage() {
     </div>
   );
 }
+
