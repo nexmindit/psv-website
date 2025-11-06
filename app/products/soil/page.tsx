@@ -18,12 +18,6 @@ export default function SoilPage() {
       image: "https://placehold.co/600x400.png",
     },
     {
-      name: "ดินลูกรัง",
-      description:
-        "รายละเอียด：ดินลูกรัง เป็นดินที่มีส่วนผสมของกรวดและทราย เหมาะสำหรับงานถมถนน งานลานจอดรถ และงานรองพื้น",
-      image: "https://placehold.co/600x400.png",
-    },
-    {
       name: "ดินทราย",
       description:
         "รายละเอียด：ดินทราย เป็นดินที่มีส่วนผสมของทราย เหมาะสำหรับงานปรับพื้นที่ งานทำสวน และงานก่อสร้าง",
@@ -77,19 +71,6 @@ export default function SoilPage() {
       bgGradient: "from-[#446084] to-[#5a7a9a]",
     },
     {
-      title: "ดินลูกรัง",
-      subtitle: "Laterite Soil",
-      icon: "🟤",
-      features: [
-        "แข็งแรง ทนทาน",
-        "งานถมถนน",
-        "งานลานจอดรถ",
-        "งานรองพื้น",
-        "งานทำถนนลูกรัง",
-      ],
-      bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
-    },
-    {
       title: "ดินปลูก",
       subtitle: "Planting Soil",
       icon: "🌱",
@@ -100,7 +81,7 @@ export default function SoilPage() {
         "งานเกษตรกรรม",
         "งานปรับปรุงดิน",
       ],
-      bgGradient: "from-[#6e8aaa] to-[#829aba]",
+      bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
     },
   ];
 
@@ -215,7 +196,7 @@ export default function SoilPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ดิน 3 ประเภทใช้ในงานก่อสร้าง
+              ดิน 2 ประเภทใช้ในงานก่อสร้าง
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
               เลือกใช้ดินให้เหมาะสมกับงานก่อสร้างของคุณ
@@ -223,7 +204,7 @@ export default function SoilPage() {
             <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             {constructionSoilTypes.map((soil) => (
               <div
                 key={soil.title}
@@ -360,4 +341,3 @@ export default function SoilPage() {
     </div>
   );
 }
-

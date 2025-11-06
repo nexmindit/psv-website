@@ -96,8 +96,7 @@ export default function SandPage() {
       title: "ติดต่อเรา",
       description:
         "ติดต่อแอดมินผ่านช่องทาง Social หรือสาขาใกล้บ้านคุณเพื่อเริ่มต้นการสั่งซื้อ",
-      image:
-        "https://placehold.co/800x600.png",
+      image: "https://placehold.co/800x600.png",
       imageAlt: "ติดต่อ PSV Group",
     },
     {
@@ -105,8 +104,7 @@ export default function SandPage() {
       title: "เลือกสินค้า",
       description:
         "แจ้งรายการสินค้าที่ต้องการสั่งซื้อผ่าน Admin เพื่อให้สามารถดำเนินการได้อย่างรวดเร็ว",
-      image:
-        "https://placehold.co/800x600.png",
+      image: "https://placehold.co/800x600.png",
       imageAlt: "เลือกสินค้า PSV Group",
     },
     {
@@ -114,8 +112,7 @@ export default function SandPage() {
       title: "รับสินค้า",
       description:
         "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
-      image:
-        "https://placehold.co/800x600.png",
+      image: "https://placehold.co/800x600.png",
       imageAlt: "จัดส่ง PSV Group",
     },
   ];
@@ -222,7 +219,7 @@ export default function SandPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ทราย 3 ประเภทใช้ในงานก่อสร้าง
+              ทราย 2 ประเภทใช้ในงานก่อสร้าง
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
               เลือกใช้ทรายให้เหมาะสมกับงานก่อสร้างของคุณ
@@ -230,7 +227,7 @@ export default function SandPage() {
             <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             {constructionSandTypes.map((sand) => (
               <div
                 key={sand.title}
@@ -367,5 +364,3 @@ export default function SandPage() {
     </div>
   );
 }
-
-
