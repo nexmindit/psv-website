@@ -150,6 +150,13 @@ export default function Header() {
                     <span className="relative z-10">รับจัดสวน</span>
                     <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
+                  <Link
+                    href="/services/grass-installation"
+                    className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
+                  >
+                    <span className="relative z-10">รับปูหญ้า</span>
+                    <span className="absolute bottom-0 left-5 right-5 h-0.5 bg-[#D4AF37] scale-x-0 group-hover/item:scale-x-100 transition-transform origin-left duration-300"></span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -386,25 +393,18 @@ export default function Header() {
                       รับถมที่
                     </Link>
                     <Link
-                      href="/services/excavation"
+                      href="/services/gardening"
                       className="text-sm text-gray-700 hover:text-[#D4AF37]"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      รับขุดดิน
+                      รับจัดสวน
                     </Link>
                     <Link
-                      href="/services/transportation"
+                      href="/services/grass-installation"
                       className="text-sm text-gray-700 hover:text-[#D4AF37]"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      รับขนส่งวัสดุ
-                    </Link>
-                    <Link
-                      href="/services/consultation"
-                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      ให้คำปรึกษา
+                      รับปูหญ้า
                     </Link>
                   </div>
                 )}
