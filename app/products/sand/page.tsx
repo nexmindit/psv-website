@@ -347,7 +347,7 @@ export default function SandPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
             {deliveryPhotos.map((photo, index) => (
               <div
-                key={photo}
+                key={index}
                 className="relative aspect-square rounded-lg overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
               >
                 <Image
