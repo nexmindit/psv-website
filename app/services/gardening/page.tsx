@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import CustomerReviews from "@/components/CustomerReviews";
 
 export const metadata: Metadata = {
   title: "บริการจัดสวน - PSV Group",
@@ -281,6 +282,10 @@ export default function GardeningServicePage() {
         subtitle="ที่ไว้วางใจและใช้บริการของเรามาอย่างต่อเนื่อง"
         bgColor="bg-white"
       />
+
+
+      {/* Customer Reviews Section */}
+      <CustomerReviews />
 
       {/* Gallery Section */}
       <section className="py-16 bg-white">

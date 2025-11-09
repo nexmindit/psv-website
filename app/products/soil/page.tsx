@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import CustomerReviews from "@/components/CustomerReviews";
 
 export const metadata: Metadata = {
   title: "ดิน - PSV Group",
@@ -71,7 +72,7 @@ export default function SoilPage() {
       bgGradient: "from-[#446084] to-[#5a7a9a]",
     },
     {
-      title: "ดินปลูก",
+      title: "หน้าดิน/ดินปลูกต้นไม้",
       subtitle: "Planting Soil",
       icon: "🌱",
       features: [
@@ -308,6 +309,8 @@ export default function SoilPage() {
         bgColor="bg-white"
       />
 
+      <CustomerReviews />
+
       {/* Section 6: รูปภาพการจัดส่ง (4x3 grid) */}
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
@@ -324,7 +327,7 @@ export default function SoilPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
             {deliveryPhotos.map((photo, index) => (
               <div
-                key={photo}
+                key={index}
                 className="relative aspect-square rounded-lg overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
               >
                 <Image

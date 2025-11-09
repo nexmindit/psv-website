@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import CustomerReviews from "@/components/CustomerReviews";
 
 export const metadata: Metadata = {
   title: "บริการรับถมที่ดิน - PSV Group",
@@ -281,6 +282,10 @@ export default function LandFillingServicePage() {
         subtitle="ที่ไว้วางใจและใช้บริการของเรามาอย่างต่อเนื่องมากกว่า 30 ปี"
         bgColor="bg-gray-50"
       />
+
+
+      {/* Customer Reviews Section */}
+      <CustomerReviews />
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">

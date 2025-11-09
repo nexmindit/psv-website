@@ -1,3 +1,4 @@
+import CustomerReviews from "@/components/CustomerReviews";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Image from "next/image";
 
@@ -263,6 +264,10 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <TestimonialsSection />
+
+
+      {/* Customer Reviews Section */}
+      <CustomerReviews />
 
       {/* Value Proposition - Value ที่เราส่งมอบให้กับลูกค้า */}
       <section className="py-16 md:py-20 bg-gray-900 text-white">

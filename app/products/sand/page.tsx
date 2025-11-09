@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import CustomerReviews from "@/components/CustomerReviews";
 
 export const metadata: Metadata = {
   title: "ทราย - PSV Group",
@@ -26,13 +27,6 @@ export default function SandPage() {
         "https://psvgroupsand.com/wp-content/uploads/2022/12/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%A2%E0%B8%B2%E0%B8%9A.jpg",
     },
     {
-      name: "ทรายละเอียด",
-      description:
-        "รายละเอียด：ทรายละเอียด เป็นทรายที่ถูกตรก เป็นเม็ดทรายค่อนข้างละเอียด มีความเหนียวพอดี เหมาะสำหรับงานฉาบปูน",
-      image:
-        "https://psvgroupsand.com/wp-content/uploads/2022/12/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94-300x300.jpg",
-    },
-    {
       name: "กระสอบทราย",
       description:
         "รายละเอียด：กระสอบทราย เป็นทรายที่บรรจุในกระสอบ เหมาะสำหรับการขนส่งและจัดเก็บ",
@@ -48,19 +42,6 @@ export default function SandPage() {
 
   // ทรายสามประเภทที่ใช้ในงานก่อสร้าง
   const constructionSandTypes = [
-    {
-      title: "ทรายละเอียด",
-      subtitle: "Fine Sand",
-      icon: "⚪",
-      features: [
-        "เม็ดเล็ก มีความละเอียด",
-        "ผสมปูนฉาบ",
-        "ทำอิฐมวลเบา",
-        "ทำลวดลายต่างๆ",
-        "งานตกแต่งและงานศิลปะ",
-      ],
-      bgGradient: "from-[#446084] to-[#5a7a9a]",
-    },
     {
       title: "ทรายหยาบ",
       subtitle: "Coarse Sand",
@@ -156,8 +137,8 @@ export default function SandPage() {
           </div>
 
           {/* First row: 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
-            {sandTypes.slice(0, 3).map((sand) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
+            {sandTypes.slice(0, 2).map((sand) => (
               <div
                 key={sand.name}
                 className="rounded-lg overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
@@ -175,13 +156,13 @@ export default function SandPage() {
           </div>
 
           {/* Second row: 2 cards (centered) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
-            {sandTypes.slice(3, 5).map((sand) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
+            {sandTypes.slice(2, 4).map((sand) => (
               <div
                 key={sand.name}
                 className="rounded-lg overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
+                <div className="relative h-100 sm:h-100 md:h-120 w-full">
                   <Image
                     src={sand.image}
                     alt={sand.name}
@@ -330,6 +311,8 @@ export default function SandPage() {
         subtitle="ลูกค้าชั้นนำที่ไว้วางใจ PSV Group"
         bgColor="bg-white"
       />
+
+      <CustomerReviews />
 
       {/* Section 6: รูปภาพการจัดส่ง (4x3 grid) */}
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
