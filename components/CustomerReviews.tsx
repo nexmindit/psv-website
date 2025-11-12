@@ -18,7 +18,9 @@ interface CustomerReviewsProps {
   reviews?: Review[];
 }
 
-export default function CustomerReviews({ reviews = defaultReviews }: CustomerReviewsProps) {
+export default function CustomerReviews({
+  reviews = defaultReviews,
+}: CustomerReviewsProps) {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -29,7 +31,7 @@ export default function CustomerReviews({ reviews = defaultReviews }: CustomerRe
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+              className="relative h-96 w-full rounded-sm overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
             >
               <Image
                 src={review.src}

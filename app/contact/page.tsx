@@ -71,7 +71,7 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
             {/* Image */}
-            <div className="relative h-64 sm:h-80 lg:h-[500px] rounded-lg overflow-hidden border-2 border-(--psv-border)">
+            <div className="relative h-64 sm:h-80 lg:h-[500px] rounded-sm overflow-hidden border-2 border-(--psv-border)">
               <Image
                 src="/psv_hero.png"
                 alt="PSV Group - ติดต่อเรา"
@@ -96,9 +96,9 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 gap-3 sm:gap-4">
                 <a
                   href="tel:098-408-7725"
-                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-sm border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors"
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-(--color-primary) rounded-lg flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-(--color-primary) rounded-sm flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       fill="currentColor"
@@ -121,9 +121,9 @@ export default function ContactPage() {
                   href="http://line.me/ti/p/~@psv.group"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#00B900] transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-sm border-2 border-(--psv-border) hover:border-[#00B900] transition-colors"
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00B900] rounded-lg flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00B900] rounded-sm flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       fill="currentColor"
@@ -146,9 +146,9 @@ export default function ContactPage() {
                   href="https://www.facebook.com/PSVGroup.Sand"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-lg border-2 border-(--psv-border) hover:border-[#1877F2] transition-colors"
+                  className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-sm border-2 border-(--psv-border) hover:border-[#1877F2] transition-colors"
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#1877F2] rounded-lg flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#1877F2] rounded-sm flex items-center justify-center shrink-0">
                     <svg
                       className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                       fill="currentColor"
@@ -189,7 +189,7 @@ export default function ContactPage() {
             {branches.map((branch, index) => (
               <div
                 key={branch.name}
-                className="bg-white rounded-lg border-2 border-(--psv-border) overflow-hidden"
+                className="bg-white rounded-sm border-2 border-(--psv-border) overflow-hidden"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Branch Info */}
@@ -283,7 +283,7 @@ export default function ContactPage() {
                           href={branch.directMapUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block bg-(--color-primary) text-white px-4 sm:px-6 py-2 rounded-lg text-sm sm:text-base font-semibold hover:opacity-90 transition-opacity duration-200"
+                          className="inline-block bg-(--color-primary) text-white px-4 sm:px-6 py-2 rounded-sm text-sm sm:text-base font-semibold hover:opacity-90 transition-opacity duration-200"
                         >
                           เปิดใน Google Maps
                         </a>
@@ -314,14 +314,14 @@ export default function ContactPage() {
       {/* Line QR Code Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="bg-gray-50 rounded-lg border-2 border-(--psv-border) p-4 sm:p-6 lg:p-8 max-w-2xl mx-auto text-center">
+          <div className="bg-gray-50 rounded-sm border-2 border-(--psv-border) p-4 sm:p-6 lg:p-8 max-w-2xl mx-auto text-center">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
               ติดต่อผ่าน Line Official Account
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mb-6">
               สแกน QR Code เพื่อเพิ่มเพื่อนและสอบถามข้อมูล
             </p>
-            <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-lg border-2 border-(--psv-border) inline-block max-w-full">
+            <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-sm border-2 border-(--psv-border) inline-block max-w-full">
               <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 bg-gray-200 flex items-center justify-center mx-auto mb-4">
                 {/* Replace with actual QR code image */}
 
@@ -336,7 +336,7 @@ export default function ContactPage() {
                 href="https://line.me/ti/p/~@psv.group"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#00B900] text-white px-6 py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-[#00A000] transition-all hover:scale-105 shadow-md"
+                className="inline-flex items-center gap-2 bg-[#00B900] text-white px-6 py-3 rounded-sm font-semibold text-sm sm:text-base hover:bg-[#00A000] transition-all hover:scale-105 shadow-md"
               >
                 <svg
                   className="w-5 h-5"

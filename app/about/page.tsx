@@ -143,7 +143,7 @@ export default function AboutPage() {
                   สามารถจัดส่งสินค้าได้ทั้งกรุงเทพและปริมณฑลและเราจะขยายสาขาเพิ่มเรื่อยๆเพื่อครอบคลุมการให้บริการลูกค้าให้ทั่วถึงที่สุด
                 </p>
 
-                <div className="bg-[#446084]/5 p-6 rounded-lg border-2 border-(--psv-border) mt-6">
+                <div className="bg-[#446084]/5 p-6 rounded-sm border-2 border-(--psv-border) mt-6">
                   <p className="font-semibold text-lg text-gray-900">
                     เป็นผู้ประกอบการค้าวัสดุก่อสร้างประเภท ทราย ดิน หิน ลูกรัง
                     ที่มีคุณภาพที่ดีที่สุด ตามความต้องการของท้องตลาด
@@ -185,7 +185,7 @@ export default function AboutPage() {
                   >
                     {/* Content */}
                     <div className="w-full md:w-5/12">
-                      <div className="bg-white p-6 rounded-lg border-2 border-(--psv-border)">
+                      <div className="bg-white p-6 rounded-sm border-2 border-(--psv-border)">
                         <div className="inline-block px-3 py-1 bg-[#446084] text-white rounded-full text-sm font-bold mb-3">
                           {event.year}
                         </div>
@@ -226,7 +226,7 @@ export default function AboutPage() {
 
           {/* Locations Map Image */}
           <div className="mb-12">
-            <div className="bg-white rounded-lg overflow-hidden border-2 border-(--psv-border)">
+            <div className="bg-white rounded-sm overflow-hidden border-2 border-(--psv-border)">
               <img
                 src="/locations.jpg"
                 alt="แผนที่สาขา PSV Group"
@@ -239,7 +239,7 @@ export default function AboutPage() {
             {branches.map((branch, index) => (
               <div
                 key={branch.name}
-                className="bg-white rounded-lg border-2 border-(--psv-border) overflow-hidden"
+                className="bg-white rounded-sm border-2 border-(--psv-border) overflow-hidden"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Branch Info */}
@@ -343,7 +343,7 @@ export default function AboutPage() {
                         href={branch.directMapUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block mt-4 px-6 py-3 bg-[#446084] text-white rounded-lg font-semibold border-2 border-[#446084]"
+                        className="inline-block mt-4 px-6 py-3 bg-[#446084] text-white rounded-sm font-semibold border-2 border-[#446084]"
                       >
                         เปิดแผนที่
                       </a>

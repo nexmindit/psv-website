@@ -40,7 +40,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="bg-gray-50 p-8 rounded-sm">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
                 บริษัท พีเอสวี กรุ๊ป จำกัด
               </h2>
@@ -87,7 +87,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Branch 1 - Sai Mai */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gray-300">
                 <Image
                   src="https://placehold.co/600x400.png"
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
 
             {/* Branch 2 - Rangsit */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gray-300">
                 <Image
                   src="https://placehold.co/600x400.png"
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
 
             {/* Branch 3 - Samrong */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48 bg-gray-300">
                 <Image
                   src="https://placehold.co/600x400.png"
@@ -161,7 +161,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Reason 1 */}
-            <div className="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+            <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-white"
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
 
             {/* Reason 2 */}
-            <div className="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+            <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-white"
@@ -209,7 +209,7 @@ export default function Home() {
             </div>
 
             {/* Reason 3 */}
-            <div className="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+            <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-white"
@@ -232,7 +232,7 @@ export default function Home() {
             </div>
 
             {/* Reason 4 */}
-            <div className="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+            <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-white"
@@ -310,7 +310,7 @@ export default function Home() {
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className="relative h-48 bg-gray-300 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+                className="relative h-48 bg-gray-300 rounded-sm overflow-hidden hover:scale-105 transition-transform cursor-pointer"
               >
                 <Image
                   src={image.src}

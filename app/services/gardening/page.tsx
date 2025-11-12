@@ -120,40 +120,40 @@ export default function GardeningServicePage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-block bg-[#446084] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+                className="inline-block bg-[#446084] text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
               >
                 ติดต่อขอคำปรึกษา
               </Link>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/garden1.jpg"
                   alt="งานจัดสวน 1"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/garden2.jpg"
                   alt="งานจัดสวน 2"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/garden3.jpg"
                   alt="งานจัดสวน 3"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/garden4.jpg"
                   alt="งานจัดสวน 4"
                   fill
                   className="object-cover"
@@ -183,7 +183,7 @@ export default function GardeningServicePage() {
             ].map((item) => (
               <div
                 key={item.id}
-                className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
+                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
                   src={`https://placehold.co/800x800`}
@@ -214,7 +214,7 @@ export default function GardeningServicePage() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-white rounded-lg p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
+                className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
                   {service.icon}
@@ -245,7 +245,7 @@ export default function GardeningServicePage() {
             {whyChooseUs.map((reason) => (
               <div
                 key={reason.title}
-                className="bg-white p-6 rounded-lg text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
+                className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
@@ -308,7 +308,7 @@ export default function GardeningServicePage() {
             ].map((item) => (
               <div
                 key={item.id}
-                className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden group"
+                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden group"
               >
                 <Image
                   src={`https://placehold.co/400x400`}
@@ -335,7 +335,7 @@ export default function GardeningServicePage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-[#D4AF37] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200 mb-8"
+              className="inline-block bg-[#D4AF37] text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200 mb-8"
             >
               ติดต่อเรา
             </Link>
@@ -354,7 +354,7 @@ export default function GardeningServicePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gray-50 p-8 rounded-lg border-2 border-[#e6e9ef] text-center">
+            <div className="bg-gray-50 p-8 rounded-sm border-2 border-[#e6e9ef] text-center">
               <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-white"
@@ -375,7 +375,7 @@ export default function GardeningServicePage() {
               <p className="text-gray-600">08X-XXX-XXXX</p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg border-2 border-[#e6e9ef] text-center">
+            <div className="bg-gray-50 p-8 rounded-sm border-2 border-[#e6e9ef] text-center">
               <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-white"

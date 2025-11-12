@@ -130,7 +130,7 @@ export default function ServicesPage() {
 
               <Link
                 href="/contact"
-                className="inline-block bg-(--color-gold) text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+                className="inline-block bg-(--color-gold) text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
               >
                 ขอใบเสนอราคา
               </Link>
@@ -157,7 +157,7 @@ export default function ServicesPage() {
             {trucks.map((truck) => (
               <div
                 key={truck.name}
-                className="bg-white rounded-lg overflow-hidden border-2 border-(--psv-border) flex flex-col"
+                className="bg-white rounded-sm overflow-hidden border-2 border-(--psv-border) flex flex-col"
               >
                 <div className="relative h-48 bg-gray-200">
                   <Image
@@ -214,7 +214,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white p-8 rounded-lg border-2 border-(--psv-border) text-center">
+            <div className="bg-white p-8 rounded-sm border-2 border-(--psv-border) text-center">
               <div className="w-16 h-16 bg-(--color-gold) rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">01</span>
               </div>
@@ -227,7 +227,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg border-2 border-(--psv-border) text-center">
+            <div className="bg-white p-8 rounded-sm border-2 border-(--psv-border) text-center">
               <div className="w-16 h-16 bg-(--color-gold) rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">02</span>
               </div>
@@ -239,7 +239,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg border-2 border-(--psv-border) text-center">
+            <div className="bg-white p-8 rounded-sm border-2 border-(--psv-border) text-center">
               <div className="w-16 h-16 bg-(--color-gold) rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">03</span>
               </div>
@@ -273,7 +273,7 @@ export default function ServicesPage() {
             ].map((item) => (
               <div
                 key={item.id}
-                className="relative h-82 bg-gray-200 rounded-lg overflow-hidden"
+                className="relative h-82 bg-gray-200 rounded-sm overflow-hidden"
               >
                 <Image
                   src={item.img}
@@ -288,7 +288,7 @@ export default function ServicesPage() {
           <div className="text-center mt-8">
             <Link
               href="/portfolio"
-              className="inline-block bg-(--color-primary) text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+              className="inline-block bg-(--color-primary) text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
             >
               ดูผลงานทั้งหมด
             </Link>
@@ -309,7 +309,7 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-block bg-white text-(--color-gold) px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+              className="inline-block bg-white text-(--color-gold) px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
             >
               ติดต่อเรา
             </Link>
@@ -317,7 +317,7 @@ export default function ServicesPage() {
               href="http://line.me/ti/p/~@psv.group1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#06C755] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+              className="inline-block bg-[#06C755] text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
             >
               <span className="flex items-center justify-center gap-2">
                 <span>💬</span> Line: @psv.group1
@@ -338,7 +338,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-4">
-            <details className="bg-white p-6 rounded-lg border-2 border-(--psv-border)">
+            <details className="bg-white p-6 rounded-sm border-2 border-(--psv-border)">
               <summary className="font-semibold text-gray-900 cursor-pointer">
                 บริการรับถมที่ครอบคลุมพื้นที่ไหนบ้าง?
               </summary>
@@ -348,7 +348,7 @@ export default function ServicesPage() {
               </p>
             </details>
 
-            <details className="bg-white p-6 rounded-lg border-2 border-(--psv-border)">
+            <details className="bg-white p-6 rounded-sm border-2 border-(--psv-border)">
               <summary className="font-semibold text-gray-900 cursor-pointer">
                 ใช้เวลาในการถมที่นานแค่ไหน?
               </summary>
@@ -359,7 +359,7 @@ export default function ServicesPage() {
               </p>
             </details>
 
-            <details className="bg-white p-6 rounded-lg border-2 border-(--psv-border)">
+            <details className="bg-white p-6 rounded-sm border-2 border-(--psv-border)">
               <summary className="font-semibold text-gray-900 cursor-pointer">
                 ราคาค่าบริการคำนวณอย่างไร?
               </summary>
@@ -369,7 +369,7 @@ export default function ServicesPage() {
               </p>
             </details>
 
-            <details className="bg-white p-6 rounded-lg border-2 border-(--psv-border)">
+            <details className="bg-white p-6 rounded-sm border-2 border-(--psv-border)">
               <summary className="font-semibold text-gray-900 cursor-pointer">
                 มีบริการอัดดินหลังถมที่หรือไม่?
               </summary>
@@ -379,7 +379,7 @@ export default function ServicesPage() {
               </p>
             </details>
 
-            <details className="bg-white p-6 rounded-lg border-2 border-(--psv-border)">
+            <details className="bg-white p-6 rounded-sm border-2 border-(--psv-border)">
               <summary className="font-semibold text-gray-900 cursor-pointer">
                 สามารถขอดูตัวอย่างวัสดุก่อนสั่งได้ไหม?
               </summary>

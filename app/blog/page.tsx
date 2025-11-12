@@ -20,7 +20,7 @@ const ArticleCard = ({
 }) => (
   <Link
     href={`/blog/${article.id}`}
-    className="group bg-gray-50 rounded-lg overflow-hidden border-2 border-(--psv-border) hover:shadow-xl transition-all duration-300"
+    className="group bg-gray-50 rounded-sm overflow-hidden border-2 border-(--psv-border) hover:shadow-xl transition-all duration-300"
   >
     <div className="relative h-[300px] bg-gray-300 overflow-hidden">
       <Image
@@ -75,7 +75,7 @@ const Pagination = ({
     <button
       onClick={() => onPageChange(currentPage - 1)}
       disabled={currentPage === 1}
-      className="px-4 py-2 rounded-lg border-2 border-(--psv-border) disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#446084] hover:text-white transition-colors"
+      className="px-4 py-2 rounded-sm border-2 border-(--psv-border) disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#446084] hover:text-white transition-colors"
     >
       ก่อนหน้า
     </button>
@@ -83,7 +83,7 @@ const Pagination = ({
       <button
         key={index + 1}
         onClick={() => onPageChange(index + 1)}
-        className={`px-4 py-2 rounded-lg border-2 transition-colors ${
+        className={`px-4 py-2 rounded-sm border-2 transition-colors ${
           currentPage === index + 1
             ? "bg-[#446084] text-white border-[#446084]"
             : "border-(--psv-border) hover:bg-[#446084] hover:text-white"
@@ -95,7 +95,7 @@ const Pagination = ({
     <button
       onClick={() => onPageChange(currentPage + 1)}
       disabled={currentPage === totalPages}
-      className="px-4 py-2 rounded-lg border-2 border-(--psv-border) disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#446084] hover:text-white transition-colors"
+      className="px-4 py-2 rounded-sm border-2 border-(--psv-border) disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#446084] hover:text-white transition-colors"
     >
       ถัดไป
     </button>

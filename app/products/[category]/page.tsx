@@ -413,7 +413,7 @@ export default function CategoryPage({
               {products.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white border-2 border-gray-200 rounded-lg overflow-hidden hover:border-(--color-primary) transition-all duration-300 hover:shadow-lg"
+                  className="bg-white border-2 border-gray-200 rounded-sm overflow-hidden hover:border-(--color-primary) transition-all duration-300 hover:shadow-lg"
                 >
                   {/* Product Image */}
                   <div className="relative h-64 w-full overflow-hidden bg-gray-100">
@@ -427,7 +427,7 @@ export default function CategoryPage({
                     {/* Out of Stock Overlay */}
                     {product.outOfStock && (
                       <div className="absolute inset-0 bg-white bg-opacity-90 flex items-center justify-center">
-                        <div className="bg-gray-500 text-white px-6 py-3 rounded-lg font-bold text-lg">
+                        <div className="bg-gray-500 text-white px-6 py-3 rounded-sm font-bold text-lg">
                           OUT OF STOCK
                         </div>
                       </div>
@@ -447,7 +447,7 @@ export default function CategoryPage({
                     {!product.outOfStock && (
                       <button
                         onClick={() => setSelectedProduct(product)}
-                        className="w-full bg-(--color-primary) text-white py-2.5 px-4 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200"
+                        className="w-full bg-(--color-primary) text-white py-2.5 px-4 rounded-sm font-medium hover:opacity-90 transition-opacity duration-200"
                       >
                         Quick View
                       </button>
@@ -467,7 +467,7 @@ export default function CategoryPage({
           onClick={() => setSelectedProduct(null)}
         >
           <div
-            className="bg-white rounded-lg max-w-4xl w-full shadow-2xl"
+            className="bg-white rounded-sm max-w-4xl w-full shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Content */}
@@ -536,7 +536,6 @@ export default function CategoryPage({
                     SKU: {selectedProduct.sku}
                   </p>
                 </div>
-
               </div>
             </div>
           </div>

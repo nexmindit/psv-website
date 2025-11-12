@@ -456,7 +456,7 @@ export default function ArticlePage({
               </p>
               <Link
                 href="/contact"
-                className="inline-block px-8 py-3 bg-white text-[#446084] font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                className="inline-block px-8 py-3 bg-white text-[#446084] font-semibold rounded-sm hover:bg-gray-100 transition-colors"
               >
                 ติดต่อเรา
               </Link>
@@ -474,7 +474,7 @@ export default function ArticlePage({
                   <Link
                     key={related.id}
                     href={`/blog/${related.id}`}
-                    className="group block bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-[#446084] hover:shadow-lg transition-all duration-300"
+                    className="group block bg-white rounded-sm overflow-hidden border-2 border-gray-200 hover:border-[#446084] hover:shadow-lg transition-all duration-300"
                   >
                     <div className="relative h-48 bg-gray-300">
                       <Image
@@ -497,7 +497,7 @@ export default function ArticlePage({
               <div className="mt-8">
                 <Link
                   href="/blog"
-                  className="block w-full text-center px-6 py-3 bg-[#446084] text-white font-semibold rounded-lg hover:bg-[#5a7a9f] transition-colors"
+                  className="block w-full text-center px-6 py-3 bg-[#446084] text-white font-semibold rounded-sm hover:bg-[#5a7a9f] transition-colors"
                 >
                   ดูบทความทั้งหมด
                 </Link>

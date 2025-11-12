@@ -135,7 +135,7 @@ export default function Header() {
                     : "opacity-0 invisible -translate-y-2 pointer-events-none"
                 }`}
               >
-                <div className="bg-white shadow-xl rounded-lg overflow-hidden border border-gray-200">
+                <div className="bg-white shadow-xl rounded-sm overflow-hidden border border-gray-200">
                   <Link
                     href="/services/land-filling"
                     className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"
@@ -206,7 +206,7 @@ export default function Header() {
                     : "opacity-0 invisible -translate-y-2 pointer-events-none"
                 }`}
               >
-                <div className="bg-white shadow-xl rounded-lg overflow-hidden border border-gray-200">
+                <div className="bg-white shadow-xl rounded-sm overflow-hidden border border-gray-200">
                   <Link
                     href="/products/sand"
                     className="block px-5 py-3.5 text-sm font-medium text-gray-700 hover:text-[#D4AF37] hover:bg-gray-50 transition-all relative group/item border-b border-gray-100 last:border-b-0"

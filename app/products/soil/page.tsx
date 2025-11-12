@@ -154,7 +154,7 @@ export default function SoilPage() {
             {soilTypes.slice(0, 3).map((soil) => (
               <div
                 key={soil.name}
-                className="rounded-lg overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div className="relative h-64 sm:h-72 md:h-80 w-full">
                   <Image
@@ -173,7 +173,7 @@ export default function SoilPage() {
             {soilTypes.slice(3, 5).map((soil) => (
               <div
                 key={soil.name}
-                className="rounded-lg overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div className="relative h-64 sm:h-72 md:h-80 w-full">
                   <Image
@@ -271,7 +271,7 @@ export default function SoilPage() {
               >
                 {/* Image */}
                 <div className="w-full md:w-1/2">
-                  <div className="relative h-64 sm:h-80 md:h-96 w-full rounded-lg overflow-hidden border-2 border-(--psv-border)">
+                  <div className="relative h-64 sm:h-80 md:h-96 w-full rounded-sm overflow-hidden border-2 border-(--psv-border)">
                     <Image
                       src={step.image}
                       alt={step.imageAlt}
@@ -325,7 +325,7 @@ export default function SoilPage() {
             {deliveryPhotos.map((photo, index) => (
               <div
                 key={index}
-                className="relative aspect-square rounded-lg overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
+                className="relative aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
               >
                 <Image
                   src={photo}

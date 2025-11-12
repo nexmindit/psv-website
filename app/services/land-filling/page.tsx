@@ -120,40 +120,40 @@ export default function LandFillingServicePage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-block bg-[#446084] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200"
+                className="inline-block bg-[#446084] text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
               >
                 ขอใบเสนอราคา
               </Link>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/landfilling1.jpg"
                   alt="งานถมที่ 1"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/landfilling2.jpg"
                   alt="งานถมที่ 2"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/landfilling3.jpg"
                   alt="งานถมที่ 3"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="relative h-64 bg-gray-300 rounded-lg overflow-hidden">
+              <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/landfilling4.jpg"
                   alt="งานถมที่ 4"
                   fill
                   className="object-cover"
@@ -183,7 +183,7 @@ export default function LandFillingServicePage() {
             ].map((item) => (
               <div
                 key={item.id}
-                className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
+                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
                   src={`https://placehold.co/800x800`}
@@ -214,7 +214,7 @@ export default function LandFillingServicePage() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-white rounded-lg p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
+                className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
                   {service.icon}
@@ -245,7 +245,7 @@ export default function LandFillingServicePage() {
             {whyChooseUs.map((reason) => (
               <div
                 key={reason.title}
-                className="bg-white p-6 rounded-lg text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
+                className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
@@ -295,7 +295,7 @@ export default function LandFillingServicePage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-[#D4AF37] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200 mb-3"
+              className="inline-block bg-[#D4AF37] text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200 mb-3"
             >
               ติดต่อเรา
             </Link>
@@ -329,7 +329,7 @@ export default function LandFillingServicePage() {
             ].map((item) => (
               <div
                 key={item.id}
-                className="relative aspect-square bg-gray-300 rounded-lg overflow-hidden group"
+                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden group"
               >
                 <Image
                   src={`https://placehold.co/400x400`}

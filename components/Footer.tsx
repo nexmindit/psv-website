@@ -12,7 +12,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">
               ติดตามเราบน Facebook
             </h4>
-            <div className="bg-white rounded-lg overflow-hidden h-[380px] w-full">
+            <div className="bg-white rounded-sm overflow-hidden h-[380px] w-full">
               <div
                 className="fb-page w-full"
                 data-href="https://www.facebook.com/PSVGroup.Sand"
@@ -41,7 +41,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">
               ติดตามเราบน TikTok
             </h4>
-            <div className="bg-gray-800 rounded-lg overflow-hidden h-[380px] w-full flex items-center justify-center">
+            <div className="bg-gray-800 rounded-sm overflow-hidden h-[380px] w-full flex items-center justify-center">
               <blockquote
                 className="tiktok-embed w-full"
                 cite="https://www.tiktok.com/@psv.sand"
@@ -71,7 +71,7 @@ export default function Footer() {
               {[1, 2, 3, 4, 5].map((item) => (
                 <div
                   key={item}
-                  className="flex gap-3 bg-gray-800 rounded-lg p-2 hover:bg-gray-750 transition-colors cursor-pointer"
+                  className="flex gap-3 bg-gray-800 rounded-sm p-2 hover:bg-gray-750 transition-colors cursor-pointer"
                 >
                   <div className="w-20 h-16 bg-gray-700 rounded shrink-0 flex items-center justify-center">
                     <svg
@@ -90,11 +90,10 @@ export default function Footer() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h5 className="text-sm font-medium text-gray-200 line-clamp-2 mb-1">
-                      บทความตัวอย่างที่ {item} - เกร็ดความรู้เกี่ยวกับวัสดุก่อสร้าง
+                      บทความตัวอย่างที่ {item} -
+                      เกร็ดความรู้เกี่ยวกับวัสดุก่อสร้าง
                     </h5>
-                    <p className="text-xs text-gray-400">
-                      {item} วันที่แล้ว
-                    </p>
+                    <p className="text-xs text-gray-400">{item} วันที่แล้ว</p>
                   </div>
                 </div>
               ))}
@@ -102,7 +101,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-     
+
       {/* Copyright Bar */}
       <div className="bg-black py-4">
         <div className="container mx-auto px-4 text-center">
