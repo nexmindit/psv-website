@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import BannerCarousel from "@/components/BannerCarousel";
 
 export const metadata: Metadata = {
   title: "บริการรับถมที่ - PSV Group",
@@ -79,12 +80,8 @@ export default function ServicesPage() {
 
   return (
     <div className="bg-white">
-      {/* Hero Banner */}
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group - บริการรับถมที่"
-        className="w-full h-full"
-      />
+      {/* Hero Banner Carousel */}
+      <BannerCarousel />
 
       {/* About Service Section */}
       <section className="py-16">

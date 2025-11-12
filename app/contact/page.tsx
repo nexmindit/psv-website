@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Metadata } from "next";
+import BannerCarousel from "@/components/BannerCarousel";
 
 export const metadata: Metadata = {
   title: "ติดต่อเรา - PSV Group",
@@ -51,13 +52,8 @@ export default function ContactPage() {
 
   return (
     <div className="bg-white">
-      {/* Hero Banner */}
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group - ติดต่อเรา"
-        className="w-full h-full"
-      />
-
+      {/* Hero Banner Carousel */}
+      <BannerCarousel />
 
       {/* Contact Info Section */}
       <section className="py-16 bg-white">
@@ -314,8 +310,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      
 
       {/* Line QR Code Section */}
       <section className="py-16 bg-white">

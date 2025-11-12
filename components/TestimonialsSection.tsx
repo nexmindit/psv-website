@@ -118,11 +118,6 @@ export default function TestimonialsSection({
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Scroll indicator hint */}
-          <div className="text-center mt-6 text-sm text-gray-400">
-            {autoSlide && "⏸ วางเมาส์เพื่อหยุดชั่วคราว • ↔️ ลากเพื่อเลื่อนดู"}
-          </div>
         </div>
       </div>
     </section>

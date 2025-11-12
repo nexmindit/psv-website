@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CustomerReviews from "@/components/CustomerReviews";
+import BannerCarousel from "@/components/BannerCarousel";
 
 export const metadata: Metadata = {
   title: "บริการจัดสวน - PSV Group",
@@ -95,13 +96,8 @@ export default function GardeningServicePage() {
 
   return (
     <div className="bg-white">
-      {/* Hero Banner - Service Overview */}
-
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group Banner"
-        className="w-full h-full"
-      />
+      {/* Hero Banner Carousel */}
+      <BannerCarousel />
 
       {/* About Service Section */}
       <section className="py-16 bg-white">
@@ -283,7 +279,6 @@ export default function GardeningServicePage() {
         bgColor="bg-white"
       />
 
-
       {/* Customer Reviews Section */}
       <CustomerReviews />
 
@@ -405,4 +400,3 @@ export default function GardeningServicePage() {
     </div>
   );
 }
-

@@ -1,3 +1,4 @@
+import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Image from "next/image";
@@ -17,11 +18,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group Banner"
-        className="w-full h-full"
-      />
+      <BannerCarousel />
       {/* About Brand Section - Short Story (3-4 lines) + PSV Story */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-12">
@@ -264,7 +261,6 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <TestimonialsSection />
-
 
       {/* Customer Reviews Section */}
       <CustomerReviews />

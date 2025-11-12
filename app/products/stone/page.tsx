@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
 
 export const metadata: Metadata = {
@@ -97,7 +98,6 @@ export default function StonePage() {
       ],
       bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
     },
-    
   ];
 
   // 3 ขั้นตอนการสั่งซื้อ
@@ -146,11 +146,7 @@ export default function StonePage() {
 
   return (
     <div className="bg-white">
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group Banner"
-        className="w-full h-full"
-      />
+      <BannerCarousel />
 
       {/* Section 2: ประเภทหิน (8 cards: 3 แถวบน + 2 แถวกลาง + 3 แถวล่าง) */}
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
@@ -322,7 +318,6 @@ export default function StonePage() {
         subtitle="ลูกค้าชั้นนำที่ไว้วางใจ PSV Group"
         bgColor="bg-white"
       />
-
 
       <CustomerReviews />
 

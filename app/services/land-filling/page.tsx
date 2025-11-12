@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CustomerReviews from "@/components/CustomerReviews";
+import BannerCarousel from "@/components/BannerCarousel";
 
 export const metadata: Metadata = {
   title: "บริการรับถมที่ดิน - PSV Group",
@@ -95,13 +96,8 @@ export default function LandFillingServicePage() {
 
   return (
     <div className="bg-white">
-      {/* Hero Banner - Service Overview */}
-
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group Banner"
-        className="w-full h-full"
-      />
+      {/* Hero Banner Carousel */}
+      <BannerCarousel />
 
       {/* About Service Section */}
       <section className="py-16 bg-white">
@@ -283,7 +279,6 @@ export default function LandFillingServicePage() {
         bgColor="bg-gray-50"
       />
 
-
       {/* Customer Reviews Section */}
       <CustomerReviews />
 
@@ -350,4 +345,3 @@ export default function LandFillingServicePage() {
     </div>
   );
 }
-

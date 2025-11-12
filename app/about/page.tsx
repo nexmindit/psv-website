@@ -94,13 +94,6 @@ export default function AboutPage() {
 
   return (
     <div className="bg-white">
-      {/* Hero Banner */}
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group - เกี่ยวกับเรา"
-        className="w-full h-full"
-      />
-
       {/* Company Story Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">

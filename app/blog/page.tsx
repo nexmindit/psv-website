@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import BannerCarousel from "@/components/BannerCarousel";
 
 // Article Card Component
 const ArticleCard = ({
@@ -277,12 +278,8 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Banner */}
-      <img
-        src="/psv_banner.png"
-        alt="PSV Group Banner"
-        className="w-full h-full"
-      />
+      {/* Hero Banner Carousel */}
+      <BannerCarousel />
 
       {/* บทความ Section */}
       <section className="py-16 bg-white">
