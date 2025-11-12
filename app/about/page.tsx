@@ -1,10 +1,6 @@
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "เกี่ยวกับเรา - PSV Group | ผู้นำด้านวัสดุก่อสร้างมากกว่า 30 ปี",
-  description:
-    "ประวัติและเรื่องราวของ PSV Group ผู้ประกอบการค้าวัสดุก่อสร้าง ทราย ดิน หิน ลูกรัง มากกว่า 30 ปี พร้อมสาขาทั้ง 3 แห่ง",
-};
+import { Fade } from "react-awesome-reveal";
 
 export default function AboutPage() {
   const branches = [
@@ -97,15 +93,17 @@ export default function AboutPage() {
       {/* Company Story Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              เรื่องราวของเรา
-            </h2>
-            <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full"></div>
-          </div>
+          <Fade triggerOnce>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                เรื่องราวของเรา
+              </h2>
+              <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full"></div>
+            </div>
+          </Fade>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <Fade direction="left" triggerOnce delay={100}>
               <div className="bg-gray-100 overflow-hidden">
                 <img
                   src="/vehicles.jpg"
@@ -113,35 +111,37 @@ export default function AboutPage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-            </div>
+            </Fade>
 
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                บริษัท พีเอสวี กรุ๊ป จำกัด
-              </h3>
+            <Fade direction="right" triggerOnce delay={200}>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                  บริษัท พีเอสวี กรุ๊ป จำกัด
+                </h3>
 
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  เป็นผู้ประกอบการค้าวัสดุก่อสร้าง ประเภท ทราย ดิน หิน ลูกรัง
-                  ที่มีคุณภาพดีที่สุด ตามความต้องการของท้องตลาด เนื่องจาก บริษัท
-                  ผลิตวัสดุเองจากบ่อดินบ่อทรายบนเนื้อที่ 4000 ไร่
-                  ขนส่งเองโดยเรือเหล็กของบริษัทที่มากรุงเทพ
-                  และขายเองโดยบริษัทในเครือจึงสามารถทำราคาได้ถูกที่สุดในท้องตลาด
-                </p>
+                <div className="space-y-4 text-gray-700 leading-relaxed">
+                  <p>
+                    เป็นผู้ประกอบการค้าวัสดุก่อสร้าง ประเภท ทราย ดิน หิน ลูกรัง
+                    ที่มีคุณภาพดีที่สุด ตามความต้องการของท้องตลาด เนื่องจาก บริษัท
+                    ผลิตวัสดุเองจากบ่อดินบ่อทรายบนเนื้อที่ 4000 ไร่
+                    ขนส่งเองโดยเรือเหล็กของบริษัทที่มากรุงเทพ
+                    และขายเองโดยบริษัทในเครือจึงสามารถทำราคาได้ถูกที่สุดในท้องตลาด
+                  </p>
 
-                <p>
-                  การันตีได้จาก บริษัท อิตาเลี่ยนไทยฯ บริษัท ช.การช่างฯ บริษัท
-                  ชิโนไทยฯ บริษัท ยูนิค เอ็นจิเนียริ่งฯ เป็นต้น ที่ไว้วางใจ
-                  และใช้วัสดุและเป็นลูกค้าของเรามานานกว่า 30 ปี
-                </p>
+                  <p>
+                    การันตีได้จาก บริษัท อิตาเลี่ยนไทยฯ บริษัท ช.การช่างฯ บริษัท
+                    ชิโนไทยฯ บริษัท ยูนิค เอ็นจิเนียริ่งฯ เป็นต้น ที่ไว้วางใจ
+                    และใช้วัสดุและเป็นลูกค้าของเรามานานกว่า 30 ปี
+                  </p>
 
-                <p>
-                  นอกจากนี้ด้วยวัสดุที่ผลิตเองทางบริษัทจึงมีบริการรับถมที่ในกรุงเทพ
-                  และปริมณฑล
-                  ในราคาและคุณภาพที่ดีที่สุดในปัจจุบันเราเปิดบริการจุดขายอยู่ 3
-                  สาขา สายไหม รังสิต สำโรง
-                  สามารถจัดส่งสินค้าได้ทั้งกรุงเทพและปริมณฑลและเราจะขยายสาขาเพิ่มเรื่อยๆเพื่อครอบคลุมการให้บริการลูกค้าให้ทั่วถึงที่สุด
-                </p>
+                  <p>
+                    นอกจากนี้ด้วยวัสดุที่ผลิตเองทางบริษัทจึงมีบริการรับถมที่ในกรุงเทพ
+                    และปริมณฑล
+                    ในราคาและคุณภาพที่ดีที่สุดในปัจจุบันเราเปิดบริการจุดขายอยู่ 3
+                    สาขา สายไหม รังสิต สำโรง
+                    สามารถจัดส่งสินค้าได้ทั้งกรุงเทพและปริมณฑลและเราจะขยายสาขาเพิ่มเรื่อยๆเพื่อครอบคลุมการให้บริการลูกค้าให้ทั่วถึงที่สุด
+                  </p>
+                </div>
 
                 <div className="bg-[#446084]/5 p-6 rounded-sm border-2 border-(--psv-border) mt-6">
                   <p className="font-semibold text-lg text-gray-900">
@@ -151,7 +151,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Fade>
           </div>
         </div>
       </section>
@@ -159,15 +159,17 @@ export default function AboutPage() {
       {/* Timeline Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ประวัติความเป็นมา
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              ตั้งแต่เปิดกิจการจนถึงปัจจุบัน มากกว่า 30 ปีของความมุ่งมั่น
-            </p>
-            <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
-          </div>
+          <Fade triggerOnce cascade damping={0.1}>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                ประวัติความเป็นมา
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                ตั้งแต่เปิดกิจการจนถึงปัจจุบัน มากกว่า 30 ปีของความมุ่งมั่น
+              </p>
+              <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
+            </div>
+          </Fade>
 
           <div className="max-w-4xl mx-auto">
             <div className="relative">
@@ -177,33 +179,34 @@ export default function AboutPage() {
               {/* Timeline events */}
               <div className="space-y-12">
                 {timelineEvents.map((event, index) => (
-                  <div
-                    key={event.year}
-                    className={`relative flex items-center ${
-                      index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                    } flex-col`}
-                  >
-                    {/* Content */}
-                    <div className="w-full md:w-5/12">
-                      <div className="bg-white p-6 rounded-sm border-2 border-(--psv-border)">
-                        <div className="inline-block px-3 py-1 bg-[#446084] text-white rounded-full text-sm font-bold mb-3">
-                          {event.year}
+                  <Fade key={event.year} triggerOnce cascade damping={0.1} delay={index * 100}>
+                    <div
+                      className={`relative flex items-center ${
+                        index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                      } flex-col`}
+                    >
+                      {/* Content */}
+                      <div className="w-full md:w-5/12">
+                        <div className="bg-white p-6 rounded-sm border-2 border-(--psv-border) hover:border-[#446084] transition-colors duration-300">
+                          <div className="inline-block px-3 py-1 bg-[#446084] text-white rounded-full text-sm font-bold mb-3">
+                            {event.year}
+                          </div>
+                          <h3 className="text-xl font-bold text-gray-900 mb-2">
+                            {event.title}
+                          </h3>
+                          <p className="text-gray-600">{event.description}</p>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">
-                          {event.title}
-                        </h3>
-                        <p className="text-gray-600">{event.description}</p>
                       </div>
-                    </div>
 
-                    {/* Center dot */}
-                    <div className="hidden md:flex w-2/12 justify-center">
-                      <div className="w-4 h-4 bg-[#446084] rounded-full border-4 border-white ring-4 ring-[#446084]/20"></div>
-                    </div>
+                      {/* Center dot */}
+                      <div className="hidden md:flex w-2/12 justify-center">
+                        <div className="w-4 h-4 bg-[#446084] rounded-full border-4 border-white ring-4 ring-[#446084]/20"></div>
+                      </div>
 
-                    {/* Empty space for alternating layout */}
-                    <div className="hidden md:block w-5/12"></div>
-                  </div>
+                      {/* Empty space for alternating layout */}
+                      <div className="hidden md:block w-5/12"></div>
+                    </div>
+                  </Fade>
                 ))}
               </div>
             </div>
@@ -214,33 +217,35 @@ export default function AboutPage() {
       {/* Branches Section with Maps */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              สาขาของเรา
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              เรามี 3 สาขาพร้อมให้บริการทั่วกรุงเทพและปริมณฑล
-            </p>
-            <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
-          </div>
+          <Fade triggerOnce cascade damping={0.1}>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                สาขาของเรา
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                เรามี 3 สาขาพร้อมให้บริการทั่วกรุงเทพและปริมณฑล
+              </p>
+              <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
+            </div>
+          </Fade>
 
           {/* Locations Map Image */}
-          <div className="mb-12">
-            <div className="bg-white rounded-sm overflow-hidden border-2 border-(--psv-border)">
-              <img
-                src="/locations.jpg"
-                alt="แผนที่สาขา PSV Group"
-                className="w-full h-auto object-cover"
-              />
+          <Fade triggerOnce cascade damping={0.1} delay={100}>
+            <div className="mb-12">
+              <div className="bg-white rounded-sm overflow-hidden border-2 border-(--psv-border)">
+                <img
+                  src="/locations.jpg"
+                  alt="แผนที่สาขา PSV Group"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
-          </div>
+          </Fade>
 
           <div className="space-y-12">
             {branches.map((branch, index) => (
-              <div
-                key={branch.name}
-                className="bg-white rounded-sm border-2 border-(--psv-border) overflow-hidden"
-              >
+              <Fade key={branch.name} triggerOnce cascade damping={0.1} delay={index * 150}>
+                <div className="bg-white rounded-sm border-2 border-(--psv-border) overflow-hidden hover:border-[#446084] transition-colors duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Branch Info */}
                   <div className="p-8 flex flex-col justify-center">
@@ -365,6 +370,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
+              </Fade>
             ))}
           </div>
         </div>
@@ -372,25 +378,27 @@ export default function AboutPage() {
 
       {/* Call to Action */}
       <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            ต้องการสอบถามหรือขอใบเสนอราคา?
-          </h2>
-          <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
-            ทีมงานของเราพร้อมให้คำปรึกษาและตอบทุกคำถามของคุณ
-          </p>
-          <a
-            href="http://line.me/ti/p/~@psv.group"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[#00B900] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#00A000] transition-all hover:scale-105 shadow-lg"
-          >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
-            </svg>
-            ติดต่อเราผ่าน Line
-          </a>
-        </div>
+        <Fade triggerOnce cascade damping={0.1}>
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              ต้องการสอบถามหรือขอใบเสนอราคา?
+            </h2>
+            <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
+              ทีมงานของเราพร้อมให้คำปรึกษาและตอบทุกคำถามของคุณ
+            </p>
+            <a
+              href="http://line.me/ti/p/~@psv.group"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#00B900] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#00A000] transition-all hover:scale-105 shadow-lg"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+              </svg>
+              ติดต่อเราผ่าน Line
+            </a>
+          </div>
+        </Fade>
       </section>
     </div>
   );

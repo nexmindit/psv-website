@@ -1,14 +1,10 @@
+'use client';
+
 import Image from "next/image";
-import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
-
-export const metadata: Metadata = {
-  title: "ดิน - PSV Group",
-  description:
-    "ดินคุณภาพสูงสำหรับงานก่อสร้าง ดินถม ดินลูกรัง ดินทราย จาก PSV Group พร้อมส่งกรุงเทพและปริมณฑล",
-};
+import { Fade } from "react-awesome-reveal";
 
 export default function SoilPage() {
   // ประเภทดิน 8 ชนิด (3 แถวบน + 2 แถวล่างกึ่งกลาง)
@@ -203,46 +199,47 @@ export default function SoilPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-            {constructionSoilTypes.map((soil) => (
-              <div
-                key={soil.title}
-                className={`relative bg-linear-to-br ${soil.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
-              >
-                {/* Decorative background pattern */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-5 rounded-full -ml-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
+            {constructionSoilTypes.map((soil, index) => (
+              <Fade key={soil.title} triggerOnce delay={index * 150} direction="up">
+                <div
+                  className={`relative bg-linear-to-br ${soil.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
+                >
+                  {/* Decorative background pattern */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-5 rounded-full -ml-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
 
-                {/* Title */}
-                <h3 className="text-2xl sm:text-3xl font-bold mb-2 relative z-10">
-                  {soil.title}
-                </h3>
+                  {/* Title */}
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-2 relative z-10">
+                    {soil.title}
+                  </h3>
 
-                {/* Subtitle */}
-                <p className="text-base sm:text-lg mb-6 opacity-90 font-light relative z-10">
-                  {soil.subtitle}
-                </p>
+                  {/* Subtitle */}
+                  <p className="text-base sm:text-lg mb-6 opacity-90 font-light relative z-10">
+                    {soil.subtitle}
+                  </p>
 
-                {/* Divider */}
-                <div className="w-12 h-1 bg-(--color-gold) mb-6 opacity-80"></div>
+                  {/* Divider */}
+                  <div className="w-12 h-1 bg-(--color-gold) mb-6 opacity-80"></div>
 
-                {/* Features list */}
-                <ul className="space-y-3 relative z-10">
-                  {soil.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-start text-sm sm:text-base leading-relaxed"
-                    >
-                      <span className="text-(--color-gold) mr-2 mt-1 shrink-0">
-                        ✓
-                      </span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                  {/* Features list */}
+                  <ul className="space-y-3 relative z-10">
+                    {soil.features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="flex items-start text-sm sm:text-base leading-relaxed"
+                      >
+                        <span className="text-(--color-gold) mr-2 mt-1 shrink-0">
+                          ✓
+                        </span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                {/* Bottom accent */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
-              </div>
+                  {/* Bottom accent */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
+                </div>
+              </Fade>
             ))}
           </div>
         </div>

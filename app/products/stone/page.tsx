@@ -1,14 +1,10 @@
+'use client';
+
 import Image from "next/image";
-import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
-
-export const metadata: Metadata = {
-  title: "หิน - PSV Group",
-  description:
-    "หินคุณภาพสูงสำหรับงานก่อสร้าง หินคลุก หินฝุ่น หิน 3/4 จาก PSV Group พร้อมส่งกรุงเทพและปริมณฑล",
-};
+import { Fade } from "react-awesome-reveal";
 
 export default function StonePage() {
   // ประเภทหิน 8 ชนิด (3 แถวบน + 2 แถวล่างกึ่งกลาง)
@@ -164,39 +160,41 @@ export default function StonePage() {
 
           {/* First row: 3 cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
-            {stoneTypes.slice(0, 3).map((stone) => (
-              <div
-                key={stone.name}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                  <Image
-                    src={stone.image}
-                    alt={stone.name}
-                    fill
-                    className="object-cover"
-                  />
+            {stoneTypes.slice(0, 3).map((stone, index) => (
+              <Fade key={stone.name} triggerOnce delay={index * 100}>
+                <div
+                  className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div className="relative h-64 sm:h-72 md:h-80 w-full">
+                    <Image
+                      src={stone.image}
+                      alt={stone.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
+              </Fade>
             ))}
           </div>
 
           {/* Second row: 2 cards (centered) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
-            {stoneTypes.slice(3, 5).map((stone) => (
-              <div
-                key={stone.name}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                  <Image
-                    src={stone.image}
-                    alt={stone.name}
-                    fill
-                    className="object-cover"
-                  />
+            {stoneTypes.slice(3, 5).map((stone, index) => (
+              <Fade key={stone.name} triggerOnce delay={index * 100}>
+                <div
+                  className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div className="relative h-64 sm:h-72 md:h-80 w-full">
+                    <Image
+                      src={stone.image}
+                      alt={stone.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
+              </Fade>
             ))}
           </div>
         </div>
@@ -216,46 +214,47 @@ export default function StonePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {constructionStoneTypes.map((stone) => (
-              <div
-                key={stone.title}
-                className={`relative bg-linear-to-br ${stone.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
-              >
-                {/* Decorative background pattern */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-5 rounded-full -ml-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
+            {constructionStoneTypes.map((stone, index) => (
+              <Fade key={stone.title} triggerOnce delay={index * 150} direction="up">
+                <div
+                  className={`relative bg-linear-to-br ${stone.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
+                >
+                  {/* Decorative background pattern */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-5 rounded-full -ml-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
 
-                {/* Title */}
-                <h3 className="text-2xl sm:text-3xl font-bold mb-2 relative z-10">
-                  {stone.title}
-                </h3>
+                  {/* Title */}
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-2 relative z-10">
+                    {stone.title}
+                  </h3>
 
-                {/* Subtitle */}
-                <p className="text-base sm:text-lg mb-6 opacity-90 font-light relative z-10">
-                  {stone.subtitle}
-                </p>
+                  {/* Subtitle */}
+                  <p className="text-base sm:text-lg mb-6 opacity-90 font-light relative z-10">
+                    {stone.subtitle}
+                  </p>
 
-                {/* Divider */}
-                <div className="w-12 h-1 bg-(--color-gold) mb-6 opacity-80"></div>
+                  {/* Divider */}
+                  <div className="w-12 h-1 bg-(--color-gold) mb-6 opacity-80"></div>
 
-                {/* Features list */}
-                <ul className="space-y-3 relative z-10">
-                  {stone.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-start text-sm sm:text-base leading-relaxed"
-                    >
-                      <span className="text-(--color-gold) mr-2 mt-1 shrink-0">
-                        ✓
-                      </span>
-                      <span>{feature}</span>
-                    </li>
+                  {/* Features list */}
+                  <ul className="space-y-3 relative z-10">
+                    {stone.features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="flex items-start text-sm sm:text-base leading-relaxed"
+                      >
+                        <span className="text-(--color-gold) mr-2 mt-1 shrink-0">
+                          ✓
+                        </span>
+                        <span>{feature}</span>
+                      </li>
                   ))}
                 </ul>
 
                 {/* Bottom accent */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
               </div>
+              </Fade>
             ))}
           </div>
         </div>

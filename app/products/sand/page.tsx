@@ -1,14 +1,10 @@
+'use client';
+
 import Image from "next/image";
-import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
-
-export const metadata: Metadata = {
-  title: "ทราย - PSV Group",
-  description:
-    "ทรายคุณภาพสูงสำหรับงานก่อสร้าง ทรายถม ทรายหยาบ ทรายละเอียด จาก PSV Group พร้อมส่งกรุงเทพและปริมณฑล",
-};
+import { Fade } from "react-awesome-reveal";
 
 export default function SandPage() {
   // ประเภททราย 8 ชนิด (3 แถวบน + 2 แถวล่างกึ่งกลาง)
@@ -206,11 +202,11 @@ export default function SandPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-            {constructionSandTypes.map((sand) => (
-              <div
-                key={sand.title}
-                className={`relative bg-linear-to-br ${sand.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
-              >
+            {constructionSandTypes.map((sand, index) => (
+              <Fade key={sand.title} triggerOnce delay={index * 150} direction="up">
+                <div
+                  className={`relative bg-linear-to-br ${sand.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
+                >
                 {/* Decorative background pattern */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white opacity-5 rounded-full -ml-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
@@ -246,6 +242,7 @@ export default function SandPage() {
                 {/* Bottom accent */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
               </div>
+              </Fade>
             ))}
           </div>
         </div>

@@ -30,6 +30,12 @@ body {
   animation: fade-in 0.8s ease-out;
 }
 
+/* Scroll reveal animation */
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
 /* Replace shadows with a subtle 2px light-gray border */
 .shadow,
 .shadow-sm,

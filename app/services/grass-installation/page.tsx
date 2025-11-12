@@ -1,15 +1,11 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CustomerReviews from "@/components/CustomerReviews";
 import BannerCarousel from "@/components/BannerCarousel";
-
-export const metadata: Metadata = {
-  title: "บริการรับปูหญ้า - PSV Group",
-  description:
-    "บริการรับปูหญ้าครบวงจร ทั้งหญ้าจริงและหญ้าเทียม ด้วยทีมงานมืออาชีพ พร้อมให้คำปรึกษาและติดตั้งถึงหน้างาน",
-};
+import { Fade } from "react-awesome-reveal";
 
 export default function GrassInstallationServicePage() {
   const services = [
@@ -210,21 +206,22 @@ export default function GrassInstallationServicePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
-              >
-                <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
-                  {service.icon}
+            {services.map((service, index) => (
+              <Fade key={service.title} triggerOnce delay={index * 150} direction="up">
+                <div
+                  className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
+                >
+                  <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
+              </Fade>
             ))}
           </div>
         </div>
@@ -241,11 +238,11 @@ export default function GrassInstallationServicePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyChooseUs.map((reason) => (
-              <div
-                key={reason.title}
-                className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
-              >
+            {whyChooseUs.map((reason, index) => (
+              <Fade key={reason.title} triggerOnce delay={index * 100}>
+                <div
+                  className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300"
+                >
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -266,6 +263,7 @@ export default function GrassInstallationServicePage() {
                 </h3>
                 <p className="text-gray-600 text-sm">{reason.description}</p>
               </div>
+              </Fade>
             ))}
           </div>
         </div>
