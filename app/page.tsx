@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
@@ -40,7 +40,8 @@ export default function Home() {
                   บริษัท พีเอสวี กรุ๊ป จำกัด
                 </h3>
                 <p className="text-gray-600">
-                  มากกว่า 30 ปีแห่งประสบการณ์ในการให้บริการวัสดุก่อสร้างคุณภาพสูง
+                  มากกว่า 30
+                  ปีแห่งประสบการณ์ในการให้บริการวัสดุก่อสร้างคุณภาพสูง
                 </p>
               </div>
 
@@ -193,7 +194,9 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">ผลิตเอง</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  ผลิตเอง
+                </h3>
                 <p className="text-gray-600 text-sm">
                   มีบ่อดินและทรายเป็นของตนเอง บนเนื้อที่ 4000 ไร่
                 </p>
@@ -245,7 +248,9 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">คุณภาพดี</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  คุณภาพดี
+                </h3>
                 <p className="text-gray-600 text-sm">
                   คัดสรรวัสดุอย่างดี เพื่อประสิทธิภาพสูงสุด
                 </p>
@@ -300,7 +305,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <Fade triggerOnce delay={100}>
               <div>
-                <div className="text-5xl font-bold text-[#D4AF37] mb-3">30+</div>
+                <div className="text-5xl font-bold text-[#D4AF37] mb-3">
+                  30+
+                </div>
                 <p className="text-xl">ปีแห่งความเชื่อมั่น</p>
                 <p className="text-sm text-gray-300 mt-2">
                   มากกว่า 3 ทศวรรษแห่งประสบการณ์
@@ -322,7 +329,9 @@ export default function Home() {
               <div>
                 <div className="text-5xl font-bold text-[#D4AF37] mb-3">3</div>
                 <p className="text-xl">สาขาให้บริการ</p>
-                <p className="text-sm text-gray-300 mt-2">สายไหม รังสิต สำโรง</p>
+                <p className="text-sm text-gray-300 mt-2">
+                  สายไหม รังสิต สำโรง
+                </p>
               </div>
             </Fade>
           </div>

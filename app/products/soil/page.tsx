@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -200,7 +200,12 @@ export default function SoilPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             {constructionSoilTypes.map((soil, index) => (
-              <Fade key={soil.title} triggerOnce delay={index * 150} direction="up">
+              <Fade
+                key={soil.title}
+                triggerOnce
+                delay={index * 150}
+                direction="up"
+              >
                 <div
                   className={`relative bg-linear-to-br ${soil.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
                 >

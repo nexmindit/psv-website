@@ -122,8 +122,8 @@ export default function AboutPage() {
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
                     เป็นผู้ประกอบการค้าวัสดุก่อสร้าง ประเภท ทราย ดิน หิน ลูกรัง
-                    ที่มีคุณภาพดีที่สุด ตามความต้องการของท้องตลาด เนื่องจาก บริษัท
-                    ผลิตวัสดุเองจากบ่อดินบ่อทรายบนเนื้อที่ 4000 ไร่
+                    ที่มีคุณภาพดีที่สุด ตามความต้องการของท้องตลาด เนื่องจาก
+                    บริษัท ผลิตวัสดุเองจากบ่อดินบ่อทรายบนเนื้อที่ 4000 ไร่
                     ขนส่งเองโดยเรือเหล็กของบริษัทที่มากรุงเทพ
                     และขายเองโดยบริษัทในเครือจึงสามารถทำราคาได้ถูกที่สุดในท้องตลาด
                   </p>
@@ -137,8 +137,8 @@ export default function AboutPage() {
                   <p>
                     นอกจากนี้ด้วยวัสดุที่ผลิตเองทางบริษัทจึงมีบริการรับถมที่ในกรุงเทพ
                     และปริมณฑล
-                    ในราคาและคุณภาพที่ดีที่สุดในปัจจุบันเราเปิดบริการจุดขายอยู่ 3
-                    สาขา สายไหม รังสิต สำโรง
+                    ในราคาและคุณภาพที่ดีที่สุดในปัจจุบันเราเปิดบริการจุดขายอยู่
+                    3 สาขา สายไหม รังสิต สำโรง
                     สามารถจัดส่งสินค้าได้ทั้งกรุงเทพและปริมณฑลและเราจะขยายสาขาเพิ่มเรื่อยๆเพื่อครอบคลุมการให้บริการลูกค้าให้ทั่วถึงที่สุด
                   </p>
                 </div>
@@ -179,7 +179,13 @@ export default function AboutPage() {
               {/* Timeline events */}
               <div className="space-y-12">
                 {timelineEvents.map((event, index) => (
-                  <Fade key={event.year} triggerOnce cascade damping={0.1} delay={index * 100}>
+                  <Fade
+                    key={event.year}
+                    triggerOnce
+                    cascade
+                    damping={0.1}
+                    delay={index * 100}
+                  >
                     <div
                       className={`relative flex items-center ${
                         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
@@ -244,132 +250,138 @@ export default function AboutPage() {
 
           <div className="space-y-12">
             {branches.map((branch, index) => (
-              <Fade key={branch.name} triggerOnce cascade damping={0.1} delay={index * 150}>
+              <Fade
+                key={branch.name}
+                triggerOnce
+                cascade
+                damping={0.1}
+                delay={index * 150}
+              >
                 <div className="bg-white rounded-sm border-2 border-(--psv-border) overflow-hidden hover:border-[#446084] transition-colors duration-300">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                  {/* Branch Info */}
-                  <div className="p-8 flex flex-col justify-center">
-                    <div className="mb-4">
-                      <div className="flex items-center gap-2 mb-2">
-                        {branch.isHeadOffice && (
-                          <span className="inline-block px-3 py-1 bg-[#446084] text-white rounded-full text-xs font-semibold">
-                            สำนักงานใหญ่
-                          </span>
-                        )}
-                        {branch.isNew && (
-                          <span className="inline-block px-3 py-1 bg-green-500 text-white rounded-full text-xs font-semibold">
-                            สาขาใหม่
-                          </span>
-                        )}
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    {/* Branch Info */}
+                    <div className="p-8 flex flex-col justify-center">
+                      <div className="mb-4">
+                        <div className="flex items-center gap-2 mb-2">
+                          {branch.isHeadOffice && (
+                            <span className="inline-block px-3 py-1 bg-[#446084] text-white rounded-full text-xs font-semibold">
+                              สำนักงานใหญ่
+                            </span>
+                          )}
+                          {branch.isNew && (
+                            <span className="inline-block px-3 py-1 bg-green-500 text-white rounded-full text-xs font-semibold">
+                              สาขาใหม่
+                            </span>
+                          )}
+                        </div>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                          {branch.name}
+                        </h3>
                       </div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                        {branch.name}
-                      </h3>
+
+                      <div className="space-y-4">
+                        <div className="flex items-start">
+                          <svg
+                            className="w-6 h-6 text-[#446084] mt-1 mr-3 shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                          <div>
+                            <p className="font-semibold text-gray-900 mb-1">
+                              ที่อยู่
+                            </p>
+                            <p className="text-gray-600">{branch.address}</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start">
+                          <svg
+                            className="w-6 h-6 text-[#446084] mt-1 mr-3 shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                            />
+                          </svg>
+                          <div>
+                            <p className="font-semibold text-gray-900 mb-1">
+                              เบอร์โทร
+                            </p>
+                            <p className="text-gray-600">
+                              {branch.phone}
+                              <br />
+                              {branch.mobile}
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start">
+                          <svg
+                            className="w-6 h-6 text-[#446084] mt-1 mr-3 shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                          <div>
+                            <p className="font-semibold text-gray-900 mb-1">
+                              เวลาทำการ
+                            </p>
+                            <p className="text-gray-600">{branch.hours}</p>
+                          </div>
+                        </div>
+
+                        <a
+                          href={branch.directMapUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block mt-4 px-6 py-3 bg-[#446084] text-white rounded-sm font-semibold border-2 border-[#446084]"
+                        >
+                          เปิดแผนที่
+                        </a>
+                      </div>
                     </div>
 
-                    <div className="space-y-4">
-                      <div className="flex items-start">
-                        <svg
-                          className="w-6 h-6 text-[#446084] mt-1 mr-3 shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                          />
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                          />
-                        </svg>
-                        <div>
-                          <p className="font-semibold text-gray-900 mb-1">
-                            ที่อยู่
-                          </p>
-                          <p className="text-gray-600">{branch.address}</p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start">
-                        <svg
-                          className="w-6 h-6 text-[#446084] mt-1 mr-3 shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                          />
-                        </svg>
-                        <div>
-                          <p className="font-semibold text-gray-900 mb-1">
-                            เบอร์โทร
-                          </p>
-                          <p className="text-gray-600">
-                            {branch.phone}
-                            <br />
-                            {branch.mobile}
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start">
-                        <svg
-                          className="w-6 h-6 text-[#446084] mt-1 mr-3 shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        <div>
-                          <p className="font-semibold text-gray-900 mb-1">
-                            เวลาทำการ
-                          </p>
-                          <p className="text-gray-600">{branch.hours}</p>
-                        </div>
-                      </div>
-
-                      <a
-                        href={branch.directMapUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-4 px-6 py-3 bg-[#446084] text-white rounded-sm font-semibold border-2 border-[#446084]"
-                      >
-                        เปิดแผนที่
-                      </a>
+                    {/* Map */}
+                    <div className="h-96 lg:h-auto">
+                      <iframe
+                        src={branch.mapUrl}
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0, minHeight: "400px" }}
+                        allowFullScreen={false}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title={`แผนที่ ${branch.name}`}
+                      ></iframe>
                     </div>
-                  </div>
-
-                  {/* Map */}
-                  <div className="h-96 lg:h-auto">
-                    <iframe
-                      src={branch.mapUrl}
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0, minHeight: "400px" }}
-                      allowFullScreen={false}
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title={`แผนที่ ${branch.name}`}
-                    ></iframe>
                   </div>
                 </div>
-              </div>
               </Fade>
             ))}
           </div>

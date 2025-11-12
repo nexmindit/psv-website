@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -162,9 +162,7 @@ export default function StonePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
             {stoneTypes.slice(0, 3).map((stone, index) => (
               <Fade key={stone.name} triggerOnce delay={index * 100}>
-                <div
-                  className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-                >
+                <div className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="relative h-64 sm:h-72 md:h-80 w-full">
                     <Image
                       src={stone.image}
@@ -182,9 +180,7 @@ export default function StonePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
             {stoneTypes.slice(3, 5).map((stone, index) => (
               <Fade key={stone.name} triggerOnce delay={index * 100}>
-                <div
-                  className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-                >
+                <div className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="relative h-64 sm:h-72 md:h-80 w-full">
                     <Image
                       src={stone.image}
@@ -215,7 +211,12 @@ export default function StonePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
             {constructionStoneTypes.map((stone, index) => (
-              <Fade key={stone.title} triggerOnce delay={index * 150} direction="up">
+              <Fade
+                key={stone.title}
+                triggerOnce
+                delay={index * 150}
+                direction="up"
+              >
                 <div
                   className={`relative bg-linear-to-br ${stone.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
                 >
@@ -248,12 +249,12 @@ export default function StonePage() {
                         </span>
                         <span>{feature}</span>
                       </li>
-                  ))}
-                </ul>
+                    ))}
+                  </ul>
 
-                {/* Bottom accent */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
-              </div>
+                  {/* Bottom accent */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
+                </div>
               </Fade>
             ))}
           </div>
