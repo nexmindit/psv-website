@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import BannerCarousel from "@/components/BannerCarousel";
+import { Fade } from "react-awesome-reveal";
 
 export const metadata: Metadata = {
   title: "ติดต่อเรา - PSV Group",
@@ -55,8 +56,9 @@ export default function ContactPage() {
       {/* Hero Banner Carousel */}
       <BannerCarousel />
 
-      {/* Contact Info Section */}
-      <section className="py-16 bg-white">
+  {/* Contact Info Section */}
+  <Fade triggerOnce>
+  <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -170,10 +172,12 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+  </section>
+  </Fade>
 
-      {/* Branches Section with Maps */}
-      <section className="py-16 bg-gray-50">
+  {/* Branches Section with Maps */}
+  <Fade triggerOnce>
+  <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -309,10 +313,12 @@ export default function ContactPage() {
             ))}
           </div>
         </div>
-      </section>
+  </section>
+  </Fade>
 
-      {/* Line QR Code Section */}
-      <section className="py-16 bg-white">
+  {/* Line QR Code Section */}
+  <Fade triggerOnce>
+  <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="bg-gray-50 rounded-sm border-2 border-(--psv-border) p-4 sm:p-6 lg:p-8 max-w-2xl mx-auto text-center">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
@@ -350,7 +356,8 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+  </section>
+  </Fade>
     </div>
   );
 }
