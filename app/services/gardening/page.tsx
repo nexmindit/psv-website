@@ -5,6 +5,7 @@ import Link from "next/link";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CustomerReviews from "@/components/CustomerReviews";
 import BannerCarousel from "@/components/BannerCarousel";
+import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
 
 export default function GardeningServicePage() {
@@ -95,8 +96,8 @@ export default function GardeningServicePage() {
       {/* Hero Banner Carousel */}
       <BannerCarousel />
 
-      {/* About Service Section */}
-      <section className="py-16 bg-white">
+  {/* About Service Section */}
+  <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -158,10 +159,10 @@ export default function GardeningServicePage() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Team & Case Study Section */}
-      <section className="py-16 bg-gray-50">
+  {/* Team & Case Study Section */}
+  <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -191,10 +192,10 @@ export default function GardeningServicePage() {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Services Section */}
-      <section className="py-16 bg-white">
+  {/* Services Section */}
+  <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -229,10 +230,10 @@ export default function GardeningServicePage() {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Why Choose Us Section */}
-      <section className="py-16 bg-gray-50">
+  {/* Why Choose Us Section */}
+  <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -269,7 +270,7 @@ export default function GardeningServicePage() {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Testimonials Section */}
       <TestimonialsSection
@@ -281,8 +282,8 @@ export default function GardeningServicePage() {
       {/* Customer Reviews Section */}
       <CustomerReviews />
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-white">
+  {/* Gallery Section */}
+  <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -319,10 +320,10 @@ export default function GardeningServicePage() {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gray-900 text-white">
+  {/* CTA Section */}
+  <AnimatedSection className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -340,10 +341,10 @@ export default function GardeningServicePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      {/* Contact Info Section */}
-      <section className="py-16 bg-white">
+  {/* Contact Info Section */}
+  <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -395,7 +396,7 @@ export default function GardeningServicePage() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </div>
   );
 }

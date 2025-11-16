@@ -4,6 +4,7 @@ import Image from "next/image";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
+import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
 
 export default function SoilPage() {
@@ -146,7 +147,7 @@ export default function SoilPage() {
           </div>
 
           {/* First row: 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
+          <AnimatedSection className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
             {soilTypes.slice(0, 3).map((soil) => (
               <div
                 key={soil.name}
@@ -162,10 +163,10 @@ export default function SoilPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </AnimatedSection>
 
           {/* Second row: 2 cards (centered) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
+          <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
             {soilTypes.slice(3, 5).map((soil) => (
               <div
                 key={soil.name}
@@ -181,7 +182,7 @@ export default function SoilPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </AnimatedSection>
         </div>
       </section>
 

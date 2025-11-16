@@ -4,6 +4,7 @@ import Image from "next/image";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
+import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
 
 export default function StonePage() {
@@ -145,7 +146,7 @@ export default function StonePage() {
       <BannerCarousel />
 
       {/* Section 2: ประเภทหิน (8 cards: 3 แถวบน + 2 แถวกลาง + 3 แถวล่าง) */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -193,11 +194,11 @@ export default function StonePage() {
               </Fade>
             ))}
           </div>
-        </div>
-      </section>
+      </div>
+    </AnimatedSection>
 
-      {/* Section 3: การนำไปใช้งาน (3 cards) */}
-      <section className="py-12 md:py-16 lg:py-20 bg-linear-to-b from-white to-gray-50">
+    {/* Section 3: การนำไปใช้งาน (3 cards) */}
+    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-linear-to-b from-white to-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -258,11 +259,11 @@ export default function StonePage() {
               </Fade>
             ))}
           </div>
-        </div>
-      </section>
+      </div>
+    </AnimatedSection>
 
-      {/* Section 4: 3 ขั้นตอนการสั่งซื้อ (Alternating layout) */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+    {/* Section 4: 3 ขั้นตอนการสั่งซื้อ (Alternating layout) */}
+    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -309,10 +310,10 @@ export default function StonePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+      </div>
+    </AnimatedSection>
 
-      {/* Section 5: ลูกค้าของเรา - Testimonials */}
+    {/* Section 5: ลูกค้าของเรา - Testimonials */}
       <TestimonialsSection
         title="ลูกค้าของเรา"
         subtitle="ลูกค้าชั้นนำที่ไว้วางใจ PSV Group"
@@ -322,7 +323,7 @@ export default function StonePage() {
       <CustomerReviews />
 
       {/* Section 6: รูปภาพการจัดส่ง (4x3 grid) */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -349,8 +350,8 @@ export default function StonePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+      </div>
+    </AnimatedSection>
     </div>
   );
 }

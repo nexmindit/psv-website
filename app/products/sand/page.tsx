@@ -4,6 +4,7 @@ import Image from "next/image";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
+import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
 
 export default function SandPage() {
@@ -129,8 +130,8 @@ export default function SandPage() {
             <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
-          {/* First row: 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
+        {/* First row: 3 cards */}
+          <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
             {sandTypes.slice(0, 2).map((sand) => (
               <div
                 key={sand.name}
@@ -146,10 +147,10 @@ export default function SandPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </AnimatedSection>
 
           {/* Second row: 2 cards (centered) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
+          <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
             {sandTypes.slice(2, 4).map((sand) => (
               <div
                 key={sand.name}
@@ -165,10 +166,10 @@ export default function SandPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </AnimatedSection>
 
           {/* Third row: 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <AnimatedSection className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {sandTypes.slice(5, 8).map((sand) => (
               <div
                 key={sand.name}
@@ -184,7 +185,7 @@ export default function SandPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </AnimatedSection>
         </div>
       </section>
 
