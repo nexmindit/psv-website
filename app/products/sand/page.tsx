@@ -98,18 +98,27 @@ export default function SandPage() {
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
-    "https://placehold.co/400x400.png",
+    { src: "/work/work-01.jpg", alt: "งานหน้าไซต์ 1" },
+    { src: "/work/work-02.jpg", alt: "งานหน้าไซต์ 2" },
+    { src: "/work/work-03.jpg", alt: "งานหน้าไซต์ 3" },
+    { src: "/work/work-04.jpg", alt: "งานหน้าไซต์ 4" },
+    { src: "/work/work-05.jpg", alt: "งานหน้าไซต์ 5" },
+    { src: "/work/work-06.jpg", alt: "งานหน้าไซต์ 6" },
+    { src: "/work/work-07.jpg", alt: "งานหน้าไซต์ 7" },
+    { src: "/work/work-08.jpg", alt: "งานหน้าไซต์ 8" },
+    { src: "/work/work-09.jpg", alt: "งานหน้าไซต์ 9" },
+    { src: "/work/work-10.jpg", alt: "งานหน้าไซต์ 10" },
+    { src: "/work/work-11.jpg", alt: "งานหน้าไซต์ 11" },
+    { src: "/work/work-12.jpg", alt: "งานหน้าไซต์ 12" },
+    { src: "/work/work-13.jpg", alt: "งานหน้าไซต์ 13" },
+    { src: "/work/work-14.jpg", alt: "งานหน้าไซต์ 14" },
+    { src: "/work/work-15.jpg", alt: "งานหน้าไซต์ 15" },
+    { src: "/work/work-16.jpg", alt: "งานหน้าไซต์ 16" },
+    { src: "/work/work-17.jpg", alt: "งานหน้าไซต์ 17" },
+    { src: "/work/work-18.jpg", alt: "งานหน้าไซต์ 18" },
+    { src: "/work/work-19.jpg", alt: "งานหน้าไซต์ 19" },
+    { src: "/work/work-20.jpg", alt: "งานหน้าไซต์ 20" },
+    { src: "/work/work-21.jpg", alt: "งานหน้าไซต์ 21" },
   ];
 
   return (
@@ -261,48 +270,24 @@ export default function SandPage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               ขั้นตอนการสั่งซื้อ
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              สั่งซื้อง่ายๆ เพียง 3 ขั้นตอน
-            </p>
             <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
           </div>
 
-          <div className="max-w-6xl mx-auto space-y-8 md:space-y-12">
-            {orderSteps.map((step) => (
-              <div
-                key={step.number}
-                className={`flex flex-col ${
-                  step.number % 2 === 1 ? "md:flex-row" : "md:flex-row-reverse"
-                } gap-6 md:gap-8 items-center`}
-              >
-                {/* Image */}
-                <div className="w-full md:w-1/2">
-                  <div className="relative h-64 sm:h-80 md:h-96 w-full rounded-sm overflow-hidden border-2 border-(--psv-border)">
-                    <Image
-                      src={step.image}
-                      alt={step.imageAlt}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="w-full md:w-1/2 text-center md:text-left">
-                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-(--color-gold) text-white text-xl sm:text-2xl font-bold mb-4">
-                    {step.number}
-                  </div>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
+          <div className="space-y-12 mx-auto">
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
+                <Image
+                  src="/sales/sales_step.jpg"
+                  alt="ขั้นตอนการสั่งซื้อ"
+                  fill
+                  className="object-cover"
+                />
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+
+            
+      </div>
       </section>
 
       {/* Section 5: ลูกค้าของเรา - Testimonials */}
@@ -331,12 +316,13 @@ export default function SandPage() {
             {deliveryPhotos.map((photo, index) => (
               <div
                 key={index}
-                className="relative aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
+                className="relative w-full aspect-[3/2] rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
               >
                 <Image
-                  src={photo}
-                  alt={`การจัดส่ง ${index + 1}`}
+                  src={photo.src}
+                  alt={photo.alt}
                   fill
+                  sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw"
                   className="object-cover"
                 />
               </div>

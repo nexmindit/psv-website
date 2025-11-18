@@ -9,11 +9,53 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
 
 export default function GardeningServicePage() {
+  const galleryImages = [
+    { id: 1, src: "/services/gardening/garden-01.jpg" },
+    { id: 2, src: "/services/gardening/garden-02.jpg" },
+    { id: 3, src: "/services/gardening/garden-03.jpg" },
+    { id: 4, src: "/services/gardening/garden-04.jpg" },
+    { id: 5, src: "/services/gardening/garden-05.jpg" },
+    { id: 6, src: "/services/gardening/garden-06.jpg" },
+    { id: 7, src: "/services/gardening/garden-07.jpg" },
+    { id: 8, src: "/services/gardening/garden-08.jpg" },
+    { id: 9, src: "/services/gardening/garden-09.jpg" },
+    { id: 10, src: "/services/gardening/garden-10.jpg" },
+    { id: 11, src: "/services/gardening/garden-11.jpg" },
+    { id: 12, src: "/services/gardening/garden-12.jpg" },
+    { id: 13, src: "/services/gardening/garden-13.jpg" },
+    { id: 14, src: "/services/gardening/garden-14.jpg" },
+    { id: 15, src: "/services/gardening/garden-15.jpg" },
+    { id: 16, src: "/services/gardening/garden-16.jpg" },
+    { id: 17, src: "/services/gardening/garden-17.jpg" },
+    { id: 18, src: "/services/gardening/garden-18.jpg" },
+    { id: 19, src: "/services/gardening/garden-19.jpg" },
+    { id: 20, src: "/services/gardening/garden-20.jpg" },
+    { id: 21, src: "/services/gardening/garden-21.jpg" },
+    { id: 22, src: "/services/gardening/garden-22.jpg" },
+    { id: 23, src: "/services/gardening/garden-23.jpg" },
+    { id: 24, src: "/services/gardening/garden-24.jpg" },
+    { id: 25, src: "/services/gardening/garden-25.jpg" },
+    { id: 26, src: "/services/gardening/garden-26.jpg" },
+    { id: 27, src: "/services/gardening/garden-27.jpg" },
+    { id: 28, src: "/services/gardening/garden-28.jpg" },
+    { id: 29, src: "/services/gardening/garden-29.jpg" },
+    { id: 30, src: "/services/gardening/garden-30.jpg" },
+    { id: 31, src: "/services/gardening/garden-31.jpg" },
+    { id: 32, src: "/services/gardening/garden-32.jpg" },
+    { id: 33, src: "/services/gardening/garden-33.jpg" },
+    { id: 34, src: "/services/gardening/garden-34.jpg" },
+    { id: 35, src: "/services/gardening/garden-35.jpg" },
+    { id: 36, src: "/services/gardening/garden-36.jpg" },
+    { id: 37, src: "/services/gardening/garden-37.jpg" },
+    { id: 38, src: "/services/gardening/garden-38.jpg" },
+    { id: 39, src: "/services/gardening/garden-39.jpg" },
+  ];
+
   const services = [
     {
-      title: "ออกแบบและจัดสวน",
+      title: "วัดขนาด & ส่งรูป",
       description:
-        "ออกแบบและจัดสวนตามความต้องการ ด้วยทีมงานมืออาชีพ ใช้พันธุ์ไม้คุณภาพดี เหมาะสมกับสภาพแวดล้อม",
+        "ลูกค้าวัดกว้างxยาว และถ่ายรูปพื้นที่ ส่งมาทางไลน์",
       icon: (
         <svg
           className="w-8 h-8"
@@ -31,9 +73,9 @@ export default function GardeningServicePage() {
       ),
     },
     {
-      title: "ดูแลบำรุงรักษา",
+      title: "เลือกโทนสีหิน",
       description:
-        "บริการดูแลสวนสม่ำเสมอ ตัดแต่งกิ่งไม้ ให้น้ำ ใส่ปุ๋ย กำจัดวัชพืช เพื่อให้สวนสวยงามตลอดเวลา",
+        "เลือกสีหินเกร็ด/หินแม่น้ำ และแบบแผ่นทางเดินที่ชอบ จากแคตตาล็อกออนไลน์",
       icon: (
         <svg
           className="w-8 h-8"
@@ -51,9 +93,9 @@ export default function GardeningServicePage() {
       ),
     },
     {
-      title: "ปรับปรุงภูมิทัศน์",
+      title: "นัดวันเข้าทำ (จบใน 1-2 วัน)",
       description:
-        "ปรับเปลี่ยนภูมิทัศน์ใหม่ ติดตั้งระบบน้ำ ระบบไฟสนาม วางศิลาแลง จัดวางต้นไม้ประดับ",
+        "ทีมงานเข้าเคลียร์พื้นที่ ปูแผ่นกันหญ้า ลงทราย ลงหิน เสร็จไว ไม่ยืดเยื้อ",
       icon: (
         <svg
           className="w-8 h-8"
@@ -74,20 +116,20 @@ export default function GardeningServicePage() {
 
   const whyChooseUs = [
     {
+      title: "ราคาถูกกว่า 50%",
+      description: `เพราะเราเป็น "ศูนย์ค้าส่งวัสดุ" (ทราย/หิน) เอง คุณจึงได้ราคาทุนโดยไม่ต้องผ่านผู้รับเหมาหลายต่อ`,
+    },
+    {
+      title: "ไม่มีงบบานปลาย",
+      description: "ขายเหมารวมเป็นแพ็คเกจต่อตารางเมตร จ่ายจบทีเดียว ไม่มีค่าออกแบบแฝง",
+    },
+    {
+      title: "ดูแลรักษาง่าย",
+      description: "เน้นสวนหิน/สวนกรวด เหมาะกับคนเวลาน้อย ไม่ต้องตัดหญ้า ไม่ต้องรดน้ำ ประหยัดค่าดูแลระยะยาว",
+    },
+    {
       title: "ทีมงานมืออาชีพ",
-      description: "ช่างจัดสวนที่มีประสบการณ์และความเชี่ยวชาญ",
-    },
-    {
-      title: "พันธุ์ไม้คุณภาพ",
-      description: "คัดสรรพันธุ์ไม้คุณภาพดี เหมาะกับสภาพอากาศ",
-    },
-    {
-      title: "ราคายุติธรรม",
-      description: "ราคาที่เหมาะสมกับคุณภาพงานที่ได้รับ",
-    },
-    {
-      title: "บริการครบวงจร",
-      description: "จากการออกแบบ จัดสวน ไปจนถึงการดูแลรักษา",
+      description: "ทำงานไว เก็บงานเรียบร้อย ล้างทำความสะอาดก่อนส่งมอบ (เหมาะกับหมู่บ้านจัดสรร)",
     },
   ];
 
@@ -96,30 +138,29 @@ export default function GardeningServicePage() {
       {/* Hero Banner Carousel */}
       <BannerCarousel />
 
-  {/* About Service Section */}
-  <AnimatedSection className="py-16 bg-white">
+      {/* About Service Section */}
+      <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                รับจัดสวน
+                จัดสวนหิน งบจบไม่บานปลาย <br/> ราคาถูกกว่าเจ้าอื่น 50%
+                เพราะเราคือผู้ผลิต <br/> ปูพื้นหินทำสวน,ปูทางเดิน
               </h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-                เรามีบริการจัดสวนครบวงจร ตั้งแต่การออกแบบ จัดสวน
-                ไปจนถึงการดูแลบำรุงรักษา
-                ด้วยทีมงานมืออาชีพที่มีประสบการณ์มากกว่า 10 ปี
-                พร้อมให้คำปรึกษาและแนะนำการจัดสวนที่เหมาะสมกับพื้นที่และความต้องการของคุณ
+                ทำไมต้องจ่ายแพงในเมื่อคุณจ่ายเพียง 15,xxx บาท
+                ก็ได้สวนสวยมาตรฐานเดียวกัน! PSV บริการจัดสวนหิน/ปูทางเดิน สำหรับ
+                ทาวน์โฮมและบ้านแฝด (พื้นที่ประมาณ 30 ตร.ม.) เราคือศูนย์ค้าส่ง
+                ทราย-ดิน-หิน ตัวจริง ทำให้คุณได้ 'ราคาต้นน้ำ'
               </p>
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-                เราใช้พันธุ์ไม้คุณภาพดี
-                คัดสรรมาเป็นอย่างดีเพื่อให้เหมาะสมกับสภาพอากาศและสภาพแวดล้อมของประเทศไทย
-                พร้อมบริการจัดส่งและปลูกติดตั้งถึงหน้างาน
+                ตัดค่าหัวคิวคนกลางออกไป เน้นความเรียบง่าย ดูแลรักษาง่าย สบายกระเป๋า
               </p>
               <Link
                 href="/contact"
                 className="inline-block bg-[#446084] text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
               >
-                ติดต่อขอคำปรึกษา
+                ส่งรูปพื้นที่ ประเมินราคาฟรี
               </Link>
             </div>
 
@@ -161,8 +202,8 @@ export default function GardeningServicePage() {
         </div>
       </AnimatedSection>
 
-  {/* Team & Case Study Section */}
-  <AnimatedSection className="py-16 bg-gray-50">
+      {/* Team & Case Study Section */}
+      <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -174,16 +215,16 @@ export default function GardeningServicePage() {
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { id: 1, color: "2E8B57" },
-              { id: 2, color: "3CB371" },
-              { id: 3, color: "66CDAA" },
+              { id: 1, src: "/services/gardening/4.png" },
+              { id: 2, src: "/services/gardening/5.png" },
+              { id: 3, src: "/services/gardening/6.png" },
             ].map((item) => (
               <div
                 key={item.id}
                 className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={`https://placehold.co/800x800`}
+                  src={ item.src}
                   alt={`ตัวอย่างงานจัดสวน ${item.id}`}
                   fill
                   className="object-cover"
@@ -194,8 +235,8 @@ export default function GardeningServicePage() {
         </div>
       </AnimatedSection>
 
-  {/* Services Section */}
-  <AnimatedSection className="py-16 bg-white">
+      {/* Services Section */}
+      <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -232,8 +273,8 @@ export default function GardeningServicePage() {
         </div>
       </AnimatedSection>
 
-  {/* Why Choose Us Section */}
-  <AnimatedSection className="py-16 bg-gray-50">
+      {/* Why Choose Us Section */}
+      <AnimatedSection className="py-16 bg-gray-50">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -282,48 +323,8 @@ export default function GardeningServicePage() {
       {/* Customer Reviews Section */}
       <CustomerReviews />
 
-  {/* Gallery Section */}
-  <AnimatedSection className="py-16 bg-white">
-        <div className="container mx-auto px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ภาพหน้างานจริง
-            </h2>
-            <p className="text-gray-600 text-lg">
-              ผลงานการจัดสวนของเราที่ได้รับความไว้วางใจจากลูกค้า
-            </p>
-            <div className="w-20 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[
-              { id: 1, color: "90EE90" },
-              { id: 2, color: "98FB98" },
-              { id: 3, color: "8FBC8F" },
-              { id: 4, color: "3CB371" },
-              { id: 5, color: "2E8B57" },
-              { id: 6, color: "228B22" },
-              { id: 7, color: "006400" },
-              { id: 8, color: "556B2F" },
-            ].map((item) => (
-              <div
-                key={item.id}
-                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden group"
-              >
-                <Image
-                  src={`https://placehold.co/400x400`}
-                  alt={`ผลงานจัดสวน ${item.id}`}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
-
-  {/* CTA Section */}
-  <AnimatedSection className="py-16 bg-gray-900 text-white">
+      {/* CTA Section */}
+      <AnimatedSection className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -343,57 +344,34 @@ export default function GardeningServicePage() {
         </div>
       </AnimatedSection>
 
-  {/* Contact Info Section */}
-  <AnimatedSection className="py-16 bg-white">
+
+      {/* Gallery Section */}
+      <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ช่องทางติดต่อเพิ่มเติม
+              ภาพหน้างานจริง
             </h2>
-            <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full"></div>
+            <p className="text-gray-600 text-lg">
+              ผลงานการจัดสวนของเราที่ได้รับความไว้วางใจจากลูกค้า
+            </p>
+            <div className="w-20 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gray-50 p-8 rounded-sm border-2 border-[#e6e9ef] text-center">
-              <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {galleryImages.map((item) => (
+              <div
+                key={item.id}
+                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden group"
+              >
+                <Image
+                  src={item.src}
+                  alt={`ผลงานจัดสวน ${item.id}`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">โทรศัพท์</h3>
-              <p className="text-gray-600">02-XXX-XXXX</p>
-              <p className="text-gray-600">08X-XXX-XXXX</p>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-sm border-2 border-[#e6e9ef] text-center">
-              <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">อีเมล</h3>
-              <p className="text-gray-600">info@psvgroup.co.th</p>
-            </div>
+            ))}
           </div>
         </div>
       </AnimatedSection>

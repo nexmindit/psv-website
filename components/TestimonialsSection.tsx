@@ -20,22 +20,43 @@ interface TestimonialsSectionProps {
 
 // Default testimonials data
 const defaultTestimonials: Testimonial[] = [
-  {
-    company: "บริษัท อิตาเลี่ยนไทย ดีเวลลอปเม้นท์ จำกัด (มหาชน)",
-    logo: "/testimonial1.jpeg",
-  },
+  
   {
     company: "บริษัท ช.การช่าง จำกัด (มหาชน)",
-    logo: "/testimonial2.jpg",
+    logo: "/logo/chorkarnchang.png",
   },
   {
-    company: "บริษัท ชิโนไทย เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด",
-    logo: "/testimonial3.png",
+    company: "บริษัท ออริจิ้น พร็อพเพอร์ตี้ จำกัด (มหาชน)",
+    logo: "/logo/origin.jpg",
+  },
+  {
+    company: "บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
+    logo: "/logo/sino-thai.jpg",
+  },
+  {
+    company: "บริษัท สี่แสงการโยธา (1979) จำกัด",
+    logo: "/logo/see_sang_karn_yotah.jpg",
+  },
+  {
+    company: "บริษัท ฤทธา จำกัด",
+    logo: "/logo/ritta.jpg",
+  },
+  {
+    company: "บริษัท อินเตอร์ไทย ฟาร์มาซูติเคิ้ล แมนูแฟคเจอริ่ง จำกัด",
+    logo: "/logo/interthai.jpg",
   },
   {
     company: "บริษัท ยูนิค เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
-    logo: "/testimonial4.jpg",
+    logo: "/logo/unique.jpg",
   },
+  {
+    company: "บริษัท อมร พรสติจ จำกัด (เป็นดีลเลอร์จำหน่ายรถยนต์ BMW)",
+    logo: "/logo/amorn_prestige.jpg",
+  },
+  {
+    company: "บริษัท สยามวันเดอร์วินเทอร์แลนด์ จำกัด",
+    logo: "/logo/winter_wonder_land.jpg",
+  }
 ];
 
 export default function TestimonialsSection({
@@ -57,10 +78,75 @@ export default function TestimonialsSection({
         </div>
 
         <div className="relative max-w-7xl mx-auto">
-          <Swiper
+            <Swiper
             modules={[Autoplay, FreeMode]}
             spaceBetween={32}
             slidesPerView={3}
+            loop={true}
+            freeMode={{
+              enabled: true,
+              momentum: true,
+              momentumRatio: 0.5,
+            }}
+            autoplay={
+              autoSlide
+              ? {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                }
+              : false
+            }
+            speed={3000}
+            breakpoints={{
+              320: {
+              slidesPerView: 1,
+              spaceBetween: 16,
+              },
+              640: {
+              slidesPerView: 1,
+              spaceBetween: 16,
+              },
+              768: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+              },
+              1024: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+              },
+              1280: {
+              slidesPerView: 3,
+              spaceBetween: 32,
+              },
+            }}
+            className="testimonials-swiper"
+            >
+            {testimonials.slice(0, 4).map((testimonial, index) => (
+              <SwiperSlide key={index}>
+              <div className="bg-white p-6 rounded-sm border-2 border-[#e6e9ef] flex flex-col items-center justify-center text-center hover:shadow-lg transition-shadow duration-300 h-full">
+                <div className="w-32 h-32 mb-4 flex items-center justify-center">
+                <img
+                  src={testimonial.logo}
+                  alt={testimonial.company}
+                  className="max-w-full max-h-full object-contain"
+                />
+                </div>
+                <p className="text-xs text-gray-700 font-medium">
+                {testimonial.company}
+                </p>
+              </div>
+              </SwiperSlide>
+            ))}
+            </Swiper>
+
+            <br />
+
+           <Swiper
+            modules={[Autoplay, FreeMode]}
+            spaceBetween={32}
+            slidesPerView={3}
+            dir="rtl"
             loop={true}
             freeMode={{
               enabled: true,
@@ -101,7 +187,7 @@ export default function TestimonialsSection({
             }}
             className="testimonials-swiper"
           >
-            {testimonials.map((testimonial, index) => (
+            {testimonials.slice(4, 9).map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white p-6 rounded-sm border-2 border-[#e6e9ef] flex flex-col items-center justify-center text-center hover:shadow-lg transition-shadow duration-300 h-full">
                   <div className="w-32 h-32 mb-4 flex items-center justify-center">
@@ -111,7 +197,7 @@ export default function TestimonialsSection({
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
-                  <p className="text-sm text-gray-700 font-medium">
+                  <p className="text-xs text-gray-700 font-medium">
                     {testimonial.company}
                   </p>
                 </div>

@@ -8,11 +8,53 @@ import BannerCarousel from "@/components/BannerCarousel";
 import { Fade } from "react-awesome-reveal";
 
 export default function GrassInstallationServicePage() {
+
+  const galleyImages = [
+    { id: 1, src: "/services/grass-installation/grass-installation-01.jpg" },
+    { id: 2, src: "/services/grass-installation/grass-installation-02.jpg" },
+    { id: 3, src: "/services/grass-installation/grass-installation-03.jpg" },
+    { id: 4, src: "/services/grass-installation/grass-installation-04.jpg" },
+    { id: 5, src: "/services/grass-installation/grass-installation-05.jpg" },
+    { id: 6, src: "/services/grass-installation/grass-installation-06.jpg" },
+    { id: 7, src: "/services/grass-installation/grass-installation-07.jpg" },
+    { id: 8, src: "/services/grass-installation/grass-installation-08.jpg" },
+    { id: 9, src: "/services/grass-installation/grass-installation-09.jpg" },
+    { id: 10, src: "/services/grass-installation/grass-installation-10.jpg" },
+    { id: 11, src: "/services/grass-installation/grass-installation-11.jpg" },
+    { id: 12, src: "/services/grass-installation/grass-installation-12.jpg" },
+    { id: 13, src: "/services/grass-installation/grass-installation-13.jpg" },
+    { id: 14, src: "/services/grass-installation/grass-installation-14.jpg" },
+    { id: 15, src: "/services/grass-installation/grass-installation-15.jpg" },
+    { id: 16, src: "/services/grass-installation/grass-installation-16.jpg" },
+    { id: 17, src: "/services/grass-installation/grass-installation-17.jpg" },
+    { id: 18, src: "/services/grass-installation/grass-installation-18.jpg" },
+    { id: 19, src: "/services/grass-installation/grass-installation-19.jpg" },
+    { id: 20, src: "/services/grass-installation/grass-installation-20.jpg" },
+    { id: 21, src: "/services/grass-installation/grass-installation-21.jpg" },
+    { id: 22, src: "/services/grass-installation/grass-installation-22.jpg" },
+    { id: 23, src: "/services/grass-installation/grass-installation-23.jpg" },
+    { id: 24, src: "/services/grass-installation/grass-installation-24.jpg" },
+    { id: 25, src: "/services/grass-installation/grass-installation-25.jpg" },
+    { id: 26, src: "/services/grass-installation/grass-installation-26.jpg" },
+    { id: 27, src: "/services/grass-installation/grass-installation-27.jpg" },
+    { id: 28, src: "/services/grass-installation/grass-installation-28.jpg" },
+    { id: 29, src: "/services/grass-installation/grass-installation-29.jpg" },
+    { id: 30, src: "/services/grass-installation/grass-installation-30.jpg" },
+    { id: 31, src: "/services/grass-installation/grass-installation-31.jpg" },
+    { id: 32, src: "/services/grass-installation/grass-installation-32.jpg" },
+    { id: 33, src: "/services/grass-installation/grass-installation-33.jpg" },
+    { id: 34, src: "/services/grass-installation/grass-installation-34.jpg" },
+    { id: 35, src: "/services/grass-installation/grass-installation-35.jpg" },
+    { id: 36, src: "/services/grass-installation/grass-installation-36.jpg" },
+    { id: 37, src: "/services/grass-installation/grass-installation-37.jpg" },
+    { id: 38, src: "/services/grass-installation/grass-installation-38.jpg" },
+    { id: 39, src: "/services/grass-installation/grass-installation-39.jpg" },
+  ]
   const services = [
     {
-      title: "ปูหญ้าจริง",
+      title: "เลือกสเปกหญ้า",
       description:
-        "บริการปูหญ้าจริงคุณภาพดี คัดสรรพันธุ์หญ้าที่เหมาะสมกับสภาพพื้นที่และสภาพอากาศ พร้อมบริการดูแลรักษาหลังการติดตั้ง",
+        "ทักแชทแอดมิน เพื่อขอดูตัวอย่าง ความยาวขนหญ้า (1-3 ซม.) และแจ้งขนาดพื้นที่",
       icon: (
         <svg
           className="w-8 h-8"
@@ -30,9 +72,9 @@ export default function GrassInstallationServicePage() {
       ),
     },
     {
-      title: "ปูหญ้าเทียม",
+      title: "นัดวันติดตั้ง",
       description:
-        "บริการปูหญ้าเทียมคุณภาพสูง ทนทาน ไม่ต้องดูแลรักษา เหมาะสำหรับพื้นที่ที่ต้องการความสวยงามตลอดเวลา",
+        "ทีมงาน PSV ขนวัสดุและเครื่องมือเข้าหน้างาน ตามวันเวลาที่นัดหมาย",
       icon: (
         <svg
           className="w-8 h-8"
@@ -50,9 +92,9 @@ export default function GrassInstallationServicePage() {
       ),
     },
     {
-      title: "ปรับพื้นที่และติดตั้ง",
+      title: "ติดตั้งและส่งมอบ",
       description:
-        "บริการปรับพื้นที่ให้เรียบ เตรียมดินรองพื้น ติดตั้งหญ้าด้วยเทคนิคมาตรฐาน เพื่อความทนทานและสวยงาม",
+        "ปรับพื้น ลงทราย ปูหญ้า ยึดหมุด เก็บกวาด พร้อมใช้งานทันที",
       icon: (
         <svg
           className="w-8 h-8"
@@ -73,20 +115,20 @@ export default function GrassInstallationServicePage() {
 
   const whyChooseUs = [
     {
-      title: "ทีมงานมืออาชีพ",
-      description: "ช่างติดตั้งที่มีประสบการณ์และความเชี่ยวชาญ",
+      title: "ฟรี! ทรายปรับระดับ",
+      description: "(หรือราคาพิเศษ) เพราะเราเป็นบ่อทรายเอง ตัดปัญหาเรื่องหาวัสดุรองพื้น ลูกค้าไม่ต้องสั่งแยก",
     },
     {
-      title: "หญ้าคุณภาพสูง",
-      description: "คัดสรรหญ้าคุณภาพดี ทั้งหญ้าจริงและหญ้าเทียม",
+      title: "ทีมงานติดตั้งโดยตรง",
+      description: "ไม่ใช่นายหน้าขายของ เรามีทีมช่างพร้อมเครื่องมือตบดินและอุปกรณ์ติดตั้งครบ",
     },
     {
-      title: "ราคายุติธรรม",
-      description: "ราคาที่เหมาะสมกับคุณภาพงานที่ได้รับ",
+      title: "หญ้าเกรดพรีเมียม",
+      description: "คัดสรรหญ้าเทียมคุณภาพดี ทนแดด ทนฝน (UV Resistant) มีรูระบายน้ำ ไม่เหม็นอับ",
     },
     {
-      title: "รับประกันผลงาน",
-      description: "รับประกันคุณภาพการติดตั้งและวัสดุ",
+      title: "บริการครบจบที่เดียว",
+      description: "แค่เลือกหญ้าแล้วรอที่บ้าน ที่เหลือเราจัดการให้หมด ทั้งของ ทั้งแรง ทั้งการขนส่ง",
     },
   ];
 
@@ -101,30 +143,29 @@ export default function GrassInstallationServicePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                รับปูหญ้า
+                บริการรับปูหญ้าเทียมครบวงจร
               </h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-                เรามีบริการปูหญ้าครบวงจร ทั้งหญ้าจริงและหญ้าเทียม
-                ด้วยทีมงานมืออาชีพที่มีประสบการณ์มากกว่า 10 ปี
-                พร้อมให้คำปรึกษาและแนะนำประเภทหญ้าที่เหมาะสมกับการใช้งานและพื้นที่ของคุณ
+                เปลี่ยนพื้นที่รอบบ้านให้เขียวสวยตลอดปี ดูแลรักษาง่าย
+                ไม่ต้องตัดหญ้า! PSV ให้บริการปูหญ้าเทียมแบบ One-Stop Service
+                ตั้งแต่ขนส่ง ปรับระดับหน้าดิน ลงทรายรองพื้นอัดแน่น <br />{" "}
+                จนถึงปูหญ้าเก็บงานเรียบร้อย
+                เลือกเกรดหญ้าได้ตามงบประมาณผ่านแอดมิน สะดวก รวดเร็ว <br />{" "}
+                งานเนี๊ยบ
               </p>
-              <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-                เราคัดสรรหญ้าคุณภาพสูง ไม่ว่าจะเป็นหญ้าจริงที่สดชื่นและเขียวขจี
-                หรือหญ้าเทียมที่ทนทานและไม่ต้องดูแลรักษา
-                พร้อมบริการติดตั้งมาตรฐานและรับประกันคุณภาพ
-              </p>
+              <p className="text-gray-700 text-lg mb-8 leading-relaxed"></p>
               <Link
                 href="/contact"
                 className="inline-block bg-[#446084] text-white px-8 py-3 rounded-sm font-semibold hover:opacity-90 transition-opacity duration-200"
               >
-                ติดต่อขอคำปรึกษา
+                ขอดูตัวอย่างหญ้า / ประเมินราคา
               </Link>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/services/grass-installation/1.png"
                   alt="งานปูหญ้า 1"
                   fill
                   className="object-cover"
@@ -132,7 +173,7 @@ export default function GrassInstallationServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/services/grass-installation/2.png"
                   alt="งานปูหญ้า 2"
                   fill
                   className="object-cover"
@@ -140,7 +181,7 @@ export default function GrassInstallationServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/services/grass-installation/3.png"
                   alt="งานปูหญ้า 3"
                   fill
                   className="object-cover"
@@ -148,7 +189,7 @@ export default function GrassInstallationServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="https://placehold.co/600x400.png"
+                  src="/services/grass-installation/4.png"
                   alt="งานปูหญ้า 4"
                   fill
                   className="object-cover"
@@ -172,16 +213,16 @@ export default function GrassInstallationServicePage() {
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { id: 1, color: "2E8B57" },
-              { id: 2, color: "3CB371" },
-              { id: 3, color: "66CDAA" },
+              { id: 1, src: "/services/grass-installation/4_2.png" },
+              { id: 2, src: "/services/grass-installation/5.png" },
+              { id: 3, src: "/services/grass-installation/6.png" },
             ].map((item) => (
               <div
                 key={item.id}
                 className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={`https://placehold.co/800x800`}
+                  src={item.src}
                   alt={`ตัวอย่างงานปูหญ้า ${item.id}`}
                   fill
                   className="object-cover"
@@ -280,46 +321,6 @@ export default function GrassInstallationServicePage() {
       {/* Customer Reviews Section */}
       <CustomerReviews />
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ภาพหน้างานจริง
-            </h2>
-            <p className="text-gray-600 text-lg">
-              ผลงานการปูหญ้าของเราที่ได้รับความไว้วางใจจากลูกค้า
-            </p>
-            <div className="w-20 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[
-              { id: 1, color: "90EE90" },
-              { id: 2, color: "98FB98" },
-              { id: 3, color: "8FBC8F" },
-              { id: 4, color: "3CB371" },
-              { id: 5, color: "2E8B57" },
-              { id: 6, color: "228B22" },
-              { id: 7, color: "006400" },
-              { id: 8, color: "556B2F" },
-            ].map((item) => (
-              <div
-                key={item.id}
-                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden group"
-              >
-                <Image
-                  src={`https://placehold.co/400x400`}
-                  alt={`ผลงานปูหญ้า ${item.id}`}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-12">
@@ -341,57 +342,33 @@ export default function GrassInstallationServicePage() {
         </div>
       </section>
 
-      {/* Contact Info Section */}
+      {/* Gallery Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ช่องทางติดต่อเพิ่มเติม
+              ภาพหน้างานจริง
             </h2>
-            <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full"></div>
+            <p className="text-gray-600 text-lg">
+              ผลงานการปูหญ้าของเราที่ได้รับความไว้วางใจจากลูกค้า
+            </p>
+            <div className="w-20 h-1 bg-[#D4AF37] mx-auto mt-4 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gray-50 p-8 rounded-sm border-2 border-[#e6e9ef] text-center">
-              <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {galleyImages.map((item) => (
+              <div
+                key={item.id}
+                className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden group"
+              >
+                <Image
+                  src={item.src}
+                  alt={`ผลงานปูหญ้า ${item.id}`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">โทรศัพท์</h3>
-              <p className="text-gray-600">02-XXX-XXXX</p>
-              <p className="text-gray-600">08X-XXX-XXXX</p>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-sm border-2 border-[#e6e9ef] text-center">
-              <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">อีเมล</h3>
-              <p className="text-gray-600">info@psvgroup.co.th</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -9,14 +9,27 @@ import Image from "next/image";
 export default function Home() {
   // Gallery images array
   const galleryImages = [
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 1" },
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 2" },
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 3" },
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 4" },
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 5" },
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 6" },
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 7" },
-    { src: "https://placehold.co/600x400.png", alt: "งานหน้าไซต์ 8" },
+    { src: "/work/work-01.jpg", alt: "งานหน้าไซต์ 1" },
+    { src: "/work/work-02.jpg", alt: "งานหน้าไซต์ 2" },
+    { src: "/work/work-03.jpg", alt: "งานหน้าไซต์ 3" },
+    { src: "/work/work-04.jpg", alt: "งานหน้าไซต์ 4" },
+    { src: "/work/work-05.jpg", alt: "งานหน้าไซต์ 5" },
+    { src: "/work/work-06.jpg", alt: "งานหน้าไซต์ 6" },
+    { src: "/work/work-07.jpg", alt: "งานหน้าไซต์ 7" },
+    { src: "/work/work-08.jpg", alt: "งานหน้าไซต์ 8" },
+    { src: "/work/work-09.jpg", alt: "งานหน้าไซต์ 9" },
+    { src: "/work/work-10.jpg", alt: "งานหน้าไซต์ 10" },
+    { src: "/work/work-11.jpg", alt: "งานหน้าไซต์ 11" },
+    { src: "/work/work-12.jpg", alt: "งานหน้าไซต์ 12" },
+    { src: "/work/work-13.jpg", alt: "งานหน้าไซต์ 13" },
+    { src: "/work/work-14.jpg", alt: "งานหน้าไซต์ 14" },
+    { src: "/work/work-15.jpg", alt: "งานหน้าไซต์ 15" },
+    { src: "/work/work-16.jpg", alt: "งานหน้าไซต์ 16" },
+    { src: "/work/work-17.jpg", alt: "งานหน้าไซต์ 17" },
+    { src: "/work/work-18.jpg", alt: "งานหน้าไซต์ 18" },
+    { src: "/work/work-19.jpg", alt: "งานหน้าไซต์ 19" },
+    { src: "/work/work-20.jpg", alt: "งานหน้าไซต์ 20" },
+    { src: "/work/work-21.jpg", alt: "งานหน้าไซต์ 21" },
   ];
 
   return (
@@ -99,7 +112,7 @@ export default function Home() {
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
-                    src="https://placehold.co/600x400.png"
+                    src="/branch/Location_saimai.jpg"
                     alt="สาขา สายไหม"
                     fill
                     className="object-cover"
@@ -122,7 +135,7 @@ export default function Home() {
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
-                    src="https://placehold.co/600x400.png"
+                    src="/branch/Location_rangsit.jpg"
                     alt="สาขา รังสิต"
                     fill
                     className="object-cover"
@@ -145,7 +158,7 @@ export default function Home() {
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
-                    src="https://placehold.co/600x400.png"
+                    src="/branch/Location_samutrprakarn.jpg"
                     alt="สาขา สำโรง"
                     fill
                     className="object-cover"
@@ -342,7 +355,7 @@ export default function Home() {
         <div className="container mx-auto px-12">
           <Fade triggerOnce>
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-              งานของเรา
+              ภาพการจัดส่งสินค้าและบริการ
             </h2>
             <p className="text-center text-gray-600 mb-12">ภาพหน้างานจริง</p>
           </Fade>
@@ -351,7 +364,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages.map((image, index) => (
               <Fade triggerOnce key={`gallery-${index}`} delay={index * 50}>
-                <div className="relative h-48 bg-gray-300 rounded-sm overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+                <div className="relative w-full aspect-[3/2] bg-gray-300 rounded-sm overflow-hidden hover:scale-105 transition-transform cursor-pointer">
                   <Image
                     src={image.src}
                     alt={image.alt}
