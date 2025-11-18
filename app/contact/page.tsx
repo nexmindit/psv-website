@@ -251,12 +251,22 @@ export default function ContactPage() {
                           <h4 className="font-semibold text-gray-900 mb-1 text-sm">
                             โทรศัพท์
                           </h4>
-                          <p className="text-gray-600 text-sm">
-                            {branch.phone}
-                          </p>
-                          <p className="text-gray-600 text-sm">
-                            {branch.mobile}
-                          </p>
+                            <p className="text-gray-600 text-sm">
+                              <a
+                                href={`tel:${branch.phone?.replace(/\D/g, "")}`}
+                                className="hover:underline"
+                              >
+                                {branch.phone}
+                              </a>
+                            </p>
+                            <p className="text-gray-600 text-sm">
+                              <a
+                                href={`tel:${branch.mobile?.replace(/\D/g, "")}`}
+                                className="hover:underline"
+                              >
+                                {branch.mobile}
+                              </a>
+                            </p>
                         </div>
                       </div>
 

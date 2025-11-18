@@ -11,30 +11,30 @@ export default function SandPage() {
   // ประเภททราย 8 ชนิด (3 แถวบน + 2 แถวล่างกึ่งกลาง)
   const sandTypes = [
     {
-      name: "ทรายถม",
+      name: "ทรายถม (Filling Sand)",
       description:
-        "รายละเอียด：ทรายถม หรือทั่วไปเรียกว่า ทรายขี้นิ้ว เป็นทรายที่มีส่วนผสมเล็กน้อย จึงเหมาะสำหรับงานปรับพื้นที่ก่อนเทพื้น",
+        "จัดส่งเต็มคิว จากแหล่งผลิตโดยตรงจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
       image:
-        "https://psvgroupsand.com/wp-content/uploads/2022/12/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%96%E0%B8%A1.jpg",
+        "/products/sand/1_1.png",
     },
     {
-      name: "ทรายหยาบ",
+      name: "ทรายหยาบ (Coarse Sand)",
       description:
-        "รายละเอียด：ทรายหยาบ เป็นทรายเม็ดใหญ่หนาและแข็งแรงมาก เหมาะสำหรับงานก่อสร้างต่อเติมองค์การ ทรายด้วยคุณสมบัติที่มีความแข็งแรงสูงเป็นพิเศษ",
+        "จัดส่งเต็มคิว จากแหล่งผลิตโดยตรงจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
       image:
-        "https://psvgroupsand.com/wp-content/uploads/2022/12/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%A2%E0%B8%B2%E0%B8%9A.jpg",
+        "/products/sand/2_0.png",
     },
     {
-      name: "กระสอบทราย",
+      name: "กระสอบทรายถม (Filling Sand)",
       description:
-        "รายละเอียด：กระสอบทราย เป็นทรายที่บรรจุในกระสอบ เหมาะสำหรับการขนส่งและจัดเก็บ",
-      image: "/sand/sand-bag.png",
+        "น้ำหนัก 25 กิโลกรัมจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
+      image: "/products/sand/3_1.png",
     },
     {
-      name: "กองทราย",
+      name: "กระสอบทรายหยาบ (Coarse Sand)",
       description:
-        "รายละเอียด：กองทราย เป็นการจัดเก็บทรายในรูปแบบกอง เหมาะสำหรับการใช้งานในพื้นที่กว้าง",
-      image: "/sand/sand-pile.png",
+        "น้ำหนัก 25 กิโลกรัมจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
+      image: "/products/sand/4_1.png",
     },
   ];
 
@@ -129,71 +129,44 @@ export default function SandPage() {
       <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ประเภททรายที่เราจำหน่าย
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              วัสดุก่อสร้างคุณภาพสูง ผลิตเองจากบ่อดินบ่อทราย
-              พร้อมจัดส่งทั้งกรุงเทพและปริมณฑล
-            </p>
-            <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          ศูนย์รวมทรายก่อสร้างครบวงจร ราคาหน้าบ่อ (ปลีก-ส่ง)
+        </h2>
+        <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+          ทรายถม ทรายหยาบ คิวเต็ม ไม่โกงตาชั่ง มีจำหน่ายทั้งแบบคิวและแบบกระสอบ <br /> พร้อมทีมรถดั๊มพ์ส่งถึงหน้างานทั่วกรุงเทพฯ-ปริมณฑล
+        </p>
+        <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
-        {/* First row: 3 cards */}
-          <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
-            {sandTypes.slice(0, 2).map((sand) => (
-              <div
-                key={sand.name}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                  <Image
-                    src={sand.image}
-                    alt={sand.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </AnimatedSection>
+          {/* Responsive grid: images keep 1:1 aspect ratio with Tailwind's aspect-square */}
+          <AnimatedSection className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+        {sandTypes.map((sand) => (
+          <div
+            key={sand.name}
+            className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300 bg-white"
+          >
+            {/* Square image container */}
+            <div className="relative w-full aspect-square">
+          <Image
+            src={sand.image}
+            alt={sand.name}
+            fill
+            className="object-cover"
+            sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+          />
+            </div>
 
-          {/* Second row: 2 cards (centered) */}
-          <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
-            {sandTypes.slice(2, 4).map((sand) => (
-              <div
-                key={sand.name}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-100 sm:h-100 md:h-120 w-full">
-                  <Image
-                    src={sand.image}
-                    alt={sand.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </AnimatedSection>
-
-          {/* Third row: 3 cards */}
-          <AnimatedSection className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-            {sandTypes.slice(5, 8).map((sand) => (
-              <div
-                key={sand.name}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                  <Image
-                    src={sand.image}
-                    alt={sand.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
+            {/* Description under image */}
+            <div className="p-4 text-center">
+          <h4 className="text-lg font-semibold text-gray-900 mb-1">
+            {sand.name}
+          </h4>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {sand.description}
+          </p>
+            </div>
+          </div>
+        ))}
           </AnimatedSection>
         </div>
       </section>

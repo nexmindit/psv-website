@@ -327,9 +327,21 @@ export default function AboutPage() {
                               เบอร์โทร
                             </p>
                             <p className="text-gray-600">
-                              {branch.phone}
+                              <a
+                                href={`tel:${branch.phone.replace(/\D+/g, "")}`}
+                                className="hover:underline"
+                                aria-label={`โทรไปที่ ${branch.phone}`}
+                              >
+                                {branch.phone}
+                              </a>
                               <br />
-                              {branch.mobile}
+                              <a
+                                href={`tel:${branch.mobile.replace(/\D+/g, "")}`}
+                                className="hover:underline"
+                                aria-label={`โทรไปที่ ${branch.mobile}`}
+                              >
+                                {branch.mobile}
+                              </a>
                             </p>
                           </div>
                         </div>
