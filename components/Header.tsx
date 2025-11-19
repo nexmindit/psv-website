@@ -463,13 +463,6 @@ export default function Header() {
                     >
                       หิน
                     </Link>
-                    <Link
-                      href="/products/aggregate"
-                      className="text-sm text-gray-700 hover:text-[#D4AF37]"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      วัสดุมวลรวม
-                    </Link>
                   </div>
                 )}
               </div>
