@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 
 interface ImageModalProps {
@@ -38,12 +39,13 @@ export default function ImageModal({
 
   if (!isOpen || !imageSrc) return null;
 
-  return (
+  // Use portal to render modal at document body level
+  return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 transition-opacity duration-300"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 transition-opacity duration-300"
       onClick={onClose}
     >
-      <div className="absolute top-4 right-4 z-50">
+      <div className="absolute top-4 right-4 z-[10000]">
         <button
           onClick={onClose}
           className="text-white hover:text-gray-300 focus:outline-none p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
@@ -84,6 +86,7 @@ export default function ImageModal({
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

@@ -13,32 +13,50 @@ export default function StonePage() {
     {
       name: "หินคลุก",
       description:
-        "รายละเอียด：หินคลุก เป็นหินที่มีขนาดหลากหลาย เหมาะสำหรับงานถมพื้นที่ งานรองฐานถนน และงานปรับพื้นที่",
-      image: "https://placehold.co/600x400.png",
+        "หินที่มีฝุ่นหินผสม บดอัดได้ดีเยี่ยม สำหรับทำถนน ลานจอดรถ หรือรองพื้นปูทางเดิน",
+      image: "/products/stone/หินคลุก.png",
     },
     {
       name: "หินเกล็ด",
       description:
-        "รายละเอียด：หินเกล็ด เป็นหินที่มีขนาดละเอียด เหมาะสำหรับงานปรับพื้นที่ งานรองพื้นคอนกรีต และงานทำถนน",
-      image: "https://placehold.co/600x400.png",
+        "หินเม็ดเล็กสีขาว/เทา สำหรับงานจัดสวน โรยทางเดิน ทำพื้นที่ระบายน้ำ หรือผสมคอนกรีตที่ต้องการความละเอียด",
+      image: "/products/stone/หินเกล็ด.png",
     },
     {
       name: "หิน 1 หรือหิน 3/4",
       description:
-        "รายละเอียด：หิน 3/4 นิ้ว เป็นหินที่มีขนาดกลาง เหมาะสำหรับงานคอนกรีต งานก่อสร้างอาคาร และงานโครงสร้าง",
-      image: "https://placehold.co/600x400.png",
+        "หินเบอร์ 1 (3/4 นิ้ว) สำหรับงานผสมคอนกรีต งานเทพื้น และโครงสร้างทั่วไป",
+      image: "/products/stone/หิน1.png",
     },
     {
-      name: "ดินลูกรัง",
+      name: "ลูกรัง",
       description:
-        "รายละเอียด：ดินลูกรัง เป็นดินที่มีส่วนผสมของกรวดและทราย เหมาะสำหรับงานถมถนน งานลานจอดรถ และงานรองพื้น",
-      image: "https://placehold.co/600x400.png",
+        "ดินลูกรังสีแดง สำหรับงานรองพื้นชั้นล่างสุด ถมทำถนนในไซต์งาน หรือบดอัดลานดิน",
+      image: "/products/stone/ลูกรัง.png",
+    },  
+    {
+      name: "กระสอบหินคลุก",
+      description:
+        "หินที่มีฝุ่นหินผสม บดอัดได้ดีเยี่ยม สำหรับทำถนน ลานจอดรถ หรือรองพื้นปูทางเดิน",
+      image: "/products/stone/กระสอบหินคลุก.png",
     },
     {
-      name: "หินเกล็ด",
+      name: "กระสอบหินเกล็ด",
       description:
-        "รายละเอียด：หินเกล็ด เป็นหินที่มีรูปแบบแบน เหมาะสำหรับงานตกแต่ง งานปูพื้น และงานจัดสวน",
-      image: "https://placehold.co/600x400.png",
+        "หินเม็ดเล็กสีขาว/เทา สำหรับงานจัดสวน โรยทางเดิน ทำพื้นที่ระบายน้ำ หรือผสมคอนกรีตที่ต้องการความละเอียด",
+      image: "/products/stone/กระสอบหินเกล็ด.png",
+    },
+    {
+      name: "กระสอบหิน 1 หรือหิน 3/4",
+      description:
+        "หินเบอร์ 1 (3/4 นิ้ว) สำหรับงานผสมคอนกรีต งานเทพื้น และโครงสร้างทั่วไป",
+      image: "/products/stone/กระสอบหิน1.png",
+    },
+    {
+      name: "กระสอบลูกรัง",
+      description:
+        "ดินลูกรังสีแดง สำหรับงานรองพื้นชั้นล่างสุด ถมทำถนนในไซต์งาน หรือบดอัดลานดิน",
+      image: "/products/stone/กระสอบลูกรัง.jpg",
     },
   ];
 
@@ -82,7 +100,7 @@ export default function StonePage() {
     },
   ];
 
-   const whyChooseUs = [
+  const whyChooseUs = [
     {
       title: "ราคาโรงโม่/หน้าบ่อ",
       description: "เราคือผู้จำหน่ายรายใหญ่ ได้ราคาทุนที่ถูกกว่า",
@@ -159,58 +177,56 @@ export default function StonePage() {
       <BannerCarousel />
 
       {/* Section 2: ประเภทหิน (8 cards: 3 แถวบน + 2 แถวกลาง + 3 แถวล่าง) */}
-    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
+      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               ศูนย์จำหน่ายหินก่อสร้างและหินจัดสวน (ทุกประเภท ทุกขนาด)
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              หิน 1, หิน 2, หินคลุก, หินเกล็ด, ลูกรัง... ครบจบในที่เดียว! ส่งตรงจากโรงโม่ <br/> ราคาหน้าบ่อ คิวเต็ม ส่งด่วนถึงหน้างาน
+              หิน 1, หิน 2, หินคลุก, หินเกล็ด, ลูกรัง... ครบจบในที่เดียว! ส่งตรงจากโรงโม่ <br /> ราคาหน้าบ่อ คิวเต็ม ส่งด่วนถึงหน้างาน
             </p>
             <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
-          {/* First row: 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
-            {stoneTypes.slice(0, 3).map((stone, index) => (
-              <AnimatedSection key={stone.name} delay={index * 100}>
-                <div className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="relative h-64 sm:h-72 md:h-80 w-full">
+          {/* Responsive grid: images keep 1:1 aspect ratio with Tailwind's aspect-square */}
+          <AnimatedSection >
+
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
+              {stoneTypes.map((stone) => (
+                <div
+                  key={stone.name}
+                  className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300 bg-white"
+                >
+                  {/* Square image container */}
+                  <div className="relative w-full aspect-square">
                     <Image
                       src={stone.image}
                       alt={stone.name}
                       fill
                       className="object-cover"
+                      sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                     />
                   </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
 
-          {/* Second row: 2 cards (centered) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
-            {stoneTypes.slice(3, 5).map((stone, index) => (
-              <AnimatedSection key={stone.name} delay={index * 100}>
-                <div className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                    <Image
-                      src={stone.image}
-                      alt={stone.name}
-                      fill
-                      className="object-cover"
-                    />
+                  {/* Description under image */}
+                  <div className="p-4 text-center">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                      {stone.name}
+                    </h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {stone.description}
+                    </p>
                   </div>
                 </div>
-              </AnimatedSection>
-            ))}
-          </div>
-      </div>
-    </AnimatedSection>
+              ))}
+            </div>
+          </AnimatedSection>
+        </div>
+      </AnimatedSection>
 
-    {/* Section 3: การนำไปใช้งาน (3 cards) */}
-    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-linear-to-b from-white to-gray-50">
+      {/* Section 3: การนำไปใช้งาน (3 cards) */}
+      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-linear-to-b from-white to-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -227,7 +243,7 @@ export default function StonePage() {
               <AnimatedSection
                 key={stone.title}
                 delay={index * 150}
-                
+
               >
                 <div
                   className={`relative bg-linear-to-br ${stone.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
@@ -270,11 +286,11 @@ export default function StonePage() {
               </AnimatedSection>
             ))}
           </div>
-      </div>
-    </AnimatedSection>
+        </div>
+      </AnimatedSection>
 
-    {/* Section 4: 3 ขั้นตอนการสั่งซื้อ (Alternating layout) */}
-    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
+      {/* Section 4: 3 ขั้นตอนการสั่งซื้อ (Alternating layout) */}
+      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -287,22 +303,22 @@ export default function StonePage() {
           </div>
 
           <div className="space-y-12 mx-auto">
-                      <div className="flex justify-center">
-                        <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
-                          <Image
-                            src="/sales/sales_step.jpg"
-                            alt="ขั้นตอนการสั่งซื้อ"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      </div>
-                    </div>
-      </div>
-    </AnimatedSection>
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
+                <Image
+                  src="/sales/sales_step.jpg"
+                  alt="ขั้นตอนการสั่งซื้อ"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
 
 
-     {/* Why Choose Us Section */}
+      {/* Why Choose Us Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
@@ -343,7 +359,7 @@ export default function StonePage() {
       </section>
 
 
-    {/* Section 5: ลูกค้าของเรา - Testimonials */}
+      {/* Section 5: ลูกค้าของเรา - Testimonials */}
       <TestimonialsSection
         title="ลูกค้าของเรา"
         subtitle="ลูกค้าชั้นนำที่ไว้วางใจ PSV Group"
