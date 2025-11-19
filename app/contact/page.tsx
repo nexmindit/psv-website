@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import BannerCarousel from "@/components/BannerCarousel";
-import { Fade } from "react-awesome-reveal";
+import AnimatedSection from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "ติดต่อเรา - PSV Group",
@@ -57,7 +57,7 @@ export default function ContactPage() {
       <BannerCarousel />
 
   {/* Contact Info Section */}
-  <Fade triggerOnce>
+  <AnimatedSection>
   <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
@@ -173,10 +173,10 @@ export default function ContactPage() {
           </div>
         </div>
   </section>
-  </Fade>
+  </AnimatedSection>
 
   {/* Branches Section with Maps */}
-  <Fade triggerOnce>
+  <AnimatedSection>
   <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
@@ -324,10 +324,10 @@ export default function ContactPage() {
           </div>
         </div>
   </section>
-  </Fade>
+  </AnimatedSection>
 
   {/* Line QR Code Section */}
-  <Fade triggerOnce>
+  <AnimatedSection>
   <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="bg-gray-50 rounded-sm border-2 border-(--psv-border) p-4 sm:p-6 lg:p-8 max-w-2xl mx-auto text-center">
@@ -367,7 +367,7 @@ export default function ContactPage() {
           </div>
         </div>
   </section>
-  </Fade>
+  </AnimatedSection>
     </div>
   );
 }

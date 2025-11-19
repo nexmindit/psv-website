@@ -1,6 +1,6 @@
 "use client";
 
-import { Fade } from "react-awesome-reveal";
+import AnimatedSection from "@/components/AnimatedSection";
 
 export default function AboutPage() {
   const branches = [
@@ -93,17 +93,17 @@ export default function AboutPage() {
       {/* Company Story Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
-          <Fade triggerOnce>
+          <AnimatedSection>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 เรื่องราวของเรา
               </h2>
               <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full"></div>
             </div>
-          </Fade>
+          </AnimatedSection>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <Fade direction="left" triggerOnce delay={100}>
+            <AnimatedSection direction="left" delay={100}>
               <div className="bg-gray-100 overflow-hidden">
                 <img
                   src="/vehicles.jpg"
@@ -111,9 +111,9 @@ export default function AboutPage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-            </Fade>
+            </AnimatedSection>
 
-            <Fade direction="right" triggerOnce delay={200}>
+            <AnimatedSection direction="right" delay={200}>
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                   บริษัท พีเอสวี กรุ๊ป จำกัด
@@ -151,7 +151,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-            </Fade>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -159,7 +159,7 @@ export default function AboutPage() {
       {/* Timeline Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-12">
-          <Fade triggerOnce cascade damping={0.1}>
+          <AnimatedSection>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 ประวัติความเป็นมา
@@ -169,7 +169,7 @@ export default function AboutPage() {
               </p>
               <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
             </div>
-          </Fade>
+          </AnimatedSection>
 
           <div className="max-w-4xl mx-auto">
             <div className="relative">
@@ -179,11 +179,8 @@ export default function AboutPage() {
               {/* Timeline events */}
               <div className="space-y-12">
                 {timelineEvents.map((event, index) => (
-                  <Fade
+                  <AnimatedSection
                     key={event.year}
-                    triggerOnce
-                    cascade
-                    damping={0.1}
                     delay={index * 100}
                   >
                     <div
@@ -212,7 +209,7 @@ export default function AboutPage() {
                       {/* Empty space for alternating layout */}
                       <div className="hidden md:block w-5/12"></div>
                     </div>
-                  </Fade>
+                  </AnimatedSection>
                 ))}
               </div>
             </div>
@@ -223,7 +220,7 @@ export default function AboutPage() {
       {/* Branches Section with Maps */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
-          <Fade triggerOnce cascade damping={0.1}>
+          <AnimatedSection>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 สาขาของเรา
@@ -233,10 +230,10 @@ export default function AboutPage() {
               </p>
               <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full mt-4"></div>
             </div>
-          </Fade>
+          </AnimatedSection>
 
           {/* Locations Map Image */}
-          <Fade triggerOnce cascade damping={0.1} delay={100}>
+          <AnimatedSection delay={100}>
             <div className="mb-12">
               <div className="bg-white rounded-sm overflow-hidden border-2 border-(--psv-border)">
                 <img
@@ -246,15 +243,12 @@ export default function AboutPage() {
                 />
               </div>
             </div>
-          </Fade>
+          </AnimatedSection>
 
           <div className="space-y-12">
             {branches.map((branch, index) => (
-              <Fade
+              <AnimatedSection
                 key={branch.name}
-                triggerOnce
-                cascade
-                damping={0.1}
                 delay={index * 150}
               >
                 <div className="bg-white rounded-sm border-2 border-(--psv-border) overflow-hidden hover:border-[#446084] transition-colors duration-300">
@@ -394,7 +388,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </div>
-              </Fade>
+              </AnimatedSection>
             ))}
           </div>
         </div>
@@ -402,7 +396,7 @@ export default function AboutPage() {
 
       {/* Call to Action */}
       <section className="py-16 bg-gray-100">
-        <Fade triggerOnce cascade damping={0.1}>
+        <AnimatedSection>
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
               ต้องการสอบถามหรือขอใบเสนอราคา?
@@ -422,7 +416,7 @@ export default function AboutPage() {
               ติดต่อเราผ่าน Line
             </a>
           </div>
-        </Fade>
+        </AnimatedSection>
       </section>
     </div>
   );

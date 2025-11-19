@@ -5,7 +5,6 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Fade } from "react-awesome-reveal";
 import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function SandPage() {
@@ -154,7 +153,8 @@ export default function SandPage() {
           </div>
 
           {/* Responsive grid: images keep 1:1 aspect ratio with Tailwind's aspect-square */}
-          <AnimatedSection className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+          <AnimatedSection >
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
         {sandTypes.map((sand) => (
           <div
             key={sand.name}
@@ -182,6 +182,7 @@ export default function SandPage() {
             </div>
           </div>
         ))}
+        </div>
           </AnimatedSection>
         </div>
       </section>
@@ -199,11 +200,11 @@ export default function SandPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             {constructionSandTypes.map((sand, index) => (
-              <Fade
+              <AnimatedSection
                 key={sand.title}
-                triggerOnce
+                
                 delay={index * 150}
-                direction="up"
+                
               >
                 <div
                   className={`relative bg-linear-to-br ${sand.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
@@ -243,7 +244,7 @@ export default function SandPage() {
                   {/* Bottom accent */}
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-(--color-gold) to-transparent opacity-50"></div>
                 </div>
-              </Fade>
+              </AnimatedSection>
             ))}
           </div>
         </div>
@@ -290,7 +291,7 @@ export default function SandPage() {
       
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {whyChooseUs.map((reason, index) => (
-                    <Fade key={reason.title} triggerOnce delay={index * 100}>
+                    <AnimatedSection key={reason.title} delay={index * 100}>
                       <div className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300">
                         <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                           <svg
@@ -312,7 +313,7 @@ export default function SandPage() {
                         </h3>
                         <p className="text-gray-600 text-sm">{reason.description}</p>
                       </div>
-                    </Fade>
+                    </AnimatedSection>
                   ))}
                 </div>
               </div>

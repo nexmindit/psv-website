@@ -6,7 +6,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import CustomerReviews from "@/components/CustomerReviews";
 import BannerCarousel from "@/components/BannerCarousel";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Fade } from "react-awesome-reveal";
+
 import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function GardeningServicePage() {
@@ -251,11 +251,9 @@ export default function GardeningServicePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Fade
+              <AnimatedSection
                 key={service.title}
-                triggerOnce
                 delay={index * 150}
-                direction="up"
               >
                 <div className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300">
                   <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
@@ -268,7 +266,7 @@ export default function GardeningServicePage() {
                     {service.description}
                   </p>
                 </div>
-              </Fade>
+              </AnimatedSection>
             ))}
           </div>
         </div>
@@ -286,7 +284,7 @@ export default function GardeningServicePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyChooseUs.map((reason, index) => (
-              <Fade key={reason.title} triggerOnce delay={index * 100}>
+              <AnimatedSection key={reason.title} delay={index * 100}>
                 <div className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300">
                   <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg
@@ -308,21 +306,24 @@ export default function GardeningServicePage() {
                   </h3>
                   <p className="text-gray-600 text-sm">{reason.description}</p>
                 </div>
-              </Fade>
+              </AnimatedSection>
             ))}
           </div>
         </div>
       </AnimatedSection>
 
-      {/* Testimonials Section */}
-      <TestimonialsSection
-        title="ลูกค้าที่ไว้วางใจเรา"
-        subtitle="ที่ไว้วางใจและใช้บริการของเรามาอย่างต่อเนื่อง"
-        bgColor="bg-white"
-      />
+      <AnimatedSection>
+        <TestimonialsSection
+          title="ลูกค้าที่ไว้วางใจเรา"
+          subtitle="ที่ไว้วางใจและใช้บริการของเรามาอย่างต่อเนื่อง"
+          bgColor="bg-white"
+        />
+      </AnimatedSection>
 
       {/* Customer Reviews Section */}
-      <CustomerReviews />
+      <AnimatedSection>
+        <CustomerReviews />
+      </AnimatedSection>
 
       {/* CTA Section */}
       <AnimatedSection className="py-16 bg-gray-900 text-white">
@@ -346,14 +347,16 @@ export default function GardeningServicePage() {
       </AnimatedSection>
 
 
-      <DeliveryPhotos
-        photos={galleryImages.map((img) => ({
-          src: img.src,
-          alt: `ผลงานจัดสวน ${img.id}`,
-        }))}
-        title="ภาพหน้างานจริง"
-        description="ผลงานการจัดสวนของเรา"
-      />
+      <AnimatedSection>
+        <DeliveryPhotos
+          photos={galleryImages.map((img) => ({
+            src: img.src,
+            alt: `ผลงานจัดสวน ${img.id}`,
+          }))}
+          title="ภาพหน้างานจริง"
+          description="ผลงานการจัดสวนของเรา"
+        />
+      </AnimatedSection>
     </div>
   );
 }

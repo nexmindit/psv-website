@@ -3,7 +3,7 @@
 import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import { Fade } from "react-awesome-reveal";
+import AnimatedSection from "@/components/AnimatedSection";
 import Image from "next/image";
 import DeliveryPhotos from "@/components/DeliveryPhotos";
 
@@ -39,7 +39,7 @@ export default function Home() {
       {/* About Brand Section - Short Story (3-4 lines) + PSV Story */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-12">
-          <Fade triggerOnce>
+          <AnimatedSection>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div>
                 <div className="relative bg-gray-300 mb-4 w-full h-[300px] md:h-[400px]">
@@ -86,14 +86,14 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </Fade>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Branch Locations - สาขาที่มีปัจจุบัน */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-12">
-          <Fade triggerOnce>
+          <AnimatedSection>
             <div className="text-center mb-12">
               <div className="inline-block px-4 py-2 bg-[#446084]/5 rounded-full mb-4">
                 <span className="text-sm font-semibold text-[#446084] uppercase tracking-wider">
@@ -105,11 +105,11 @@ export default function Home() {
               </h2>
               <div className="w-20 h-1 bg-[#446084] mx-auto rounded-full"></div>
             </div>
-          </Fade>
+          </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Branch 1 - Sai Mai */}
-            <Fade triggerOnce delay={100}>
+            <AnimatedSection delay={100}>
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
@@ -129,10 +129,10 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </Fade>
+            </AnimatedSection>
 
             {/* Branch 2 - Rangsit */}
-            <Fade triggerOnce delay={200}>
+            <AnimatedSection delay={200}>
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
@@ -152,10 +152,10 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </Fade>
+            </AnimatedSection>
 
             {/* Branch 3 - Samrong */}
-            <Fade triggerOnce delay={300}>
+            <AnimatedSection delay={300}>
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
@@ -175,7 +175,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </Fade>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -183,15 +183,15 @@ export default function Home() {
       {/* Why Choose Us - ทำไมถึงเลือกใช้บริการเรา */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-12">
-          <Fade triggerOnce>
+          <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
               ทำไมถึงเลือกใช้บริการเรา
             </h2>
-          </Fade>
+          </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Reason 1 */}
-            <Fade triggerOnce delay={100}>
+            <AnimatedSection delay={100}>
               <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
@@ -215,10 +215,10 @@ export default function Home() {
                   มีบ่อดินและทรายเป็นของตนเอง บนเนื้อที่ 4000 ไร่
                 </p>
               </div>
-            </Fade>
+            </AnimatedSection>
 
             {/* Reason 2 */}
-            <Fade triggerOnce delay={200}>
+            <AnimatedSection delay={200}>
               <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
@@ -242,10 +242,10 @@ export default function Home() {
                   ขายในราคาถูกที่สุดในย่านนี้ คุ้มค่าที่สุด
                 </p>
               </div>
-            </Fade>
+            </AnimatedSection>
 
             {/* Reason 3 */}
-            <Fade triggerOnce delay={300}>
+            <AnimatedSection delay={300}>
               <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
@@ -269,10 +269,10 @@ export default function Home() {
                   คัดสรรวัสดุอย่างดี เพื่อประสิทธิภาพสูงสุด
                 </p>
               </div>
-            </Fade>
+            </AnimatedSection>
 
             {/* Reason 4 */}
-            <Fade triggerOnce delay={400}>
+            <AnimatedSection delay={400}>
               <div className="bg-gray-50 p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
                 <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
@@ -296,28 +296,32 @@ export default function Home() {
                   บริการจัดส่งทั่วกรุงเทพและปริมณฑล
                 </p>
               </div>
-            </Fade>
+            </AnimatedSection>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <TestimonialsSection />
+      <AnimatedSection>
+        <TestimonialsSection />
+      </AnimatedSection>
 
       {/* Customer Reviews Section */}
-      <CustomerReviews />
+      <AnimatedSection>
+        <CustomerReviews />
+      </AnimatedSection>
 
       {/* Value Proposition - Value ที่เราส่งมอบให้กับลูกค้า */}
       <section className="py-16 md:py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
-          <Fade triggerOnce>
+          <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               Value ที่เราส่งมอบให้กับลูกค้า
             </h2>
-          </Fade>
+          </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <Fade triggerOnce delay={100}>
+            <AnimatedSection delay={100}>
               <div>
                 <div className="text-5xl font-bold text-[#D4AF37] mb-3">
                   30+
@@ -327,8 +331,8 @@ export default function Home() {
                   มากกว่า 3 ทศวรรษแห่งประสบการณ์
                 </p>
               </div>
-            </Fade>
-            <Fade triggerOnce delay={200}>
+            </AnimatedSection>
+            <AnimatedSection delay={200}>
               <div>
                 <div className="text-5xl font-bold text-[#D4AF37] mb-3">
                   4,000
@@ -338,8 +342,8 @@ export default function Home() {
                   บ่อดินและทรายของตนเอง
                 </p>
               </div>
-            </Fade>
-            <Fade triggerOnce delay={300}>
+            </AnimatedSection>
+            <AnimatedSection delay={300}>
               <div>
                 <div className="text-5xl font-bold text-[#D4AF37] mb-3">3</div>
                 <p className="text-xl">สาขาให้บริการ</p>
@@ -347,15 +351,17 @@ export default function Home() {
                   สายไหม รังสิต สำโรง
                 </p>
               </div>
-            </Fade>
+            </AnimatedSection>
           </div>
         </div>
       </section>
-      <DeliveryPhotos
-        photos={galleryImages}
-        title="ภาพการจัดส่งสินค้าและบริการ"
-        description="ภาพหน้างานจริง"
-      />
+      <AnimatedSection>
+        <DeliveryPhotos
+          photos={galleryImages}
+          title="ภาพการจัดส่งสินค้าและบริการ"
+          description="ภาพหน้างานจริง"
+        />
+      </AnimatedSection>
     </div>
   );
 }
