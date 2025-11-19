@@ -5,6 +5,7 @@ import CustomerReviews from "@/components/CustomerReviews";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
+import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function Home() {
   // Gallery images array
@@ -350,33 +351,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Customer Gallery - ภาพลูกค้ามาชื่อที่สาขา/จัดส่ง ภาพหน้างานจริง 8-12 รูป */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="container mx-auto px-12">
-          <Fade triggerOnce>
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-              ภาพการจัดส่งสินค้าและบริการ
-            </h2>
-            <p className="text-center text-gray-600 mb-12">ภาพหน้างานจริง</p>
-          </Fade>
-
-          {/* Gallery Grid - 4 work site photos */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {galleryImages.map((image, index) => (
-              <Fade triggerOnce key={`gallery-${index}`} delay={index * 50}>
-                <div className="relative w-full aspect-[3/2] bg-gray-300 rounded-sm overflow-hidden hover:scale-105 transition-transform cursor-pointer">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </Fade>
-            ))}
-          </div>
-        </div>
-      </section>
+      <DeliveryPhotos
+        photos={galleryImages}
+        title="ภาพการจัดส่งสินค้าและบริการ"
+        description="ภาพหน้างานจริง"
+      />
     </div>
   );
 }

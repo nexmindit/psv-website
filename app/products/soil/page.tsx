@@ -6,79 +6,45 @@ import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
+import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function SoilPage() {
   // ประเภทดิน 8 ชนิด (3 แถวบน + 2 แถวล่างกึ่งกลาง)
   const soilTypes = [
     {
-      name: "ดินถม",
+      name: "หน้าดิน (Topsoil) คิว",
       description:
-        "รายละเอียด：ดินถม เป็นดินที่มีคุณภาพดี เหมาะสำหรับงานถมที่ดิน งานปรับพื้นที่ และงานยกระดับพื้น",
-      image: "https://placehold.co/600x400.png",
+        "เหมาะสำหรับงานจัดสวนขนาดใหญ่, ถมปรับหน้าดิน, โครงการหมู่บ้าน",
+      image: "/products/soil/1_1.png",
     },
     {
-      name: "ดินทราย",
+      name: "กระสอบหน้าดิน (Topsoil)",
       description:
-        "รายละเอียด：ดินทราย เป็นดินที่มีส่วนผสมของทราย เหมาะสำหรับงานปรับพื้นที่ งานทำสวน และงานก่อสร้าง",
-      image: "https://placehold.co/600x400.png",
+        "เหมาะสำหรับเติมกระถาง, แปลงผักสวนครัว, ซ่อมแซมสนามหญ้า",
+      image: "/products/soil/1_2.png",
     },
-    {
-      name: "ดินเหนียว",
-      description:
-        "รายละเอียด：ดินเหนียว เป็นดินที่มีความเหนียว เหมาะสำหรับงานทำเขื่อน งานกันน้ำ และงานปั้นดิน",
-      image: "https://placehold.co/600x400.png",
-    },
-    {
-      name: "ดินร่วน",
-      description:
-        "รายละเอียด：ดินร่วน เป็นดินที่มีความอุดมสมบูรณ์ เหมาะสำหรับงานทำสวน งานเกษตรกรรม และงานปลูกต้นไม้",
-      image: "https://placehold.co/600x400.png",
-    },
-    {
-      name: "ดินปลูก",
-      description:
-        "รายละเอียด：ดินปลูก เป็นดินที่มีการปรับปรุงคุณภาพ เหมาะสำหรับงานจัดสวน งานปลูกต้นไม้ และงานเกษตร",
-      image: "https://placehold.co/600x400.png",
-    },
-    {
-      name: "ดินดำ",
-      description:
-        "รายละเอียด：ดินดำ เป็นดินที่มีความอุดมสมบูรณ์สูง เหมาะสำหรับงานทำสวน งานเกษตรกรรม และงานปลูกพืช",
-      image: "https://placehold.co/600x400.png",
-    },
-    {
-      name: "ดินหินปูน",
-      description:
-        "รายละเอียด：ดินหินปูน เป็นดินที่มีส่วนผสมของหินปูน เหมาะสำหรับงานถมพื้นที่ งานก่อสร้าง และงานปรับพื้น",
-      image: "https://placehold.co/600x400.png",
-    },
+    
   ];
 
   // ดิน 3 ประเภทที่ใช้ในงานก่อสร้าง
   const constructionSoilTypes = [
     {
-      title: "ดินถม",
-      subtitle: "Fill Soil",
+      title: "สั่งเหมาลำ (รถ 6 ล้อ / 10 ล้อ)",
+      subtitle: "",
       icon: "🟫",
       features: [
-        "คุณภาพดี อัดตัวได้ดี",
-        "งานถมที่ดิน",
-        "งานปรับพื้นที่",
-        "งานยกระดับพื้น",
-        "งานก่อสร้างทั่วไป",
+        "เหมาะสำหรับงานจัดสวนขนาดใหญ่, ถมปรับหน้าดิน, โครงการหมู่บ้าน",
+        "ดินเต็มคิว ไม่โกงตาชั่ง ราคาเฉลี่ยต่อคิวถูกที่สุด",
       ],
       bgGradient: "from-[#446084] to-[#5a7a9a]",
     },
     {
-      title: "หน้าดิน/ดินปลูกต้นไม้",
-      subtitle: "Planting Soil",
+      title: "สั่งจำนวนน้อย / ใส่ถุง",
+      subtitle: "",
       icon: "🌱",
       features: [
-        "อุดมสมบูรณ์ เหมาะปลูก",
-        "งานจัดสวน",
-        "งานปลูกต้นไม้",
-        "งานเกษตรกรรม",
-        "งานปรับปรุงดิน",
+        "เหมาะสำหรับเติมกระถาง, แปลงผักสวนครัว, ซ่อมแซมสนามหญ้า",
+        "ดินสะอาด พร้อมปลูก ส่งถึงหน้าบ้าน",
       ],
       bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
     },
@@ -109,6 +75,25 @@ export default function SoilPage() {
         "ชำระเงินและแจ้งที่อยู่สำหรับจัดส่งให้เรียบร้อยเพื่อรับสินค้าที่ต้องการ",
       image: "https://placehold.co/800x600.png",
       imageAlt: "จัดส่ง PSV Group",
+    },
+  ];
+
+  const whyChooseUs = [
+    {
+      title: "เนื้อดินร่วนซุย",
+      description: "รากพืชเดินง่าย ระบายน้ำดีแต่ยังเก็บความชื้นได้เหมาะสม",
+    },
+    {
+      title: "สะอาด คัดเกรด",
+      description: "เรากรองเศษขยะ เศษหิน หรือวัชพืชออกแล้ว มั่นใจได้ดินล้วนๆ",
+    },
+    {
+      title: "อุดมสมบูรณ์",
+      description: "เป็นหน้าดินผิวดินธรรมชาติ มีแร่ธาตุและอินทรียวัตถุที่ต้นไม้ต้องการ",
+    },
+    {
+      title: "ใช้งานได้ทันที",
+      description: "ไม่ต้องหมักดินเพิ่ม สามารถลงต้นไม้หรือปูหญ้าได้เลย",
     },
   ];
 
@@ -146,52 +131,45 @@ export default function SoilPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ประเภทดินที่เราจำหน่าย
+              หน้าดินดำเกรด A" คัดพิเศษ (ราคาหน้าบ่อ)
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              วัสดุก่อสร้างคุณภาพสูง ผลิตเองจากบ่อดินบ่อทราย
-              พร้อมจัดส่งทั้งกรุงเทพและปริมณฑล
+              ดินดี ร่วนซุย ธาตุอาหารสูง เหมาะสำหรับปลูกต้นไม้ จัดสวน หรือปรับหน้าดินชั้นบน <br/> ส่งตรงจากบ่อ ไม่ผ่านคนกลาง
             </p>
             <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
-          {/* First row: 3 cards */}
-          <AnimatedSection className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-6 md:mb-8">
-            {soilTypes.slice(0, 3).map((soil) => (
-              <div
-                key={soil.name}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                  <Image
-                    src={soil.image}
-                    alt={soil.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </AnimatedSection>
+          {/* Responsive grid: images keep 1:1 aspect ratio with Tailwind's aspect-square */}
+                    <AnimatedSection className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+                  {soilTypes.map((soil) => (
+                    <div
+                      key={soil.name}
+                      className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300 bg-white"
+                    >
+                      {/* Square image container */}
+                      <div className="relative w-full aspect-square">
+                    <Image
+                      src={soil.image}
+                      alt={soil.name}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+                    />
+                      </div>
+          
+                      {/* Description under image */}
+                      <div className="p-4 text-center">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                      {soil.name}
+                    </h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {soil.description}
+                    </p>
+                      </div>
+                    </div>
+                  ))}
+                    </AnimatedSection>
 
-          {/* Second row: 2 cards (centered) */}
-          <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mb-6 md:mb-8">
-            {soilTypes.slice(3, 5).map((soil) => (
-              <div
-                key={soil.name}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
-                <div className="relative h-64 sm:h-72 md:h-80 w-full">
-                  <Image
-                    src={soil.image}
-                    alt={soil.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </AnimatedSection>
         </div>
       </section>
 
@@ -200,10 +178,10 @@ export default function SoilPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ดิน 2 ประเภทใช้ในงานก่อสร้าง
+              ราคาและเงื่อนไข
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
-              เลือกใช้ดินให้เหมาะสมกับงานก่อสร้างของคุณ
+              แบ่งตามปริมาณการสั่ง
             </p>
             <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
@@ -238,9 +216,9 @@ export default function SoilPage() {
 
                   {/* Features list */}
                   <ul className="space-y-3 relative z-10">
-                    {soil.features.map((feature) => (
+                    {soil.features.map((feature, index) => (
                       <li
-                        key={feature}
+                        key={index}
                         className="flex items-start text-sm sm:text-base leading-relaxed"
                       >
                         <span className="text-(--color-gold) mr-2 mt-1 shrink-0">
@@ -288,6 +266,47 @@ export default function SoilPage() {
         </div>
       </section>
 
+       {/* Why Choose Us Section */}
+                  <AnimatedSection className="py-16 bg-gray-50">
+                    <div className="container mx-auto px-12">
+                      <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                          ทำไมต้อง "หน้าดิน" ของ PSV?
+                        </h2>
+                        <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
+                      </div>
+            
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {whyChooseUs.map((reason, index) => (
+                          <Fade key={reason.title} triggerOnce delay={index * 100}>
+                            <div className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300">
+                              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg
+                                  className="w-8 h-8 text-white"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                  />
+                                </svg>
+                              </div>
+                              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                {reason.title}
+                              </h3>
+                              <p className="text-gray-600 text-sm">{reason.description}</p>
+                            </div>
+                          </Fade>
+                        ))}
+                      </div>
+                    </div>
+                  </AnimatedSection>
+      
+
       {/* Section 5: ลูกค้าของเรา - Testimonials */}
       <TestimonialsSection
         title="ลูกค้าของเรา"
@@ -297,37 +316,7 @@ export default function SoilPage() {
 
       <CustomerReviews />
 
-      {/* Section 6: รูปภาพการจัดส่ง (4x3 grid) */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ภาพการจัดส่ง
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              บริการจัดส่งรวดเร็ว ทั่วกรุงเทพและปริมณฑล
-            </p>
-            <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
-            {deliveryPhotos.map((photo, index) => (
-              <div
-                key={index}
-                className="relative w-full rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300 aspect-[3/2]"
-              >
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <DeliveryPhotos photos={deliveryPhotos} />
     </div>
   );
 }

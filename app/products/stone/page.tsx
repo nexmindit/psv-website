@@ -6,6 +6,7 @@ import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
+import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function StonePage() {
   // ประเภทหิน 8 ชนิด (3 แถวบน + 2 แถวล่างกึ่งกลาง)
@@ -45,55 +46,59 @@ export default function StonePage() {
   // หิน 3 ประเภทที่ใช้ในงานก่อสร้าง
   const constructionStoneTypes = [
     {
-      title: "หินคลุก",
-      subtitle: "Crushed Stone",
+      title: "หินโครงสร้าง (Building)",
+      subtitle: "หิน 1",
       icon: "🪨",
       features: [
-        "ขนาดหลากหลาย มีความแข็งแรง",
-        "งานถมพื้นที่",
-        "งานรองฐานถนน",
-        "งานปรับพื้นที่",
-        "งานก่อสร้างทั่วไป",
+        "ราคาขายส่ง เน้นคุณภาพสำหรับงานเทคอนกรีตโดยเฉพาะ",
       ],
       bgGradient: "from-[#446084] to-[#5a7a9a]",
     },
     {
-      title: "หิน 1 หรือ หิน 3/4",
-      subtitle: "3/4 Inch Stone",
+      title: "หินรองพื้น (Sub-Base)",
+      subtitle: "หินคลุก, ลูกรัง",
       icon: "🔷",
       features: [
-        "ขนาดมาตรฐาน แข็งแรงทนทาน",
-        "งานคอนกรีต",
-        "งานก่อสร้างอาคาร",
-        "งานโครงสร้าง",
-        "งานฐานราก",
+        "บดอัดแน่น ไม่ยุบตัวง่าย สำหรับทำถนนและลานจอดรถ",
       ],
       bgGradient: "from-[#6e8aaa] to-[#829aba]",
     },
     {
-      title: "หินเกล็ด",
-      subtitle: "Gravel",
+      title: "หินจัดสวน (Landscaping)",
+      subtitle: "หินเกล็ด",
       icon: "🔹",
       features: [
-        "ขนาดละเอียด เหมาะสำหรับงานปรับพื้นที่",
-        "งานรองพื้นคอนกรีต",
-        "งานทำถนน",
-        "งานตกแต่งภูมิทัศน์",
+        "มีหลายสี หลายขนาด สำหรับงานตกแต่งและงาน DIY",
       ],
       bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
     },
     {
-      title: "ลูกรัง",
-      subtitle: "Laterite",
+      title: "บริการขนส่ง (Delivery)",
+      subtitle: "",
       icon: "🟤",
       features: [
-        "แข็งแรง ทนทาน",
-        "งานถมถนน",
-        "งานลานจอดรถ",
-        "งานรองพื้น",
-        "งานทำถนนลูกรัง",
+        "มีรถดั๊มพ์ 6 ล้อ / 10 ล้อ และรถพ่วง ขนส่งตรงจากแหล่งหิน คิวเต็มทุกเที่ยว",
       ],
       bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
+    },
+  ];
+
+   const whyChooseUs = [
+    {
+      title: "ราคาโรงโม่/หน้าบ่อ",
+      description: "เราคือผู้จำหน่ายรายใหญ่ ได้ราคาทุนที่ถูกกว่า",
+    },
+    {
+      title: "คิวเต็ม 100%",
+      description: "มั่นใจได้ปริมาณครบตามสั่ง ด้วยการชั่งน้ำหนักมาตรฐาน",
+    },
+    {
+      title: "หินสะอาด คัดขนาด",
+      description: "ได้หินตามสเปกเป๊ะๆ ไม่ปนเศษดิน/ขยะ",
+    },
+    {
+      title: "จัดส่งรวดเร็ว",
+      description: "พร้อมขนส่งตลอดเวลาตามความต้องการของไซต์งาน",
     },
   ];
 
@@ -159,11 +164,10 @@ export default function StonePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ประเภทหินที่เราจำหน่าย
+              ศูนย์จำหน่ายหินก่อสร้างและหินจัดสวน (ทุกประเภท ทุกขนาด)
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              วัสดุก่อสร้างคุณภาพสูง ผลิตเองจากบ่อดินบ่อทราย
-              พร้อมจัดส่งทั้งกรุงเทพและปริมณฑล
+              หิน 1, หิน 2, หินคลุก, หินเกล็ด, ลูกรัง... ครบจบในที่เดียว! ส่งตรงจากโรงโม่ <br/> ราคาหน้าบ่อ คิวเต็ม ส่งด่วนถึงหน้างาน
             </p>
             <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
@@ -299,6 +303,48 @@ export default function StonePage() {
       </div>
     </AnimatedSection>
 
+
+     {/* Why Choose Us Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-12">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              สั่งหินกับ PSV มั่นใจได้อะไร
+            </h2>
+            <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {whyChooseUs.map((reason, index) => (
+              <Fade key={reason.title} triggerOnce delay={index * 100}>
+                <div className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300">
+                  <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {reason.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{reason.description}</p>
+                </div>
+              </Fade>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
     {/* Section 5: ลูกค้าของเรา - Testimonials */}
       <TestimonialsSection
         title="ลูกค้าของเรา"
@@ -308,39 +354,7 @@ export default function StonePage() {
 
       <CustomerReviews />
 
-      {/* Section 6: รูปภาพการจัดส่ง (4x3 grid) */}
-    <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ภาพการจัดส่ง
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              บริการจัดส่งรวดเร็ว ทั่วกรุงเทพและปริมณฑล
-            </p>
-            <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
-            {deliveryPhotos.map((photo, index) => (
-              <div
-                key={index}
-                className="rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
-              >
-                <div className="relative w-full aspect-[3/2]">
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-      </div>
-    </AnimatedSection>
+      <DeliveryPhotos photos={deliveryPhotos} />
     </div>
   );
 }

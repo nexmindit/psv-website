@@ -6,6 +6,7 @@ import BannerCarousel from "@/components/BannerCarousel";
 import CustomerReviews from "@/components/CustomerReviews";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Fade } from "react-awesome-reveal";
+import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function SandPage() {
   // ประเภททราย 8 ชนิด (3 แถวบน + 2 แถวล่างกึ่งกลาง)
@@ -41,28 +42,23 @@ export default function SandPage() {
   // ทรายสามประเภทที่ใช้ในงานก่อสร้าง
   const constructionSandTypes = [
     {
-      title: "ทรายหยาบ",
-      subtitle: "Coarse Sand",
+      title: "สั่งเหมาคันรถ (ราคาขายส่ง)",
+      subtitle: "",
       icon: "�",
       features: [
-        "เม็ดใหญ่ มีกรวดเล็กๆ",
-        "ก่อสร้างอาคาร",
-        "คอนกรีตเสริมเหล็ก",
-        "ก่อสร้างฐานราก",
-        "ก่อสร้างตึกสูง",
+        "ผู้รับเหมา, งานก่อสร้าง, ถมที่",
+        "ขนส่งด้วย: รถ 6 ล้อ (3-5 คิว) / รถ 10 ล้อ (10-12 คิว) / รถพ่วง",
+        "ราคาถูกที่สุด เฉลี่ยต่อคิวต่ำ เหมาะกับงานปริมาณมาก",
       ],
       bgGradient: "from-[#5a7a9a] to-[#6e8aaa]",
     },
     {
-      title: "ทรายถม",
-      subtitle: "Fill Sand",
+      title: "สั่งเป็นถุง / กระบะ (ราคาปลีก)",
+      subtitle: "",
       icon: "🟤",
       features: [
-        "ใกล้เคียงกับดิน",
-        "งานถมถนน",
-        "งานปรับพื้นที่",
-        "ถมรองคอนกรีต",
-        "กันน้ำท่วม",
+        "งานซ่อมแซม, จัดสวน, งานต่อเติมเล็กๆ",
+        "สั่งน้อยก็ส่ง สะดวก ขนย้ายง่าย ไม่เลอะหน้างาน",
       ],
       bgGradient: "from-[#6e8aaa] to-[#829aba]",
     },
@@ -96,11 +92,30 @@ export default function SandPage() {
     },
   ];
 
+   const whyChooseUs = [
+    {
+      title: "เจ้าของบ่อเอง",
+      description: "มั่นใจได้ราคาต้นน้ำ ไม่ผ่านคนกลาง",
+    },
+    {
+      title: "คิวเต็ม 100",
+      description: "ตวงมาตรฐาน ไม่มีการหมกเม็ดปริมาณ",
+    },
+    {
+      title: "มีของตลอดปี",
+      description: "สต็อกแน่น ไม่ต้องกลัวของขาด หน้างานไม่สะดุด",
+    },
+    {
+      title: "ส่งไว ทันใช้",
+      description: "มีเครือข่ายรถบรรทุกวิ่งงานตลอด 24 ชม. (หรือตามเวลาทำการ)",
+    },
+  ];
+
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    { src: "/work/work-01.jpg", alt: "งานหน้าไซต์ 1" },
-    { src: "/work/work-02.jpg", alt: "งานหน้าไซต์ 2" },
-    { src: "/work/work-03.jpg", alt: "งานหน้าไซต์ 3" },
+    { src: "/work/work-01.jpg", alt: "ส่งงานวัดบึงทองหลวง (ทรายหยาย)" },
+    { src: "/work/work-02.jpg", alt: "ส่งงานถมที่เทพรักษ์ (รถพ่วง)" },
+    { src: "/work/work-03.jpg", alt: "ส่งงานก่อสร้างอาคาร (รถ 6 ล้อ)" },
     { src: "/work/work-04.jpg", alt: "งานหน้าไซต์ 4" },
     { src: "/work/work-05.jpg", alt: "งานหน้าไซต์ 5" },
     { src: "/work/work-06.jpg", alt: "งานหน้าไซต์ 6" },
@@ -176,11 +191,9 @@ export default function SandPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ทราย 2 ประเภทใช้ในงานก่อสร้าง
+              ราคาและรูปแบบการจัดส่ง
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
-              เลือกใช้ทรายให้เหมาะสมกับงานก่อสร้างของคุณ
-            </p>
+            
             <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
@@ -263,6 +276,49 @@ export default function SandPage() {
       </div>
       </section>
 
+      
+
+      {/* Why Choose Us Section */}
+            <AnimatedSection className="py-16 bg-gray-50">
+              <div className="container mx-auto px-12">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    ทำไมต้องสั่งทรายกับ PSV?
+                  </h2>
+                  <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
+                </div>
+      
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {whyChooseUs.map((reason, index) => (
+                    <Fade key={reason.title} triggerOnce delay={index * 100}>
+                      <div className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300">
+                        <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
+                          <svg
+                            className="w-8 h-8 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">
+                          {reason.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm">{reason.description}</p>
+                      </div>
+                    </Fade>
+                  ))}
+                </div>
+              </div>
+            </AnimatedSection>
+
+      
       {/* Section 5: ลูกค้าของเรา - Testimonials */}
       <TestimonialsSection
         title="ลูกค้าของเรา"
@@ -272,37 +328,7 @@ export default function SandPage() {
 
       <CustomerReviews />
 
-      {/* Section 6: รูปภาพการจัดส่ง (4x3 grid) */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ภาพการจัดส่ง
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              บริการจัดส่งรวดเร็ว ทั่วกรุงเทพและปริมณฑล
-            </p>
-            <div className="w-16 md:w-20 h-1 bg-(--color-gold) mx-auto mt-4"></div>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
-            {deliveryPhotos.map((photo, index) => (
-              <div
-                key={index}
-                className="relative w-full aspect-[3/2] rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300"
-              >
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <DeliveryPhotos photos={deliveryPhotos} />
     </div>
   );
 }
