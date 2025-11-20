@@ -98,27 +98,19 @@ export default function SoilPage() {
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    { src: "/work/work-01.jpg", alt: "งานหน้าไซต์ 1" },
-    { src: "/work/work-02.jpg", alt: "งานหน้าไซต์ 2" },
-    { src: "/work/work-03.jpg", alt: "งานหน้าไซต์ 3" },
-    { src: "/work/work-04.jpg", alt: "งานหน้าไซต์ 4" },
-    { src: "/work/work-05.jpg", alt: "งานหน้าไซต์ 5" },
-    { src: "/work/work-06.jpg", alt: "งานหน้าไซต์ 6" },
-    { src: "/work/work-07.jpg", alt: "งานหน้าไซต์ 7" },
-    { src: "/work/work-08.jpg", alt: "งานหน้าไซต์ 8" },
-    { src: "/work/work-09.jpg", alt: "งานหน้าไซต์ 9" },
-    { src: "/work/work-10.jpg", alt: "งานหน้าไซต์ 10" },
-    { src: "/work/work-11.jpg", alt: "งานหน้าไซต์ 11" },
-    { src: "/work/work-12.jpg", alt: "งานหน้าไซต์ 12" },
-    { src: "/work/work-13.jpg", alt: "งานหน้าไซต์ 13" },
-    { src: "/work/work-14.jpg", alt: "งานหน้าไซต์ 14" },
-    { src: "/work/work-15.jpg", alt: "งานหน้าไซต์ 15" },
-    { src: "/work/work-16.jpg", alt: "งานหน้าไซต์ 16" },
-    { src: "/work/work-17.jpg", alt: "งานหน้าไซต์ 17" },
-    { src: "/work/work-18.jpg", alt: "งานหน้าไซต์ 18" },
-    { src: "/work/work-19.jpg", alt: "งานหน้าไซต์ 19" },
-    { src: "/work/work-20.jpg", alt: "งานหน้าไซต์ 20" },
-    { src: "/work/work-21.jpg", alt: "งานหน้าไซต์ 21" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_1.jpg", alt: "งานลงดินปรับระดับพื้น 1" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_2.jpg", alt: "งานลงดินปรับระดับพื้น 2" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_3.jpg", alt: "งานลงดินปรับระดับพื้น 3" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_4.jpg", alt: "งานลงดินปรับระดับพื้น 4" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_5.jpg", alt: "งานลงดินปรับระดับพื้น 5" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_6.jpg", alt: "งานลงดินปรับระดับพื้น 6" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_7.jpg", alt: "งานลงดินปรับระดับพื้น 7" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_8.jpg", alt: "งานลงดินปรับระดับพื้น 8" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_9.jpg", alt: "งานลงดินปรับระดับพื้น 9" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_10.jpg", alt: "งานลงดินปรับระดับพื้น 10" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_11.jpg", alt: "งานลงดินปรับระดับพื้น 11" },
+    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_12.jpg", alt: "งานลงดินปรับระดับพื้น 12" },
+    
   ];
 
   return (

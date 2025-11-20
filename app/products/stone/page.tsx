@@ -149,29 +149,31 @@ export default function StonePage() {
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    { src: "/work/work-01.jpg", alt: "งานหน้าไซต์ 1" },
-    { src: "/work/work-02.jpg", alt: "งานหน้าไซต์ 2" },
-    { src: "/work/work-03.jpg", alt: "งานหน้าไซต์ 3" },
-    { src: "/work/work-04.jpg", alt: "งานหน้าไซต์ 4" },
-    { src: "/work/work-05.jpg", alt: "งานหน้าไซต์ 5" },
-    { src: "/work/work-06.jpg", alt: "งานหน้าไซต์ 6" },
-    { src: "/work/work-07.jpg", alt: "งานหน้าไซต์ 7" },
-    { src: "/work/work-08.jpg", alt: "งานหน้าไซต์ 8" },
-    { src: "/work/work-09.jpg", alt: "งานหน้าไซต์ 9" },
-    { src: "/work/work-10.jpg", alt: "งานหน้าไซต์ 10" },
-    { src: "/work/work-11.jpg", alt: "งานหน้าไซต์ 11" },
-    { src: "/work/work-12.jpg", alt: "งานหน้าไซต์ 12" },
-    { src: "/work/work-13.jpg", alt: "งานหน้าไซต์ 13" },
-    { src: "/work/work-14.jpg", alt: "งานหน้าไซต์ 14" },
-    { src: "/work/work-15.jpg", alt: "งานหน้าไซต์ 15" },
-    { src: "/work/work-16.jpg", alt: "งานหน้าไซต์ 16" },
-    { src: "/work/work-17.jpg", alt: "งานหน้าไซต์ 17" },
-    { src: "/work/work-18.jpg", alt: "งานหน้าไซต์ 18" },
-    { src: "/work/work-19.jpg", alt: "งานหน้าไซต์ 19" },
-    { src: "/work/work-20.jpg", alt: "งานหน้าไซต์ 20" },
-    { src: "/work/work-21.jpg", alt: "งานหน้าไซต์ 21" },
-  ];
+    { src: "/products/stone/deliveryWork/งานลงหินเกล็ด_1.jpg", alt: "งานลงหินเกล็ด 1"},
+    { src: "/products/stone/deliveryWork/งานลงหินเกล็ด_2.jpg", alt: "งานลงหินเกล็ด 2"},
+    { src: "/products/stone/deliveryWork/งานลงหินเกล็ด_3.jpg", alt: "งานลงหินเกล็ด 3"},
+    { src: "/products/stone/deliveryWork/งานลงหินเกล็ด_4.jpg", alt: "งานลงหินเกล็ด 4"},
+    { src: "/products/stone/deliveryWork/งานลงหินเกล็ด_5.jpg", alt: "งานลงหินเกล็ด 5"},
+    { src: "/products/stone/deliveryWork/งานลงหินเกล็ด_6.jpg", alt: "งานลงหินเกล็ด 6"},
+    { src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_1.jpg", alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 1"},
+    { src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_2.jpg", alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 2"},
+    { src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_3.jpg", alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 3"},
+    { src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_4.jpg", alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 4"},
+    { src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_5.jpg", alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 5"},
+    { src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_6.jpg", alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 6"},
+    { src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_1.jpg", alt: "งานทำขอบกั้น 1"},
+    { src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_2.jpg", alt: "งานทำขอบกั้น 2"},
+    { src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_3.jpg", alt: "งานทำขอบกั้น 3"},
+    { src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_4.jpg", alt: "งานทำขอบกั้น 4"},
+    { src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_5.jpg", alt: "งานทำขอบกั้น 5"},
+    { src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_6.jpg", alt: "งานทำขอบกั้น 6"},
+    { src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_7.jpg", alt: "งานทำขอบกั้น 7"},
 
+
+
+
+
+  ]
   return (
     <div className="bg-white">
       <BannerCarousel />

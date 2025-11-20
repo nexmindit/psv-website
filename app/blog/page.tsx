@@ -22,12 +22,12 @@ const ArticleCard = ({
     href={`/blog/${article.id}`}
     className="group bg-gray-50 rounded-sm overflow-hidden border-2 border-(--psv-border) hover:shadow-xl transition-all duration-300"
   >
-    <div className="relative h-[300px] bg-gray-300 overflow-hidden">
+    <div className="relative aspect-[4/3] bg-gray-300 overflow-hidden">
       <Image
         src={article.image}
         alt={article.title}
         fill
-        className="object-cover"
+        className="object-contain"
       />
       <div className="absolute top-4 left-4">
         <span className="px-3 py-1 bg-[#446084] text-white text-xs font-semibold rounded-full">
@@ -111,10 +111,10 @@ export default function BlogPage() {
   const articles = [
     {
       id: 1,
-      title: "กระสอบทราย ดีและราคาถูก ได้มาตรฐาน",
+      title: "🚀 ประกาศสำคัญ! ดินและทรายก่อสร้างขาดตลาดชั่วคราว! แต่มีทางเลือกที่ดีกว่ามานำเสนอ 🛠️",
       excerpt:
-        "กระสอบทราย หรือ ทรายของเรามีคุณภาพได้มาตราฐานผ่านกระบวนการคัดสรร",
-      image: "https://placehold.co/400x300.png",
+        "ทาง PSV ขอแจ้งให้ทราบถึงสถานการณ์สินค้าบางรายการขาดตลาดชั่วคราวในช่วงนี้ ซึ่งเป็นผลมาจากน้ำท่วม",
+      image: "/blogs/ประกาศหน้าดินและทรายหยาบ.png",
       date: "12 ก.พ. 2024",
       category: "ทราย",
     },
