@@ -101,3 +101,28 @@ a[class*="shadow-"] {
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
 }
+
+/* --- 4. Emergency Alarm (Background Flash) --- */
+.style-4 {
+  padding: 5px 15px;
+  border-radius: 5px;
+  animation: alarm 2s infinite;
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+@keyframes alarm {
+  0% {
+    background-color: transparent;
+    color: white;
+  }
+  50% {
+    background-color: red;
+    color: white;
+  }
+  100% {
+    background-color: transparent;
+    color: white;
+  }
+}

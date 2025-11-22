@@ -74,7 +74,7 @@ export default function Home() {
                   และใช้วัสดุและเป็นลูกค้าของเรามานานกว่า 30 ปี
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  นอกจากนี้ด้วยวัสดุที่ผลิตเองทางบริษัทจึงมีบริการรับถมที่ในกรุงเทพ
+                  นอกจากนี้ด้วยวัสดุที่ผลิตเองทางบริษัทจึงมีบริการจัดสวน ปรับเกลี่ยและบริการรับถมที่ในกรุงเทพ
                   และปริมณฑล
                   ในราคาและคุณภาพที่ดีที่สุดในปัจจุบันเราเปิดบริการจุดขายอยู่ 3
                   สาขา สายไหม รังสิต สำโรง
@@ -127,6 +127,7 @@ export default function Home() {
                   <p className="text-sm text-gray-500">
                     เปิดบริการทุกวัน 08:00-17:00
                   </p>
+                  <div className="style-4">ส่งสินค้ากลางคืนได้</div>
                 </div>
               </div>
             </AnimatedSection>
@@ -150,6 +151,7 @@ export default function Home() {
                   <p className="text-sm text-gray-500">
                     เปิดบริการทุกวัน 08:00-17:00
                   </p>
+                  <div className="style-4">ส่งสินค้ากลางคืนได้</div>
                 </div>
               </div>
             </AnimatedSection>
@@ -173,6 +175,7 @@ export default function Home() {
                   <p className="text-sm text-gray-500">
                     เปิดบริการทุกวัน 08:00-17:00
                   </p>
+                  <div className="style-4">ส่งสินค้ากลางคืนได้</div>
                 </div>
               </div>
             </AnimatedSection>
@@ -236,10 +239,10 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  ราคาดีที่สุด
+                  ราคาถูกที่สุด
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  ขายในราคาถูกที่สุดในย่านนี้ คุ้มค่าที่สุด
+                  ขายราคาถูกที่สุดในตลาด เพราะผลิตเอง
                 </p>
               </div>
             </AnimatedSection>

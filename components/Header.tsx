@@ -33,7 +33,7 @@ export default function Header() {
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span>08:00 - 17:00</span>
+              <span>ส่งสินค้าได้ถึงเที่ยงคืน</span>
             </div>
             <div className="flex items-center gap-2">
               <svg
