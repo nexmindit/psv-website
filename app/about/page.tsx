@@ -33,7 +33,7 @@ export default function AboutPage() {
       name: "สาขา สำโรง",
       address: "ศูนย์ขายส่ง ซ.วัดมหาวงษ์ สำโรงใต้ สมุทรปราการ",
       phone: "062-888-2170",
-      mobile: "081-716-7719",
+      mobile: "081-816-7719",
       hours: "ทุกวัน 08:00-17:00 น.",
       mapUrl:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.0!2d100.501865!3d13.77502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ2JzMwLjEiTiAxMDDCsDMwJzA2LjciRQ!5e0!3m2!1sth!2sth!4v1234567890",
@@ -79,6 +79,12 @@ export default function AboutPage() {
       title: "สาขาที่ 3",
       description:
         "เปิดสาขาสำโรง เพื่อครอบคลุมพื้นที่ให้บริการทั้งกรุงเทพและปริมณฑล",
+    },
+    {
+      year: "2025",
+      title: "เปิดบริการรับจัดสวน ปูหญ้า ปิดโพรง",
+      description:
+        "โดยทำราคาได้ต่ำเป็นที่พอใจลูกค้า และวัสดุดี เนื่องจากผลิตวัสดุเอง",
     },
     {
       year: "ปัจจุบัน",
@@ -141,6 +147,13 @@ export default function AboutPage() {
                     3 สาขา สายไหม รังสิต สำโรง
                     สามารถจัดส่งสินค้าได้ทั้งกรุงเทพและปริมณฑลและเราจะขยายสาขาเพิ่มเรื่อยๆเพื่อครอบคลุมการให้บริการลูกค้าให้ทั่วถึงที่สุด
                   </p>
+
+                  <p>
+                    นอกจากนี้ PSV ยังมีบริการจัดสวน เป็นบริการใหม่ล่าสุด
+                    ซึ่งได้รับผลตอบรับจากลูกค้าดีมากๆ และแรงขึ้นเรื่อยๆ
+                    เนื่องจาก PSV จัดสวนได้ราคาถูกกว่าเจ้าอื่นถึง 60%
+                    ในระดับผลงานและความสวยงามใกล้เคียงกัน
+                  </p>
                 </div>
 
                 <div className="bg-[#446084]/5 p-6 rounded-sm border-2 border-(--psv-border) mt-6">
@@ -179,10 +192,7 @@ export default function AboutPage() {
               {/* Timeline events */}
               <div className="space-y-12">
                 {timelineEvents.map((event, index) => (
-                  <AnimatedSection
-                    key={event.year}
-                    delay={index * 100}
-                  >
+                  <AnimatedSection key={event.year} delay={index * 100}>
                     <div
                       className={`relative flex items-center ${
                         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
@@ -247,10 +257,7 @@ export default function AboutPage() {
 
           <div className="space-y-12">
             {branches.map((branch, index) => (
-              <AnimatedSection
-                key={branch.name}
-                delay={index * 150}
-              >
+              <AnimatedSection key={branch.name} delay={index * 150}>
                 <div className="bg-white rounded-sm border-2 border-(--psv-border) overflow-hidden hover:border-[#446084] transition-colors duration-300">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     {/* Branch Info */}
@@ -330,7 +337,10 @@ export default function AboutPage() {
                               </a>
                               <br />
                               <a
-                                href={`tel:${branch.mobile.replace(/\D+/g, "")}`}
+                                href={`tel:${branch.mobile.replace(
+                                  /\D+/g,
+                                  ""
+                                )}`}
                                 className="hover:underline"
                                 aria-label={`โทรไปที่ ${branch.mobile}`}
                               >

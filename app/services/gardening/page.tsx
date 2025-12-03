@@ -55,8 +55,7 @@ export default function GardeningServicePage() {
   const services = [
     {
       title: "วัดขนาด & ส่งรูป",
-      description:
-        "ลูกค้าวัดกว้างxยาว และถ่ายรูปพื้นที่ ส่งมาทางไลน์",
+      description: "ลูกค้าวัดกว้างxยาว และถ่ายรูปพื้นที่ ส่งมาทางไลน์",
       icon: (
         <svg
           className="w-8 h-8"
@@ -122,15 +121,18 @@ export default function GardeningServicePage() {
     },
     {
       title: "ไม่มีงบบานปลาย",
-      description: "ขายเหมารวมเป็นแพ็คเกจต่อตารางเมตร จ่ายจบทีเดียว ไม่มีค่าออกแบบแฝง",
+      description:
+        "ขายเหมารวมเป็นแพ็คเกจต่อตารางเมตร จ่ายจบทีเดียว ไม่มีค่าออกแบบแฝง",
     },
     {
       title: "ดูแลรักษาง่าย",
-      description: "เน้นสวนหิน/สวนกรวด เหมาะกับคนเวลาน้อย ไม่ต้องตัดหญ้า ไม่ต้องรดน้ำ ประหยัดค่าดูแลระยะยาว",
+      description:
+        "เน้นสวนหิน/สวนกรวด เหมาะกับคนเวลาน้อย ไม่ต้องตัดหญ้า ไม่ต้องรดน้ำ ประหยัดค่าดูแลระยะยาว",
     },
     {
       title: "ทีมงานมืออาชีพ",
-      description: "ทำงานไว เก็บงานเรียบร้อย ล้างทำความสะอาดก่อนส่งมอบ (เหมาะกับหมู่บ้านจัดสรร)",
+      description:
+        "ทำงานไว เก็บงานเรียบร้อย ล้างทำความสะอาดก่อนส่งมอบ (เหมาะกับหมู่บ้านจัดสรร)",
     },
   ];
 
@@ -145,17 +147,36 @@ export default function GardeningServicePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                จัดสวนหิน งบจบไม่บานปลาย <br/> ราคาถูกกว่าเจ้าอื่น 50%
-                เพราะเราคือผู้ผลิต <br/> ปูพื้นหินทำสวน,ปูทางเดิน
+                จัดสวนหิน งบจบไม่บานปลาย <br />
+                <span className="text-[#446084]">ราคาถูกกว่าเจ้าอื่น 50%</span>
+                <br />
+                เพราะเราคือผู้ผลิต
               </h2>
+
+              {/* Price Comparison Box */}
+              <div className="bg-gradient-to-r from-[#446084]/10 to-[#D4AF37]/10 border-2 border-[#446084] rounded-lg p-6 mb-6">
+                <p className="text-xl font-bold text-gray-900 mb-4">
+                  ทำไมต้องจ่ายค่าจัดสวนแพง{" "}
+                  <span className="text-red-600">30,000-40,000</span> ในเมื่อ
+                </p>
+                <p className="text-2xl font-bold text-[#446084] mb-2">
+                  คุณสามารถจ่ายเพียง{" "}
+                  <span className="text-[#D4AF37]">15,000 บาท</span>
+                </p>
+                <p className="text-lg text-gray-700">
+                  PSV ได้สวนมาตรฐานใกล้เคียงกัน
+                </p>
+              </div>
+
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-                ทำไมต้องจ่ายแพงในเมื่อคุณจ่ายเพียง 15,xxx บาท
-                ก็ได้สวนสวยมาตรฐานเดียวกัน! PSV บริการจัดสวนหิน/ปูทางเดิน สำหรับ
-                ทาวน์โฮมและบ้านแฝด (พื้นที่ประมาณ 30 ตร.ม.) เราคือศูนย์ค้าส่ง
-                ทราย-ดิน-หิน ตัวจริง ทำให้คุณได้ 'ราคาต้นน้ำ'
+                PSV บริการจัดสวนหิน/ปูทางเดิน สำหรับทาวน์โฮมและบ้านแฝด
+                (พื้นที่ประมาณ 30 ตร.ม.) เราคือศูนย์ค้าส่งทราย-ดิน-หิน ตัวจริง
+                ทำให้คุณได้{" "}
+                <span className="font-bold text-[#446084]">'ราคาต้นน้ำ'</span>
               </p>
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-                ตัดค่าหัวคิวคนกลางออกไป เน้นความเรียบง่าย ดูแลรักษาง่าย สบายกระเป๋า
+                ตัดค่าหัวคิวคนกลางออกไป เน้นความเรียบง่าย ดูแลรักษาง่าย
+                สบายกระเป๋า
               </p>
               <Link
                 href="/contact"
@@ -225,7 +246,7 @@ export default function GardeningServicePage() {
                 className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={ item.src}
+                  src={item.src}
                   alt={`ตัวอย่างงานจัดสวน ${item.id}`}
                   fill
                   className="object-cover"
@@ -251,10 +272,7 @@ export default function GardeningServicePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <AnimatedSection
-                key={service.title}
-                delay={index * 150}
-              >
+              <AnimatedSection key={service.title} delay={index * 150}>
                 <div className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300">
                   <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
                     {service.icon}
@@ -346,7 +364,6 @@ export default function GardeningServicePage() {
         </div>
       </AnimatedSection>
 
-
       <AnimatedSection>
         <DeliveryPhotos
           photos={galleryImages.map((img) => ({
@@ -360,4 +377,3 @@ export default function GardeningServicePage() {
     </div>
   );
 }
-
