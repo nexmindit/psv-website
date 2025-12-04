@@ -161,7 +161,7 @@ export default function GardeningServicePage() {
                 </p>
                 <p className="text-2xl font-bold text-[#446084] mb-2">
                   คุณสามารถจ่ายเพียง{" "}
-                  <span className="text-[#D4AF37]">15,000 บาท</span>
+                  <span className="text-red-600">15,000 บาท</span>
                 </p>
                 <p className="text-lg text-gray-700">
                   PSV ได้สวนมาตรฐานใกล้เคียงกัน
