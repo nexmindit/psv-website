@@ -224,8 +224,47 @@ export default function GardeningServicePage() {
         </div>
       </AnimatedSection>
 
-      {/* Team & Case Study Section */}
+      {/* Price Comparison Section */}
       <AnimatedSection className="py-16 bg-gray-50">
+        <div className="container mx-auto px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* PSV Garden */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                จัดสวนด้วย PSV
+              </h3>
+              <div className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden mb-6">
+                <Image
+                  src="/1.png"
+                  alt="จัดสวนด้วย PSV"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-4xl font-bold text-red-600">15,000 บาท</p>
+            </div>
+
+            {/* Premium Garden */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                จัดสวนกับบริษัทอื่น
+              </h3>
+              <div className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden mb-6">
+                <Image
+                  src="/2.png"
+                  alt="จัดสวนกับบริษัทอื่น"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-4xl font-bold text-gray-900">35,000 บาท</p>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Team & Case Study Section */}
+      <AnimatedSection className="py-16 bg-white">
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
