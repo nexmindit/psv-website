@@ -98,7 +98,7 @@ const articles = [
     category: "ทราย",
     date: "12 กุมภาพันธ์ 2024",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/material-center.png",
     content: [
       {
         type: "paragraph",
@@ -237,7 +237,7 @@ const articles = [
     category: "หิน",
     date: "12 กุมภาพันธ์ 2024",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/zen-garden.jpg",
     content: [
       {
         type: "paragraph",
@@ -350,7 +350,7 @@ const articles = [
     category: "บริการ",
     date: "13 มกราคม 2024",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/construction-services.jpg",
     content: [
       {
         type: "paragraph",
@@ -443,7 +443,7 @@ const articles = [
     category: "เกร็ดความรู้",
     date: "13 ธันวาคม 2023",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/material-guide.jpg",
     content: [
       {
         type: "paragraph",
@@ -587,7 +587,7 @@ const articles = [
     category: "บริการ",
     date: "13 ธันวาคม 2023",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/ordering-process.jpg",
     content: [
       {
         type: "paragraph",
@@ -696,7 +696,7 @@ const articles = [
     category: "เกร็ดความรู้",
     date: "10 พฤศจิกายน 2023",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/calculation-guide.jpg",
     content: [
       {
         type: "paragraph",
@@ -831,7 +831,7 @@ const articles = [
     category: "หิน",
     date: "25 ตุลาคม 2023",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/drainage-stone.jpg",
     content: [
       {
         type: "paragraph",
@@ -923,7 +923,7 @@ const articles = [
     category: "บริการ",
     date: "15 ตุลาคม 2023",
     author: "PSV Materials",
-    image: "https://placehold.co/1200x600.png",
+    image: "/blogs/smart-board-solution.png",
     content: [
       {
         type: "paragraph",
@@ -1021,30 +1021,6 @@ const articles = [
   },
 ];
 
-// Related articles for the sidebar
-const relatedArticles = [
-  {
-    id: 4,
-    title: "สูตรคำนวณพื้นที่แสนง่าย ที่ใคร ๆ ก็คำนวณได้",
-    image: "https://placehold.co/400x300.png",
-  },
-  {
-    id: 5,
-    title: "ดินที่ดีคือดินที่มีชีวิต",
-    image: "https://placehold.co/400x300.png",
-  },
-  {
-    id: 6,
-    title: "สาเหตุของปูนเกิดรอยแตก",
-    image: "https://placehold.co/400x300.png",
-  },
-  {
-    id: 7,
-    title: "การเลือกใช้ทรายในงานก่อสร้าง",
-    image: "https://placehold.co/400x300.png",
-  },
-];
-
 export default function ArticlePage({
   params,
 }: {
@@ -1053,6 +1029,11 @@ export default function ArticlePage({
   const { id } = use(params);
   const articleId = Number.parseInt(id);
   const article = articles.find((a) => a.id === articleId);
+
+  // Dynamic related articles: exclude current article, take up to 4 items
+  const relatedArticles = articles
+    .filter((a) => a.id !== articleId)
+    .slice(0, 4);
 
   // If article not found, show default article
   if (!article) {
