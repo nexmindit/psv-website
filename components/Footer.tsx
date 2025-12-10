@@ -1,6 +1,45 @@
 import Link from "next/link";
 import Image from "next/image";
 
+// Latest articles data
+const latestArticles = [
+  {
+    id: 1,
+    title:
+      "🚀 ประกาศสำคัญ! ดินและทรายก่อสร้างขาดตลาดชั่วคราว! แต่มีทางเลือกที่ดีกว่ามานำเสนอ 🛠️",
+    image: "/blogs/ประกาศหน้าดินและทรายหยาบ.png",
+    date: "12 ก.พ. 2024",
+  },
+  {
+    id: 2,
+    title:
+      "🏗️ PSV ศูนย์รวมทราย ดิน หิน ลูกรัง ครบวงจร! คุณภาพเกรด A ส่งไว ราคาโรงงาน",
+    image: "/blogs/material-center.png",
+    date: "12 ก.พ. 2024",
+  },
+  {
+    id: 3,
+    title:
+      '🎋 เปลี่ยน "หินก่อสร้าง" เป็นสวนสไตล์เซน! ไอเดียจัดสวนงบประหยัดด้วย หินเกล็ด & หินเบอร์ 1',
+    image: "/blogs/zen-garden.jpg",
+    date: "12 ก.พ. 2024",
+  },
+  {
+    id: 4,
+    title:
+      "🏗️ PSV ศูนย์รวมวัสดุก่อสร้างครบวงจร: จำหน่าย ทราย ดิน หิน พร้อมบริการรับถมที่ & จัดสวน จบในที่เดียว!",
+    image: "/blogs/construction-services.jpg",
+    date: "13 ม.ค. 2024",
+  },
+  {
+    id: 5,
+    title:
+      "🏗️ เลือกวัสดุก่อสร้างอย่างไรให้ได้ของดี! คู่มือเลือก หิน ดิน ทราย เกรด A สำหรับเจ้าของบ้านมือใหม่",
+    image: "/blogs/material-guide.jpg",
+    date: "13 ธ.ค. 2023",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
@@ -68,34 +107,27 @@ export default function Footer() {
               บทความล่าสุด
             </h4>
             <div className="space-y-3 h-[380px] overflow-y-auto scrollbar-transparent w-full">
-              {[1, 2, 3, 4, 5].map((item) => (
-                <div
-                  key={item}
+              {latestArticles.map((article) => (
+                <Link
+                  key={article.id}
+                  href={`/blog/${article.id}`}
                   className="flex gap-3 bg-gray-800 rounded-sm p-2 hover:bg-gray-750 transition-colors cursor-pointer"
                 >
-                  <div className="w-20 h-16 bg-gray-700 rounded shrink-0 flex items-center justify-center">
-                    <svg
-                      className="w-8 h-8 text-gray-600"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
+                  <div className="w-20 h-16 bg-gray-700 rounded shrink-0 relative overflow-hidden">
+                    <Image
+                      src={article.image}
+                      alt={article.title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h5 className="text-sm font-medium text-gray-200 line-clamp-2 mb-1">
-                      บทความตัวอย่างที่ {item} -
-                      เกร็ดความรู้เกี่ยวกับวัสดุก่อสร้าง
+                      {article.title}
                     </h5>
-                    <p className="text-xs text-gray-400">{item} วันที่แล้ว</p>
+                    <p className="text-xs text-gray-400">{article.date}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
