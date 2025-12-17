@@ -121,7 +121,7 @@ export default function ContactPage() {
                   </a>
 
                   <a
-                    href="http://line.me/ti/p/~@psv.group"
+                    href="https://lin.ee/Co4hSTs"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-sm border-2 border-(--psv-border) hover:border-[#00B900] transition-colors"
@@ -353,7 +353,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <a
-                  href="https://line.me/ti/p/~@psv.group"
+                  href="https://lin.ee/Co4hSTs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#00B900] text-white px-6 py-3 rounded-sm font-semibold text-sm sm:text-base hover:bg-[#00A000] transition-all hover:scale-105 shadow-md"

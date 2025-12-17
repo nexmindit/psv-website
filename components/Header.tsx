@@ -290,7 +290,7 @@ export default function Header() {
           {/* Social & Search */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="https://line.me/ti/p/~@psv.group1"
+              href="https://lin.ee/Co4hSTs"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-[#00B900] transition-colors"

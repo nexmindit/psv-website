@@ -268,7 +268,7 @@ export default function GardeningServicePage() {
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ทีมงานติดตั้ง/Caseตัวอย่างงานติดตั้ง
+              ตัวอย่างหน้างานที่psvส่งทราย/หิน ไป
             </h2>
             <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
           </div>

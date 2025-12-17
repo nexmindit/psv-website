@@ -51,7 +51,6 @@ export default function LandFillingServicePage() {
     { id: 39, src: "/services/land-filling/landfilling-39.jpg" },
   ];
 
-
   const services = [
     {
       title: "รับถมที่ดิน",
@@ -106,7 +105,8 @@ export default function LandFillingServicePage() {
     },
     {
       title: " ราคาโรงงาน",
-      description: "เพราะเราเป็นศูนย์ค้าส่งวัสดุก่อสร้าง (ทราย/ดิน/หิน) เอง ทำให้ได้ราคาต้นทุนที่ดีกว่า",
+      description:
+        "เพราะเราเป็นศูนย์ค้าส่งวัสดุก่อสร้าง (ทราย/ดิน/หิน) เอง ทำให้ได้ราคาต้นทุนที่ดีกว่า",
     },
     {
       title: "งานเสร็จตรงเวลา",
@@ -124,7 +124,8 @@ export default function LandFillingServicePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                บริการรับถมที่ครบวงจร โดย PSV <br/> (ถมที่ดิน, ปรับหน้าดิน, บดอัด)
+                บริการรับถมที่ครบวงจร โดย PSV <br /> (ถมที่ดิน, ปรับหน้าดิน,
+                บดอัด)
               </h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
                 รองรับทุกความต้องการงานถมที่ดิน ไม่ว่าจะเป็นงานปรับพื้นที่สำหรับ
@@ -187,7 +188,7 @@ export default function LandFillingServicePage() {
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ทีมงานติดตั้ง/Caseตัวอย่างงานติดตั้ง
+              ตัวอย่างหน้างานที่psvส่งทราย/หิน ไป
             </h2>
             <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
           </div>
@@ -204,7 +205,7 @@ export default function LandFillingServicePage() {
                 className="relative aspect-square bg-gray-300 rounded-sm overflow-hidden border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300"
               >
                 <Image
-                  src={ item.src}
+                  src={item.src}
                   alt={`ตัวอย่างงานถมที่ ${item.id}`}
                   fill
                   className="object-cover"
@@ -229,10 +230,7 @@ export default function LandFillingServicePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <AnimatedSection
-                key={service.title}
-                delay={index * 150}
-              >
+              <AnimatedSection key={service.title} delay={index * 150}>
                 <div className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300">
                   <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
                     {service.icon}
@@ -323,12 +321,12 @@ export default function LandFillingServicePage() {
 
       <AnimatedSection>
         <DeliveryPhotos
-        photos={galleryImages.map((img) => ({
-          src: img.src,
-          alt: `ผลงานถมที่ ${img.id}`,
-        }))}
-        title="ภาพหน้างานจริง"
-        description="ผลงานการถมที่ของเรา"
+          photos={galleryImages.map((img) => ({
+            src: img.src,
+            alt: `ผลงานถมที่ ${img.id}`,
+          }))}
+          title="ภาพหน้างานจริง"
+          description="ผลงานการถมที่ของเรา"
         />
       </AnimatedSection>
     </div>

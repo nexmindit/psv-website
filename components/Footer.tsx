@@ -139,7 +139,7 @@ export default function Footer() {
 
       {/* Floating LINE Button */}
       <a
-        href="https://line.me/ti/p/~@psv.group1"
+        href="https://lin.ee/Co4hSTs"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 bg-[#00B900] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50"

@@ -18,17 +18,15 @@ export default function SoilPage() {
     },
     {
       name: "กระสอบหน้าดิน (Topsoil)",
-      description:
-        "เหมาะสำหรับเติมกระถาง, แปลงผักสวนครัว, ซ่อมแซมสนามหญ้า",
+      description: "เหมาะสำหรับเติมกระถาง, แปลงผักสวนครัว, ซ่อมแซมสนามหญ้า",
       image: "/products/soil/1_2.png",
     },
-    
   ];
 
   // ดิน 3 ประเภทที่ใช้ในงานก่อสร้าง
   const constructionSoilTypes = [
     {
-      title: "สั่งเหมาลำ (รถ 6 ล้อ / 10 ล้อ)",
+      title: "สั่งเหมาคันรถ (รถ 6 ล้อ / 10 ล้อ)",
       subtitle: "",
       icon: "🟫",
       features: [
@@ -88,7 +86,8 @@ export default function SoilPage() {
     },
     {
       title: "อุดมสมบูรณ์",
-      description: "เป็นหน้าดินผิวดินธรรมชาติ มีแร่ธาตุและอินทรียวัตถุที่ต้นไม้ต้องการ",
+      description:
+        "เป็นหน้าดินผิวดินธรรมชาติ มีแร่ธาตุและอินทรียวัตถุที่ต้นไม้ต้องการ",
     },
     {
       title: "ใช้งานได้ทันที",
@@ -98,19 +97,54 @@ export default function SoilPage() {
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_1.jpg", alt: "งานลงดินปรับระดับพื้น 1" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_2.jpg", alt: "งานลงดินปรับระดับพื้น 2" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_3.jpg", alt: "งานลงดินปรับระดับพื้น 3" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_4.jpg", alt: "งานลงดินปรับระดับพื้น 4" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_5.jpg", alt: "งานลงดินปรับระดับพื้น 5" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_6.jpg", alt: "งานลงดินปรับระดับพื้น 6" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_7.jpg", alt: "งานลงดินปรับระดับพื้น 7" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_8.jpg", alt: "งานลงดินปรับระดับพื้น 8" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_9.jpg", alt: "งานลงดินปรับระดับพื้น 9" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_10.jpg", alt: "งานลงดินปรับระดับพื้น 10" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_11.jpg", alt: "งานลงดินปรับระดับพื้น 11" },
-    { src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_12.jpg", alt: "งานลงดินปรับระดับพื้น 12" },
-    
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_1.jpg",
+      alt: "งานลงดินปรับระดับพื้น 1",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_2.jpg",
+      alt: "งานลงดินปรับระดับพื้น 2",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_3.jpg",
+      alt: "งานลงดินปรับระดับพื้น 3",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_4.jpg",
+      alt: "งานลงดินปรับระดับพื้น 4",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_5.jpg",
+      alt: "งานลงดินปรับระดับพื้น 5",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_6.jpg",
+      alt: "งานลงดินปรับระดับพื้น 6",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_7.jpg",
+      alt: "งานลงดินปรับระดับพื้น 7",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_8.jpg",
+      alt: "งานลงดินปรับระดับพื้น 8",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_9.jpg",
+      alt: "งานลงดินปรับระดับพื้น 9",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_10.jpg",
+      alt: "งานลงดินปรับระดับพื้น 10",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_11.jpg",
+      alt: "งานลงดินปรับระดับพื้น 11",
+    },
+    {
+      src: "/products/soil/deliveryWork/งานลงดินปรับระดับพื้น_12.jpg",
+      alt: "งานลงดินปรับระดับพื้น 12",
+    },
   ];
 
   return (
@@ -125,22 +159,22 @@ export default function SoilPage() {
               หน้าดินดำเกรด A คัดพิเศษ (ราคาหน้าบ่อ)
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              ดินดี ร่วนซุย ธาตุอาหารสูง เหมาะสำหรับปลูกต้นไม้ จัดสวน หรือปรับหน้าดินชั้นบน <br/> ส่งตรงจากบ่อ ไม่ผ่านคนกลาง
+              ดินดี ร่วนซุย ธาตุอาหารสูง เหมาะสำหรับปลูกต้นไม้ จัดสวน
+              หรือปรับหน้าดินชั้นบน <br /> ส่งตรงจากบ่อ ไม่ผ่านคนกลาง
             </p>
             <div className="mt-4 md:mt-6 w-16 md:w-20 h-1 bg-(--color-gold) mx-auto"></div>
           </div>
 
           {/* Responsive grid: images keep 1:1 aspect ratio with Tailwind's aspect-square */}
-                    <AnimatedSection >
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
-                  {soilTypes.map((soil) => (
-                    <div
-                      key={soil.name}
-                      className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300 bg-white"
-                    >
-                      {/* Square image container */}
-                      <div className="relative w-full aspect-square">
+          <AnimatedSection>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+              {soilTypes.map((soil) => (
+                <div
+                  key={soil.name}
+                  className="rounded-sm overflow-hidden border-2 border-(--psv-border) shadow-sm hover:shadow-md transition-shadow duration-300 bg-white"
+                >
+                  {/* Square image container */}
+                  <div className="relative w-full aspect-square">
                     <Image
                       src={soil.image}
                       alt={soil.name}
@@ -148,22 +182,21 @@ export default function SoilPage() {
                       className="object-cover"
                       sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                     />
-                      </div>
-          
-                      {/* Description under image */}
-                      <div className="p-4 text-center">
+                  </div>
+
+                  {/* Description under image */}
+                  <div className="p-4 text-center">
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">
                       {soil.name}
                     </h4>
                     <p className="text-sm text-gray-600 leading-relaxed">
                       {soil.description}
                     </p>
-                      </div>
-                    </div>
-                  ))}
                   </div>
-                    </AnimatedSection>
-
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -182,11 +215,7 @@ export default function SoilPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             {constructionSoilTypes.map((soil, index) => (
-              <AnimatedSection
-                key={soil.title}
-                delay={index * 150}
-                
-              >
+              <AnimatedSection key={soil.title} delay={index * 150}>
                 <div
                   className={`relative bg-linear-to-br ${soil.bgGradient} p-8 sm:p-10 rounded-2xl text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden group`}
                 >
@@ -245,60 +274,59 @@ export default function SoilPage() {
           </div>
 
           <div className="space-y-12 mx-auto">
-                      <div className="flex justify-center">
-                        <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
-                          <Image
-                            src="/sales/sales_step.jpg"
-                            alt="ขั้นตอนการสั่งซื้อ"
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      </div>
-                    </div>
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
+                <Image
+                  src="/sales/sales_step.jpg"
+                  alt="ขั้นตอนการสั่งซื้อ"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-       {/* Why Choose Us Section */}
-                  <AnimatedSection className="py-16 bg-gray-50">
-                    <div className="container mx-auto px-12">
-                      <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                          ทำไมต้อง "หน้าดิน" ของ PSV?
-                        </h2>
-                        <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
-                      </div>
-            
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {whyChooseUs.map((reason, index) => (
-                          <AnimatedSection key={reason.title} delay={index * 100}>
-                            <div className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300">
-                              <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
-                                <svg
-                                  className="w-8 h-8 text-white"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                  />
-                                </svg>
-                              </div>
-                              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                                {reason.title}
-                              </h3>
-                              <p className="text-gray-600 text-sm">{reason.description}</p>
-                            </div>
-                          </AnimatedSection>
-                        ))}
-                      </div>
-                    </div>
-                  </AnimatedSection>
-      
+      {/* Why Choose Us Section */}
+      <AnimatedSection className="py-16 bg-gray-50">
+        <div className="container mx-auto px-12">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              ทำไมต้อง "หน้าดิน" ของ PSV?
+            </h2>
+            <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {whyChooseUs.map((reason, index) => (
+              <AnimatedSection key={reason.title} delay={index * 100}>
+                <div className="bg-white p-6 rounded-sm text-center border-2 border-[#e6e9ef] hover:shadow-lg transition-all duration-300">
+                  <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {reason.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{reason.description}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </AnimatedSection>
 
       {/* Section 5: ลูกค้าของเรา - Testimonials */}
       <TestimonialsSection

@@ -8,7 +8,6 @@ import BannerCarousel from "@/components/BannerCarousel";
 import AnimatedSection from "@/components/AnimatedSection";
 
 export default function GrassInstallationServicePage() {
-
   const galleyImages = [
     { id: 1, src: "/services/grass-installation/grass-installation-01.jpg" },
     { id: 2, src: "/services/grass-installation/grass-installation-02.jpg" },
@@ -49,7 +48,7 @@ export default function GrassInstallationServicePage() {
     { id: 37, src: "/services/grass-installation/grass-installation-37.jpg" },
     { id: 38, src: "/services/grass-installation/grass-installation-38.jpg" },
     { id: 39, src: "/services/grass-installation/grass-installation-39.jpg" },
-  ]
+  ];
   const services = [
     {
       title: "เลือกสเปกหญ้า",
@@ -93,8 +92,7 @@ export default function GrassInstallationServicePage() {
     },
     {
       title: "ติดตั้งและส่งมอบ",
-      description:
-        "ปรับพื้น ลงทราย ปูหญ้า ยึดหมุด เก็บกวาด พร้อมใช้งานทันที",
+      description: "ปรับพื้น ลงทราย ปูหญ้า ยึดหมุด เก็บกวาด พร้อมใช้งานทันที",
       icon: (
         <svg
           className="w-8 h-8"
@@ -116,19 +114,23 @@ export default function GrassInstallationServicePage() {
   const whyChooseUs = [
     {
       title: "ฟรี! ทรายปรับระดับ",
-      description: "(หรือราคาพิเศษ) เพราะเราเป็นบ่อทรายเอง ตัดปัญหาเรื่องหาวัสดุรองพื้น ลูกค้าไม่ต้องสั่งแยก",
+      description:
+        "(หรือราคาพิเศษ) เพราะเราเป็นบ่อทรายเอง ตัดปัญหาเรื่องหาวัสดุรองพื้น ลูกค้าไม่ต้องสั่งแยก",
     },
     {
       title: "ทีมงานติดตั้งโดยตรง",
-      description: "ไม่ใช่นายหน้าขายของ เรามีทีมช่างพร้อมเครื่องมือตบดินและอุปกรณ์ติดตั้งครบ",
+      description:
+        "ไม่ใช่นายหน้าขายของ เรามีทีมช่างพร้อมเครื่องมือตบดินและอุปกรณ์ติดตั้งครบ",
     },
     {
       title: "หญ้าเกรดพรีเมียม",
-      description: "คัดสรรหญ้าเทียมคุณภาพดี ทนแดด ทนฝน (UV Resistant) มีรูระบายน้ำ ไม่เหม็นอับ",
+      description:
+        "คัดสรรหญ้าเทียมคุณภาพดี ทนแดด ทนฝน (UV Resistant) มีรูระบายน้ำ ไม่เหม็นอับ",
     },
     {
       title: "บริการครบจบที่เดียว",
-      description: "แค่เลือกหญ้าแล้วรอที่บ้าน ที่เหลือเราจัดการให้หมด ทั้งของ ทั้งแรง ทั้งการขนส่ง",
+      description:
+        "แค่เลือกหญ้าแล้วรอที่บ้าน ที่เหลือเราจัดการให้หมด ทั้งของ ทั้งแรง ทั้งการขนส่ง",
     },
   ];
 
@@ -205,7 +207,7 @@ export default function GrassInstallationServicePage() {
         <div className="container mx-auto px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ทีมงานติดตั้ง/Caseตัวอย่างงานติดตั้ง
+              ตัวอย่างหน้างานที่psvส่งทราย/หิน ไป
             </h2>
             <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
           </div>
@@ -248,11 +250,7 @@ export default function GrassInstallationServicePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <AnimatedSection
-                key={service.title}
-                delay={index * 150}
-                
-              >
+              <AnimatedSection key={service.title} delay={index * 150}>
                 <div className="bg-white rounded-sm p-8 border-2 border-[#e6e9ef] hover:border-[#446084] transition-all duration-300">
                   <div className="w-16 h-16 bg-[#446084] rounded-full flex items-center justify-center text-white mb-6">
                     {service.icon}

@@ -415,7 +415,7 @@ export default function AboutPage() {
               ทีมงานของเราพร้อมให้คำปรึกษาและตอบทุกคำถามของคุณ
             </p>
             <a
-              href="http://line.me/ti/p/~@psv.group"
+              href="https://lin.ee/Co4hSTs"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#00B900] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#00A000] transition-all hover:scale-105 shadow-lg"
