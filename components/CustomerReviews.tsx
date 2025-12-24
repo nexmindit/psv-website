@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import ImageModal from "./ui/ImageModal";
 
 interface Review {
   src: string;
@@ -31,6 +35,22 @@ interface CustomerReviewsProps {
 export default function CustomerReviews({
   reviews = defaultReviews,
 }: CustomerReviewsProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
+
+  const handleImageClick = (review: Review) => {
+    setSelectedImage(review);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -39,22 +59,30 @@ export default function CustomerReviews({
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {reviews.map((review, index) => (
-        <div
-          key={index}
-          className="w-full rounded-sm overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
-        >
-          <div className="relative w-full aspect-square">
-            <Image
-          src={review.src}
-          alt={review.alt}
-          fill
-          className="object-cover"
-            />
-          </div>
-        </div>
+            <div
+              key={index}
+              onClick={() => handleImageClick(review)}
+              className="w-full rounded-sm overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer"
+            >
+              <div className="relative w-full aspect-square">
+                <Image
+                  src={review.src}
+                  alt={review.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
           ))}
         </div>
       </div>
+
+      <ImageModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        imageSrc={selectedImage?.src || null}
+        imageAlt={selectedImage?.alt}
+      />
     </section>
   );
 }

@@ -42,13 +42,13 @@ export default function ImageModal({
   // Use portal to render modal at document body level
   return createPortal(
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 transition-opacity duration-300"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 p-4 transition-opacity duration-300"
       onClick={onClose}
     >
       <div className="absolute top-4 right-4 z-[10000]">
         <button
           onClick={onClose}
-          className="text-white hover:text-gray-300 focus:outline-none p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
+          className="cursor-pointer text-white hover:text-gray-300 focus:outline-none p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
           aria-label="Close modal"
         >
           <svg
@@ -69,7 +69,7 @@ export default function ImageModal({
       </div>
 
       <div
-        className="relative w-full max-w-5xl max-h-[90vh] aspect-[4/3] sm:aspect-[16/9] rounded-lg overflow-hidden shadow-2xl"
+        className="relative w-full max-w-5xl max-h-[90vh] aspect-[4/3] sm:aspect-[16/9]"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image
       >
         <Image
@@ -80,11 +80,6 @@ export default function ImageModal({
           sizes="100vw"
           priority
         />
-        {imageAlt && (
-          <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4 text-center">
-            <p className="text-white text-lg font-medium">{imageAlt}</p>
-          </div>
-        )}
       </div>
     </div>,
     document.body
