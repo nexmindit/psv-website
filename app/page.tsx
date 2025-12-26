@@ -10,27 +10,27 @@ import DeliveryPhotos from "@/components/DeliveryPhotos";
 export default function Home() {
   // Gallery images array
   const galleryImages = [
-    { src: "/work/work-01.jpg", alt: "งานหน้าไซต์ 1" },
-    { src: "/work/work-02.jpg", alt: "งานหน้าไซต์ 2" },
-    { src: "/work/work-03.jpg", alt: "งานหน้าไซต์ 3" },
-    { src: "/work/work-04.jpg", alt: "งานหน้าไซต์ 4" },
-    { src: "/work/work-05.jpg", alt: "งานหน้าไซต์ 5" },
-    { src: "/work/work-06.jpg", alt: "งานหน้าไซต์ 6" },
-    { src: "/work/work-07.jpg", alt: "งานหน้าไซต์ 7" },
-    { src: "/work/work-08.jpg", alt: "งานหน้าไซต์ 8" },
-    { src: "/work/work-09.jpg", alt: "งานหน้าไซต์ 9" },
-    { src: "/work/work-10.jpg", alt: "งานหน้าไซต์ 10" },
-    { src: "/work/work-11.jpg", alt: "งานหน้าไซต์ 11" },
-    { src: "/work/work-12.jpg", alt: "งานหน้าไซต์ 12" },
-    { src: "/work/work-13.jpg", alt: "งานหน้าไซต์ 13" },
-    { src: "/work/work-14.jpg", alt: "งานหน้าไซต์ 14" },
-    { src: "/work/work-15.jpg", alt: "งานหน้าไซต์ 15" },
-    { src: "/work/work-16.jpg", alt: "งานหน้าไซต์ 16" },
-    { src: "/work/work-17.jpg", alt: "งานหน้าไซต์ 17" },
-    { src: "/work/work-18.jpg", alt: "งานหน้าไซต์ 18" },
-    { src: "/work/work-19.jpg", alt: "งานหน้าไซต์ 19" },
-    { src: "/work/work-20.jpg", alt: "งานหน้าไซต์ 20" },
-    { src: "/work/work-21.jpg", alt: "งานหน้าไซต์ 21" },
+    { src: "/work/work-01.webp", alt: "งานหน้าไซต์ 1" },
+    { src: "/work/work-02.webp", alt: "งานหน้าไซต์ 2" },
+    { src: "/work/work-03.webp", alt: "งานหน้าไซต์ 3" },
+    { src: "/work/work-04.webp", alt: "งานหน้าไซต์ 4" },
+    { src: "/work/work-05.webp", alt: "งานหน้าไซต์ 5" },
+    { src: "/work/work-06.webp", alt: "งานหน้าไซต์ 6" },
+    { src: "/work/work-07.webp", alt: "งานหน้าไซต์ 7" },
+    { src: "/work/work-08.webp", alt: "งานหน้าไซต์ 8" },
+    { src: "/work/work-09.webp", alt: "งานหน้าไซต์ 9" },
+    { src: "/work/work-10.webp", alt: "งานหน้าไซต์ 10" },
+    { src: "/work/work-11.webp", alt: "งานหน้าไซต์ 11" },
+    { src: "/work/work-12.webp", alt: "งานหน้าไซต์ 12" },
+    { src: "/work/work-13.webp", alt: "งานหน้าไซต์ 13" },
+    { src: "/work/work-14.webp", alt: "งานหน้าไซต์ 14" },
+    { src: "/work/work-15.webp", alt: "งานหน้าไซต์ 15" },
+    { src: "/work/work-16.webp", alt: "งานหน้าไซต์ 16" },
+    { src: "/work/work-17.webp", alt: "งานหน้าไซต์ 17" },
+    { src: "/work/work-18.webp", alt: "งานหน้าไซต์ 18" },
+    { src: "/work/work-19.webp", alt: "งานหน้าไซต์ 19" },
+    { src: "/work/work-20.webp", alt: "งานหน้าไซต์ 20" },
+    { src: "/work/work-21.webp", alt: "งานหน้าไซต์ 21" },
   ];
 
   return (
@@ -44,7 +44,7 @@ export default function Home() {
               <div>
                 <div className="relative bg-gray-300 mb-4 w-full h-[300px] md:h-[400px]">
                   <Image
-                    src="/psv_hero.png"
+                    src="/psv_hero.webp"
                     alt="PSV Group - Construction Materials"
                     fill
                     className="object-cover"
@@ -113,7 +113,7 @@ export default function Home() {
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
-                    src="/branch/Location_saimai.jpg"
+                    src="/branch/Location_saimai.webp"
                     alt="สาขา สายไหม"
                     fill
                     className="object-cover"
@@ -137,7 +137,7 @@ export default function Home() {
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
-                    src="/branch/Location_rangsit.jpg"
+                    src="/branch/Location_rangsit.webp"
                     alt="สาขา รังสิต"
                     fill
                     className="object-cover"
@@ -161,7 +161,7 @@ export default function Home() {
               <div className="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48 bg-gray-300">
                   <Image
-                    src="/branch/Location_samutrprakarn.jpg"
+                    src="/branch/Location_samutrprakarn.webp"
                     alt="สาขา สำโรง"
                     fill
                     className="object-cover"

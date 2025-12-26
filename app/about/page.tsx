@@ -112,7 +112,7 @@ export default function AboutPage() {
             <AnimatedSection direction="left" delay={100}>
               <div className="bg-gray-100 overflow-hidden">
                 <img
-                  src="/vehicles.jpg"
+                  src="/vehicles.webp"
                   alt="PSV Group - บริษัท พีเอสวี กรุ๊ป จำกัด"
                   className="w-full h-full object-cover"
                 />
@@ -247,7 +247,7 @@ export default function AboutPage() {
             <div className="mb-12">
               <div className="bg-white rounded-sm overflow-hidden border-2 border-(--psv-border)">
                 <img
-                  src="/locations.jpg"
+                  src="/locations.webp"
                   alt="แผนที่สาขา PSV Group"
                   className="w-full h-auto object-cover"
                 />

@@ -10,22 +10,22 @@ interface Review {
 }
 
 const defaultReviews: Review[] = [
-  { src: "/customer_reviews/1.png", alt: "รีวิวจากลูกค้า 1" },
-  { src: "/customer_reviews/2.png", alt: "รีวิวจากลูกค้า 2" },
-  { src: "/customer_reviews/3.png", alt: "รีวิวจากลูกค้า 3" },
-  { src: "/customer_reviews/4.png", alt: "รีวิวจากลูกค้า 4" },
-  { src: "/customer_reviews/5.png", alt: "รีวิวจากลูกค้า 5" },
-  { src: "/customer_reviews/6.png", alt: "รีวิวจากลูกค้า 6" },
-  { src: "/customer_reviews/7.png", alt: "รีวิวจากลูกค้า 7" },
-  { src: "/customer_reviews/8.png", alt: "รีวิวจากลูกค้า 8" },
-  { src: "/customer_reviews/9.png", alt: "รีวิวจากลูกค้า 9" },
-  { src: "/customer_reviews/10.png", alt: "รีวิวจากลูกค้า 10" },
-  { src: "/customer_reviews/11.png", alt: "รีวิวจากลูกค้า 11" },
-  { src: "/customer_reviews/12.png", alt: "รีวิวจากลูกค้า 12" },
-  { src: "/customer_reviews/13.png", alt: "รีวิวจากลูกค้า 13" },
-  { src: "/customer_reviews/14.png", alt: "รีวิวจากลูกค้า 14" },
-  { src: "/customer_reviews/15.png", alt: "รีวิวจากลูกค้า 15" },
-  { src: "/customer_reviews/16.png", alt: "รีวิวจากลูกค้า 16" },
+  { src: "/customer_reviews/1.webp", alt: "รีวิวจากลูกค้า 1" },
+  { src: "/customer_reviews/2.webp", alt: "รีวิวจากลูกค้า 2" },
+  { src: "/customer_reviews/3.webp", alt: "รีวิวจากลูกค้า 3" },
+  { src: "/customer_reviews/4.webp", alt: "รีวิวจากลูกค้า 4" },
+  { src: "/customer_reviews/5.webp", alt: "รีวิวจากลูกค้า 5" },
+  { src: "/customer_reviews/6.webp", alt: "รีวิวจากลูกค้า 6" },
+  { src: "/customer_reviews/7.webp", alt: "รีวิวจากลูกค้า 7" },
+  { src: "/customer_reviews/8.webp", alt: "รีวิวจากลูกค้า 8" },
+  { src: "/customer_reviews/9.webp", alt: "รีวิวจากลูกค้า 9" },
+  { src: "/customer_reviews/10.webp", alt: "รีวิวจากลูกค้า 10" },
+  { src: "/customer_reviews/11.webp", alt: "รีวิวจากลูกค้า 11" },
+  { src: "/customer_reviews/12.webp", alt: "รีวิวจากลูกค้า 12" },
+  { src: "/customer_reviews/13.webp", alt: "รีวิวจากลูกค้า 13" },
+  { src: "/customer_reviews/14.webp", alt: "รีวิวจากลูกค้า 14" },
+  { src: "/customer_reviews/15.webp", alt: "รีวิวจากลูกค้า 15" },
+  { src: "/customer_reviews/16.webp", alt: "รีวิวจากลูกค้า 16" },
 ];
 
 interface CustomerReviewsProps {

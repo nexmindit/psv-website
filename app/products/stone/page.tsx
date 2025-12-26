@@ -308,7 +308,7 @@ export default function StonePage() {
             <div className="flex justify-center">
               <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
                 <Image
-                  src="/sales/sales_step.jpg"
+                  src="/sales/sales_step.webp"
                   alt="ขั้นตอนการสั่งซื้อ"
                   fill
                   className="object-cover"

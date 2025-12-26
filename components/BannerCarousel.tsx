@@ -8,7 +8,7 @@ export default function BannerCarousel() {
 
   const banners = [
     {
-      src: "/banner/Banner1.png",
+      src: "/banner/Banner1.webp",
       alt: "PSV Group Banner 1",
     },
   ];

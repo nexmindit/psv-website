@@ -76,7 +76,7 @@ export default function ContactPage() {
               {/* Image */}
               <div className="relative h-64 sm:h-80 lg:h-[500px] rounded-sm overflow-hidden border-2 border-(--psv-border)">
                 <Image
-                  src="/psv_hero.png"
+                  src="/psv_hero.webp"
                   alt="PSV Group - ติดต่อเรา"
                   fill
                   className="object-cover"
@@ -346,7 +346,7 @@ export default function ContactPage() {
                   {/* Replace with actual QR code image */}
 
                   <Image
-                    src="/line_qr.png"
+                    src="/line_qr.webp"
                     alt="Line QR Code"
                     width={256}
                     height={256}

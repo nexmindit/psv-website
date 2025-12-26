@@ -13,7 +13,7 @@ const articles = [
     category: "ทราย",
     date: "12 กุมภาพันธ์ 2024",
     author: "PSV Materials",
-    image: "/blogs/material-center.png",
+    image: "/blogs/material-center.webp",
     content: [
       {
         type: "paragraph",
@@ -152,7 +152,7 @@ const articles = [
     category: "หิน",
     date: "12 กุมภาพันธ์ 2024",
     author: "PSV Materials",
-    image: "/blogs/zen-garden.jpg",
+    image: "/blogs/zen-garden.webp",
     content: [
       {
         type: "paragraph",
@@ -265,7 +265,7 @@ const articles = [
     category: "บริการ",
     date: "13 มกราคม 2024",
     author: "PSV Materials",
-    image: "/blogs/construction-services.jpg",
+    image: "/blogs/construction-services.webp",
     content: [
       {
         type: "paragraph",
@@ -358,7 +358,7 @@ const articles = [
     category: "เกร็ดความรู้",
     date: "13 ธันวาคม 2023",
     author: "PSV Materials",
-    image: "/blogs/material-guide.jpg",
+    image: "/blogs/material-guide.webp",
     content: [
       {
         type: "paragraph",
@@ -502,7 +502,7 @@ const articles = [
     category: "บริการ",
     date: "13 ธันวาคม 2023",
     author: "PSV Materials",
-    image: "/blogs/ordering-process.jpg",
+    image: "/blogs/ordering-process.webp",
     content: [
       {
         type: "paragraph",
@@ -611,7 +611,7 @@ const articles = [
     category: "เกร็ดความรู้",
     date: "10 พฤศจิกายน 2023",
     author: "PSV Materials",
-    image: "/blogs/calculation-guide.jpg",
+    image: "/blogs/calculation-guide.webp",
     content: [
       {
         type: "paragraph",
@@ -746,7 +746,7 @@ const articles = [
     category: "หิน",
     date: "25 ตุลาคม 2023",
     author: "PSV Materials",
-    image: "/blogs/drainage-stone.jpg",
+    image: "/blogs/drainage-stone.webp",
     content: [
       {
         type: "paragraph",
@@ -838,7 +838,7 @@ const articles = [
     category: "บริการ",
     date: "15 ตุลาคม 2023",
     author: "PSV Materials",
-    image: "/blogs/smart-board-solution.png",
+    image: "/blogs/smart-board-solution.webp",
     content: [
       {
         type: "paragraph",

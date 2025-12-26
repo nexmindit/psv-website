@@ -63,7 +63,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
-              src="/psv_logo.jpg"
+              src="/psv_logo.webp"
               alt="PSV Group Logo"
               className="h-10 w-auto object-contain"
             />

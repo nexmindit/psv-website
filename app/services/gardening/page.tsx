@@ -11,45 +11,45 @@ import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function GardeningServicePage() {
   const galleryImages = [
-    { id: 1, src: "/services/gardening/garden-01.jpg" },
-    { id: 2, src: "/services/gardening/garden-02.jpg" },
-    { id: 3, src: "/services/gardening/garden-03.jpg" },
-    { id: 4, src: "/services/gardening/garden-04.jpg" },
-    { id: 5, src: "/services/gardening/garden-05.jpg" },
-    { id: 6, src: "/services/gardening/garden-06.jpg" },
-    { id: 7, src: "/services/gardening/garden-07.jpg" },
-    { id: 8, src: "/services/gardening/garden-08.jpg" },
-    { id: 9, src: "/services/gardening/garden-09.jpg" },
-    { id: 10, src: "/services/gardening/garden-10.jpg" },
-    { id: 11, src: "/services/gardening/garden-11.jpg" },
-    { id: 12, src: "/services/gardening/garden-12.jpg" },
-    { id: 13, src: "/services/gardening/garden-13.jpg" },
-    { id: 14, src: "/services/gardening/garden-14.jpg" },
-    { id: 15, src: "/services/gardening/garden-15.jpg" },
-    { id: 16, src: "/services/gardening/garden-16.jpg" },
-    { id: 17, src: "/services/gardening/garden-17.jpg" },
-    { id: 18, src: "/services/gardening/garden-18.jpg" },
-    { id: 19, src: "/services/gardening/garden-19.jpg" },
-    { id: 20, src: "/services/gardening/garden-20.jpg" },
-    { id: 21, src: "/services/gardening/garden-21.jpg" },
-    { id: 22, src: "/services/gardening/garden-22.jpg" },
-    { id: 23, src: "/services/gardening/garden-23.jpg" },
-    { id: 24, src: "/services/gardening/garden-24.jpg" },
-    { id: 25, src: "/services/gardening/garden-25.jpg" },
-    { id: 26, src: "/services/gardening/garden-26.jpg" },
-    { id: 27, src: "/services/gardening/garden-27.jpg" },
-    { id: 28, src: "/services/gardening/garden-28.jpg" },
-    { id: 29, src: "/services/gardening/garden-29.jpg" },
-    { id: 30, src: "/services/gardening/garden-30.jpg" },
-    { id: 31, src: "/services/gardening/garden-31.jpg" },
-    { id: 32, src: "/services/gardening/garden-32.jpg" },
-    { id: 33, src: "/services/gardening/garden-33.jpg" },
-    { id: 34, src: "/services/gardening/garden-34.jpg" },
-    { id: 35, src: "/services/gardening/garden-35.jpg" },
-    { id: 36, src: "/services/gardening/garden-36.jpg" },
-    { id: 37, src: "/services/gardening/garden-37.jpg" },
-    { id: 38, src: "/services/gardening/garden-38.jpg" },
-    { id: 39, src: "/services/gardening/garden-39.jpg" },
+    { id: 1, src: "/services/gardening/garden-01.webp" },
+    { id: 2, src: "/services/gardening/garden-02.webp" },
+    { id: 3, src: "/services/gardening/garden-03.webp" },
+    { id: 4, src: "/services/gardening/garden-04.webp" },
+    { id: 5, src: "/services/gardening/garden-05.webp" },
+    { id: 6, src: "/services/gardening/garden-06.webp" },
+    { id: 7, src: "/services/gardening/garden-07.webp" },
+    { id: 8, src: "/services/gardening/garden-08.webp" },
+    { id: 9, src: "/services/gardening/garden-09.webp" },
+    { id: 10, src: "/services/gardening/garden-10.webp" },
+    { id: 11, src: "/services/gardening/garden-11.webp" },
+    { id: 12, src: "/services/gardening/garden-12.webp" },
+    { id: 13, src: "/services/gardening/garden-13.webp" },
+    { id: 14, src: "/services/gardening/garden-14.webp" },
+    { id: 15, src: "/services/gardening/garden-15.webp" },
+    { id: 16, src: "/services/gardening/garden-16.webp" },
+    { id: 17, src: "/services/gardening/garden-17.webp" },
+    { id: 18, src: "/services/gardening/garden-18.webp" },
+    { id: 19, src: "/services/gardening/garden-19.webp" },
+    { id: 20, src: "/services/gardening/garden-20.webp" },
+    { id: 21, src: "/services/gardening/garden-21.webp" },
+    { id: 22, src: "/services/gardening/garden-22.webp" },
+    { id: 23, src: "/services/gardening/garden-23.webp" },
+    { id: 24, src: "/services/gardening/garden-24.webp" },
+    { id: 25, src: "/services/gardening/garden-25.webp" },
+    { id: 26, src: "/services/gardening/garden-26.webp" },
+    { id: 27, src: "/services/gardening/garden-27.webp" },
+    { id: 28, src: "/services/gardening/garden-28.webp" },
+    { id: 29, src: "/services/gardening/garden-29.webp" },
+    { id: 30, src: "/services/gardening/garden-30.webp" },
+    { id: 31, src: "/services/gardening/garden-31.webp" },
+    { id: 32, src: "/services/gardening/garden-32.webp" },
+    { id: 33, src: "/services/gardening/garden-33.webp" },
+    { id: 34, src: "/services/gardening/garden-34.webp" },
+    { id: 35, src: "/services/gardening/garden-35.webp" },
+    { id: 36, src: "/services/gardening/garden-36.webp" },
+    { id: 37, src: "/services/gardening/garden-37.webp" },
+    { id: 38, src: "/services/gardening/garden-38.webp" },
+    { id: 39, src: "/services/gardening/garden-39.webp" },
   ];
 
   const services = [
@@ -189,7 +189,7 @@ export default function GardeningServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/garden1.jpg"
+                  src="/garden1.webp"
                   alt="งานจัดสวน 1"
                   fill
                   className="object-cover"
@@ -197,7 +197,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/garden2.jpg"
+                  src="/garden2.webp"
                   alt="งานจัดสวน 2"
                   fill
                   className="object-cover"
@@ -205,7 +205,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/garden3.jpg"
+                  src="/garden3.webp"
                   alt="งานจัดสวน 3"
                   fill
                   className="object-cover"
@@ -213,7 +213,7 @@ export default function GardeningServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/garden4.jpg"
+                  src="/garden4.webp"
                   alt="งานจัดสวน 4"
                   fill
                   className="object-cover"
@@ -235,7 +235,7 @@ export default function GardeningServicePage() {
               </h3>
               <div className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden mb-6">
                 <Image
-                  src="/1.png"
+                  src="/1.webp"
                   alt="จัดสวนด้วย PSV"
                   fill
                   className="object-cover"
@@ -251,7 +251,7 @@ export default function GardeningServicePage() {
               </h3>
               <div className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden mb-6">
                 <Image
-                  src="/2.png"
+                  src="/2.webp"
                   alt="จัดสวนกับบริษัทอื่น"
                   fill
                   className="object-cover"
@@ -276,9 +276,9 @@ export default function GardeningServicePage() {
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { id: 1, src: "/services/gardening/4.png" },
-              { id: 2, src: "/services/gardening/5.png" },
-              { id: 3, src: "/services/gardening/6.png" },
+              { id: 1, src: "/services/gardening/4.webp" },
+              { id: 2, src: "/services/gardening/5.webp" },
+              { id: 3, src: "/services/gardening/6.webp" },
             ].map((item) => (
               <div
                 key={item.id}

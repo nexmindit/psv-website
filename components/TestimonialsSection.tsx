@@ -23,39 +23,39 @@ const defaultTestimonials: Testimonial[] = [
   
   {
     company: "บริษัท ช.การช่าง จำกัด (มหาชน)",
-    logo: "/logo/chorkarnchang.png",
+    logo: "/logo/chorkarnchang.webp",
   },
   {
     company: "บริษัท ออริจิ้น พร็อพเพอร์ตี้ จำกัด (มหาชน)",
-    logo: "/logo/origin.jpg",
+    logo: "/logo/origin.webp",
   },
   {
     company: "บริษัท ซิโน-ไทย เอ็นจีเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
-    logo: "/logo/sino-thai.jpg",
+    logo: "/logo/sino-thai.webp",
   },
   {
     company: "บริษัท สี่แสงการโยธา (1979) จำกัด",
-    logo: "/logo/see_sang_karn_yotah.jpg",
+    logo: "/logo/see_sang_karn_yotah.webp",
   },
   {
     company: "บริษัท ฤทธา จำกัด",
-    logo: "/logo/ritta.jpg",
+    logo: "/logo/ritta.webp",
   },
   {
     company: "บริษัท อินเตอร์ไทย ฟาร์มาซูติเคิ้ล แมนูแฟคเจอริ่ง จำกัด",
-    logo: "/logo/interthai.jpg",
+    logo: "/logo/interthai.webp",
   },
   {
     company: "บริษัท ยูนิค เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (มหาชน)",
-    logo: "/logo/unique.jpg",
+    logo: "/logo/unique.webp",
   },
   {
     company: "บริษัท อมร พรสติจ จำกัด (เป็นดีลเลอร์จำหน่ายรถยนต์ BMW)",
-    logo: "/logo/amorn_prestige.jpg",
+    logo: "/logo/amorn_prestige.webp",
   },
   {
     company: "บริษัท สยามวันเดอร์วินเทอร์แลนด์ จำกัด",
-    logo: "/logo/winter_wonder_land.jpg",
+    logo: "/logo/winter_wonder_land.webp",
   }
 ];
 

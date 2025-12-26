@@ -10,45 +10,45 @@ import DeliveryPhotos from "@/components/DeliveryPhotos";
 
 export default function LandFillingServicePage() {
   const galleryImages = [
-    { id: 1, src: "/services/land-filling/landfilling-01.jpg" },
-    { id: 2, src: "/services/land-filling/landfilling-02.jpg" },
-    { id: 3, src: "/services/land-filling/landfilling-03.jpg" },
-    { id: 4, src: "/services/land-filling/landfilling-04.jpg" },
-    { id: 5, src: "/services/land-filling/landfilling-05.jpg" },
-    { id: 6, src: "/services/land-filling/landfilling-06.jpg" },
-    { id: 7, src: "/services/land-filling/landfilling-07.jpg" },
-    { id: 8, src: "/services/land-filling/landfilling-08.jpg" },
-    { id: 9, src: "/services/land-filling/landfilling-09.jpg" },
-    { id: 10, src: "/services/land-filling/landfilling-10.jpg" },
-    { id: 11, src: "/services/land-filling/landfilling-11.jpg" },
-    { id: 12, src: "/services/land-filling/landfilling-12.jpg" },
-    { id: 13, src: "/services/land-filling/landfilling-13.jpg" },
-    { id: 14, src: "/services/land-filling/landfilling-14.jpg" },
-    { id: 15, src: "/services/land-filling/landfilling-15.jpg" },
-    { id: 16, src: "/services/land-filling/landfilling-16.jpg" },
-    { id: 17, src: "/services/land-filling/landfilling-17.jpg" },
-    { id: 18, src: "/services/land-filling/landfilling-18.jpg" },
-    { id: 19, src: "/services/land-filling/landfilling-19.jpg" },
-    { id: 20, src: "/services/land-filling/landfilling-20.jpg" },
-    { id: 21, src: "/services/land-filling/landfilling-21.jpg" },
-    { id: 22, src: "/services/land-filling/landfilling-22.jpg" },
-    { id: 23, src: "/services/land-filling/landfilling-23.jpg" },
-    { id: 24, src: "/services/land-filling/landfilling-24.jpg" },
-    { id: 25, src: "/services/land-filling/landfilling-25.jpg" },
-    { id: 26, src: "/services/land-filling/landfilling-26.jpg" },
-    { id: 27, src: "/services/land-filling/landfilling-27.jpg" },
-    { id: 28, src: "/services/land-filling/landfilling-28.jpg" },
-    { id: 29, src: "/services/land-filling/landfilling-29.jpg" },
-    { id: 30, src: "/services/land-filling/landfilling-30.jpg" },
-    { id: 31, src: "/services/land-filling/landfilling-31.jpg" },
-    { id: 32, src: "/services/land-filling/landfilling-32.jpg" },
-    { id: 33, src: "/services/land-filling/landfilling-33.jpg" },
-    { id: 34, src: "/services/land-filling/landfilling-34.jpg" },
-    { id: 35, src: "/services/land-filling/landfilling-35.jpg" },
-    { id: 36, src: "/services/land-filling/landfilling-36.jpg" },
-    { id: 37, src: "/services/land-filling/landfilling-37.jpg" },
-    { id: 38, src: "/services/land-filling/landfilling-38.jpg" },
-    { id: 39, src: "/services/land-filling/landfilling-39.jpg" },
+    { id: 1, src: "/services/land-filling/landfilling-01.webp" },
+    { id: 2, src: "/services/land-filling/landfilling-02.webp" },
+    { id: 3, src: "/services/land-filling/landfilling-03.webp" },
+    { id: 4, src: "/services/land-filling/landfilling-04.webp" },
+    { id: 5, src: "/services/land-filling/landfilling-05.webp" },
+    { id: 6, src: "/services/land-filling/landfilling-06.webp" },
+    { id: 7, src: "/services/land-filling/landfilling-07.webp" },
+    { id: 8, src: "/services/land-filling/landfilling-08.webp" },
+    { id: 9, src: "/services/land-filling/landfilling-09.webp" },
+    { id: 10, src: "/services/land-filling/landfilling-10.webp" },
+    { id: 11, src: "/services/land-filling/landfilling-11.webp" },
+    { id: 12, src: "/services/land-filling/landfilling-12.webp" },
+    { id: 13, src: "/services/land-filling/landfilling-13.webp" },
+    { id: 14, src: "/services/land-filling/landfilling-14.webp" },
+    { id: 15, src: "/services/land-filling/landfilling-15.webp" },
+    { id: 16, src: "/services/land-filling/landfilling-16.webp" },
+    { id: 17, src: "/services/land-filling/landfilling-17.webp" },
+    { id: 18, src: "/services/land-filling/landfilling-18.webp" },
+    { id: 19, src: "/services/land-filling/landfilling-19.webp" },
+    { id: 20, src: "/services/land-filling/landfilling-20.webp" },
+    { id: 21, src: "/services/land-filling/landfilling-21.webp" },
+    { id: 22, src: "/services/land-filling/landfilling-22.webp" },
+    { id: 23, src: "/services/land-filling/landfilling-23.webp" },
+    { id: 24, src: "/services/land-filling/landfilling-24.webp" },
+    { id: 25, src: "/services/land-filling/landfilling-25.webp" },
+    { id: 26, src: "/services/land-filling/landfilling-26.webp" },
+    { id: 27, src: "/services/land-filling/landfilling-27.webp" },
+    { id: 28, src: "/services/land-filling/landfilling-28.webp" },
+    { id: 29, src: "/services/land-filling/landfilling-29.webp" },
+    { id: 30, src: "/services/land-filling/landfilling-30.webp" },
+    { id: 31, src: "/services/land-filling/landfilling-31.webp" },
+    { id: 32, src: "/services/land-filling/landfilling-32.webp" },
+    { id: 33, src: "/services/land-filling/landfilling-33.webp" },
+    { id: 34, src: "/services/land-filling/landfilling-34.webp" },
+    { id: 35, src: "/services/land-filling/landfilling-35.webp" },
+    { id: 36, src: "/services/land-filling/landfilling-36.webp" },
+    { id: 37, src: "/services/land-filling/landfilling-37.webp" },
+    { id: 38, src: "/services/land-filling/landfilling-38.webp" },
+    { id: 39, src: "/services/land-filling/landfilling-39.webp" },
   ];
 
   const services = [
@@ -149,7 +149,7 @@ export default function LandFillingServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/landfilling1.jpg"
+                  src="/landfilling1.webp"
                   alt="งานถมที่ 1"
                   fill
                   className="object-cover"
@@ -157,7 +157,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/landfilling2.jpg"
+                  src="/landfilling2.webp"
                   alt="งานถมที่ 2"
                   fill
                   className="object-cover"
@@ -165,7 +165,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/landfilling3.jpg"
+                  src="/landfilling3.webp"
                   alt="งานถมที่ 3"
                   fill
                   className="object-cover"
@@ -173,7 +173,7 @@ export default function LandFillingServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/landfilling4.jpg"
+                  src="/landfilling4.webp"
                   alt="งานถมที่ 4"
                   fill
                   className="object-cover"
@@ -196,9 +196,9 @@ export default function LandFillingServicePage() {
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { id: 1, src: "/services/land-filling/1.png" },
-              { id: 2, src: "/services/land-filling/2.png" },
-              { id: 3, src: "/services/land-filling/3.png" },
+              { id: 1, src: "/services/land-filling/1.webp" },
+              { id: 2, src: "/services/land-filling/2.webp" },
+              { id: 3, src: "/services/land-filling/3.webp" },
             ].map((item) => (
               <div
                 key={item.id}

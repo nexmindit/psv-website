@@ -9,45 +9,45 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 export default function GrassInstallationServicePage() {
   const galleyImages = [
-    { id: 1, src: "/services/grass-installation/grass-installation-01.jpg" },
-    { id: 2, src: "/services/grass-installation/grass-installation-02.jpg" },
-    { id: 3, src: "/services/grass-installation/grass-installation-03.jpg" },
-    { id: 4, src: "/services/grass-installation/grass-installation-04.jpg" },
-    { id: 5, src: "/services/grass-installation/grass-installation-05.jpg" },
-    { id: 6, src: "/services/grass-installation/grass-installation-06.jpg" },
-    { id: 7, src: "/services/grass-installation/grass-installation-07.jpg" },
-    { id: 8, src: "/services/grass-installation/grass-installation-08.jpg" },
-    { id: 9, src: "/services/grass-installation/grass-installation-09.jpg" },
-    { id: 10, src: "/services/grass-installation/grass-installation-10.jpg" },
-    { id: 11, src: "/services/grass-installation/grass-installation-11.jpg" },
-    { id: 12, src: "/services/grass-installation/grass-installation-12.jpg" },
-    { id: 13, src: "/services/grass-installation/grass-installation-13.jpg" },
-    { id: 14, src: "/services/grass-installation/grass-installation-14.jpg" },
-    { id: 15, src: "/services/grass-installation/grass-installation-15.jpg" },
-    { id: 16, src: "/services/grass-installation/grass-installation-16.jpg" },
-    { id: 17, src: "/services/grass-installation/grass-installation-17.jpg" },
-    { id: 18, src: "/services/grass-installation/grass-installation-18.jpg" },
-    { id: 19, src: "/services/grass-installation/grass-installation-19.jpg" },
-    { id: 20, src: "/services/grass-installation/grass-installation-20.jpg" },
-    { id: 21, src: "/services/grass-installation/grass-installation-21.jpg" },
-    { id: 22, src: "/services/grass-installation/grass-installation-22.jpg" },
-    { id: 23, src: "/services/grass-installation/grass-installation-23.jpg" },
-    { id: 24, src: "/services/grass-installation/grass-installation-24.jpg" },
-    { id: 25, src: "/services/grass-installation/grass-installation-25.jpg" },
-    { id: 26, src: "/services/grass-installation/grass-installation-26.jpg" },
-    { id: 27, src: "/services/grass-installation/grass-installation-27.jpg" },
-    { id: 28, src: "/services/grass-installation/grass-installation-28.jpg" },
-    { id: 29, src: "/services/grass-installation/grass-installation-29.jpg" },
-    { id: 30, src: "/services/grass-installation/grass-installation-30.jpg" },
-    { id: 31, src: "/services/grass-installation/grass-installation-31.jpg" },
-    { id: 32, src: "/services/grass-installation/grass-installation-32.jpg" },
-    { id: 33, src: "/services/grass-installation/grass-installation-33.jpg" },
-    { id: 34, src: "/services/grass-installation/grass-installation-34.jpg" },
-    { id: 35, src: "/services/grass-installation/grass-installation-35.jpg" },
-    { id: 36, src: "/services/grass-installation/grass-installation-36.jpg" },
-    { id: 37, src: "/services/grass-installation/grass-installation-37.jpg" },
-    { id: 38, src: "/services/grass-installation/grass-installation-38.jpg" },
-    { id: 39, src: "/services/grass-installation/grass-installation-39.jpg" },
+    { id: 1, src: "/services/grass-installation/grass-installation-01.webp" },
+    { id: 2, src: "/services/grass-installation/grass-installation-02.webp" },
+    { id: 3, src: "/services/grass-installation/grass-installation-03.webp" },
+    { id: 4, src: "/services/grass-installation/grass-installation-04.webp" },
+    { id: 5, src: "/services/grass-installation/grass-installation-05.webp" },
+    { id: 6, src: "/services/grass-installation/grass-installation-06.webp" },
+    { id: 7, src: "/services/grass-installation/grass-installation-07.webp" },
+    { id: 8, src: "/services/grass-installation/grass-installation-08.webp" },
+    { id: 9, src: "/services/grass-installation/grass-installation-09.webp" },
+    { id: 10, src: "/services/grass-installation/grass-installation-10.webp" },
+    { id: 11, src: "/services/grass-installation/grass-installation-11.webp" },
+    { id: 12, src: "/services/grass-installation/grass-installation-12.webp" },
+    { id: 13, src: "/services/grass-installation/grass-installation-13.webp" },
+    { id: 14, src: "/services/grass-installation/grass-installation-14.webp" },
+    { id: 15, src: "/services/grass-installation/grass-installation-15.webp" },
+    { id: 16, src: "/services/grass-installation/grass-installation-16.webp" },
+    { id: 17, src: "/services/grass-installation/grass-installation-17.webp" },
+    { id: 18, src: "/services/grass-installation/grass-installation-18.webp" },
+    { id: 19, src: "/services/grass-installation/grass-installation-19.webp" },
+    { id: 20, src: "/services/grass-installation/grass-installation-20.webp" },
+    { id: 21, src: "/services/grass-installation/grass-installation-21.webp" },
+    { id: 22, src: "/services/grass-installation/grass-installation-22.webp" },
+    { id: 23, src: "/services/grass-installation/grass-installation-23.webp" },
+    { id: 24, src: "/services/grass-installation/grass-installation-24.webp" },
+    { id: 25, src: "/services/grass-installation/grass-installation-25.webp" },
+    { id: 26, src: "/services/grass-installation/grass-installation-26.webp" },
+    { id: 27, src: "/services/grass-installation/grass-installation-27.webp" },
+    { id: 28, src: "/services/grass-installation/grass-installation-28.webp" },
+    { id: 29, src: "/services/grass-installation/grass-installation-29.webp" },
+    { id: 30, src: "/services/grass-installation/grass-installation-30.webp" },
+    { id: 31, src: "/services/grass-installation/grass-installation-31.webp" },
+    { id: 32, src: "/services/grass-installation/grass-installation-32.webp" },
+    { id: 33, src: "/services/grass-installation/grass-installation-33.webp" },
+    { id: 34, src: "/services/grass-installation/grass-installation-34.webp" },
+    { id: 35, src: "/services/grass-installation/grass-installation-35.webp" },
+    { id: 36, src: "/services/grass-installation/grass-installation-36.webp" },
+    { id: 37, src: "/services/grass-installation/grass-installation-37.webp" },
+    { id: 38, src: "/services/grass-installation/grass-installation-38.webp" },
+    { id: 39, src: "/services/grass-installation/grass-installation-39.webp" },
   ];
   const services = [
     {
@@ -167,7 +167,7 @@ export default function GrassInstallationServicePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/services/grass-installation/1.png"
+                  src="/services/grass-installation/1.webp"
                   alt="งานปูหญ้า 1"
                   fill
                   className="object-cover"
@@ -175,7 +175,7 @@ export default function GrassInstallationServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/services/grass-installation/2.png"
+                  src="/services/grass-installation/2.webp"
                   alt="งานปูหญ้า 2"
                   fill
                   className="object-cover"
@@ -183,7 +183,7 @@ export default function GrassInstallationServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/services/grass-installation/3.png"
+                  src="/services/grass-installation/3.webp"
                   alt="งานปูหญ้า 3"
                   fill
                   className="object-cover"
@@ -191,7 +191,7 @@ export default function GrassInstallationServicePage() {
               </div>
               <div className="relative h-64 bg-gray-300 rounded-sm overflow-hidden">
                 <Image
-                  src="/services/grass-installation/4.png"
+                  src="/services/grass-installation/4.webp"
                   alt="งานปูหญ้า 4"
                   fill
                   className="object-cover"
@@ -215,9 +215,9 @@ export default function GrassInstallationServicePage() {
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { id: 1, src: "/services/grass-installation/4_2.png" },
-              { id: 2, src: "/services/grass-installation/5.png" },
-              { id: 3, src: "/services/grass-installation/6.png" },
+              { id: 1, src: "/services/grass-installation/4_2.webp" },
+              { id: 2, src: "/services/grass-installation/5.webp" },
+              { id: 3, src: "/services/grass-installation/6.webp" },
             ].map((item) => (
               <div
                 key={item.id}

@@ -14,12 +14,12 @@ export default function SoilPage() {
       name: "หน้าดิน (Topsoil) คิว",
       description:
         "เหมาะสำหรับงานจัดสวนขนาดใหญ่, ถมปรับหน้าดิน, โครงการหมู่บ้าน",
-      image: "/products/soil/1_1.png",
+      image: "/products/soil/1_1.webp",
     },
     {
       name: "กระสอบหน้าดิน (Topsoil)",
       description: "เหมาะสำหรับเติมกระถาง, แปลงผักสวนครัว, ซ่อมแซมสนามหญ้า",
-      image: "/products/soil/1_2.png",
+      image: "/products/soil/1_2.webp",
     },
   ];
 
@@ -277,7 +277,7 @@ export default function SoilPage() {
             <div className="flex justify-center">
               <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
                 <Image
-                  src="/sales/sales_step.jpg"
+                  src="/sales/sales_step.webp"
                   alt="ขั้นตอนการสั่งซื้อ"
                   fill
                   className="object-cover"

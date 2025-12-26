@@ -15,26 +15,26 @@ export default function SandPage() {
       description:
         "จัดส่งเต็มคิว จากแหล่งผลิตโดยตรงจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
       image:
-        "/products/sand/1_1.png",
+        "/products/sand/1_1.webp",
     },
     {
       name: "ทรายหยาบ (Coarse Sand)",
       description:
         "จัดส่งเต็มคิว จากแหล่งผลิตโดยตรงจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
       image:
-        "/products/sand/2_0.png",
+        "/products/sand/2_0.webp",
     },
     {
       name: "กระสอบทรายถม (Filling Sand)",
       description:
         "น้ำหนัก 25 กิโลกรัมจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
-      image: "/products/sand/3_1.png",
+      image: "/products/sand/3_1.webp",
     },
     {
       name: "กระสอบทรายหยาบ (Coarse Sand)",
       description:
         "น้ำหนัก 25 กิโลกรัมจัดส่งฟรี : 10 กิโลเมตร จากสาขา",
-      image: "/products/sand/4_1.png",
+      image: "/products/sand/4_1.webp",
     },
   ];
 
@@ -112,27 +112,27 @@ export default function SandPage() {
 
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
-    { src: "/work/work-01.jpg", alt: "ส่งงานวัดบึงทองหลวง (ทรายหยาย)" },
-    { src: "/work/work-02.jpg", alt: "ส่งงานถมที่เทพรักษ์ (รถพ่วง)" },
-    { src: "/work/work-03.jpg", alt: "ส่งงานก่อสร้างอาคาร (รถ 6 ล้อ)" },
-    { src: "/work/work-04.jpg", alt: "งานหน้าไซต์ 4" },
-    { src: "/work/work-05.jpg", alt: "งานหน้าไซต์ 5" },
-    { src: "/work/work-06.jpg", alt: "งานหน้าไซต์ 6" },
-    { src: "/work/work-07.jpg", alt: "งานหน้าไซต์ 7" },
-    { src: "/work/work-08.jpg", alt: "งานหน้าไซต์ 8" },
-    { src: "/work/work-09.jpg", alt: "งานหน้าไซต์ 9" },
-    { src: "/work/work-10.jpg", alt: "งานหน้าไซต์ 10" },
-    { src: "/work/work-11.jpg", alt: "งานหน้าไซต์ 11" },
-    { src: "/work/work-12.jpg", alt: "งานหน้าไซต์ 12" },
-    { src: "/work/work-13.jpg", alt: "งานหน้าไซต์ 13" },
-    { src: "/work/work-14.jpg", alt: "งานหน้าไซต์ 14" },
-    { src: "/work/work-15.jpg", alt: "งานหน้าไซต์ 15" },
-    { src: "/work/work-16.jpg", alt: "งานหน้าไซต์ 16" },
-    { src: "/work/work-17.jpg", alt: "งานหน้าไซต์ 17" },
-    { src: "/work/work-18.jpg", alt: "งานหน้าไซต์ 18" },
-    { src: "/work/work-19.jpg", alt: "งานหน้าไซต์ 19" },
-    { src: "/work/work-20.jpg", alt: "งานหน้าไซต์ 20" },
-    { src: "/work/work-21.jpg", alt: "งานหน้าไซต์ 21" },
+    { src: "/work/work-01.webp", alt: "ส่งงานวัดบึงทองหลวง (ทรายหยาย)" },
+    { src: "/work/work-02.webp", alt: "ส่งงานถมที่เทพรักษ์ (รถพ่วง)" },
+    { src: "/work/work-03.webp", alt: "ส่งงานก่อสร้างอาคาร (รถ 6 ล้อ)" },
+    { src: "/work/work-04.webp", alt: "งานหน้าไซต์ 4" },
+    { src: "/work/work-05.webp", alt: "งานหน้าไซต์ 5" },
+    { src: "/work/work-06.webp", alt: "งานหน้าไซต์ 6" },
+    { src: "/work/work-07.webp", alt: "งานหน้าไซต์ 7" },
+    { src: "/work/work-08.webp", alt: "งานหน้าไซต์ 8" },
+    { src: "/work/work-09.webp", alt: "งานหน้าไซต์ 9" },
+    { src: "/work/work-10.webp", alt: "งานหน้าไซต์ 10" },
+    { src: "/work/work-11.webp", alt: "งานหน้าไซต์ 11" },
+    { src: "/work/work-12.webp", alt: "งานหน้าไซต์ 12" },
+    { src: "/work/work-13.webp", alt: "งานหน้าไซต์ 13" },
+    { src: "/work/work-14.webp", alt: "งานหน้าไซต์ 14" },
+    { src: "/work/work-15.webp", alt: "งานหน้าไซต์ 15" },
+    { src: "/work/work-16.webp", alt: "งานหน้าไซต์ 16" },
+    { src: "/work/work-17.webp", alt: "งานหน้าไซต์ 17" },
+    { src: "/work/work-18.webp", alt: "งานหน้าไซต์ 18" },
+    { src: "/work/work-19.webp", alt: "งานหน้าไซต์ 19" },
+    { src: "/work/work-20.webp", alt: "งานหน้าไซต์ 20" },
+    { src: "/work/work-21.webp", alt: "งานหน้าไซต์ 21" },
   ];
 
   return (
@@ -264,7 +264,7 @@ export default function SandPage() {
             <div className="flex justify-center">
               <div className="relative w-full max-w-md md:max-w-lg lg:max-w-2xl aspect-square rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300">
                 <Image
-                  src="/sales/sales_step.jpg"
+                  src="/sales/sales_step.webp"
                   alt="ขั้นตอนการสั่งซื้อ"
                   fill
                   className="object-cover"

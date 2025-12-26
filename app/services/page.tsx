@@ -17,7 +17,7 @@ export default function ServicesPage() {
       weight: "-",
       description:
         "รถกระบะสามารถบรรทุกได้ประมาณ 1.5 คิว เหมาะสำหรับการส่งวัสดุน้อยๆ เช่นพวกกระสอบและหน้างานมีข้อจำกัดพื้นที่ในการขนส่ง",
-      image: "/truck1.jpg",
+      image: "/truck1.webp",
     },
     {
       name: "รถหกล้อ",
@@ -25,7 +25,7 @@ export default function ServicesPage() {
       weight: "4.5-7.5 ตัน",
       description:
         "รถหกล้อบรรทุกประมาณ 5 คิว สามารถรับน้ำหนักได้ 4.5-7.5 ตัน เหมาะกับการขนทรายปริมาณน้อย และหน้างานมีพื้นที่จำกัด",
-      image: "/truck2.jpg",
+      image: "/truck2.webp",
     },
     {
       name: "รถสิบล้อ",
@@ -33,7 +33,7 @@ export default function ServicesPage() {
       weight: "15 ตัน",
       description:
         "รถสิบล้อบรรทุกประมาณ 10 คิว สามารถรับน้ำหนักได้ 15 ตัน เหมาะกับหน้างานที่มีพื้นที่จำกัดรถพ่วงไม่สามารถกลับรถได้และใช้รถสิบล้อในการขนส่งเท่านั้น",
-      image: "/truck3.jpg",
+      image: "/truck3.webp",
     },
     {
       name: "รถพ่วง",
@@ -41,7 +41,7 @@ export default function ServicesPage() {
       weight: "25-30 ตัน",
       description:
         "รถพ่วงสามารถบรรทุกได้ประมาณ 20 คิว สามารถรับน้ำหนักได้ประมาณ 25-30 ตัน และหน้างานไม่มีข้อจำกัดพื้นที่ในการขนส่ง ข้อดีของรถพ่วงคือสามารถแยกสินค้าได้ 2 ชนิดในการขนส่ง",
-      image: "/truck4.jpg",
+      image: "/truck4.webp",
     },
   ];
 
@@ -89,7 +89,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-full overflow-hidden">
               <Image
-                src="/vehicles.jpg"
+                src="/vehicles.webp"
                 alt="บริการถมที่ดิน"
                 fill
                 className="object-cover"
@@ -266,10 +266,10 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { id: 1, img: "/site1.jpg" },
-              { id: 2, img: "/site2.jpg" },
-              { id: 3, img: "/site3.jpg" },
-              { id: 4, img: "/site4.jpg" },
+              { id: 1, img: "/site1.webp" },
+              { id: 2, img: "/site2.webp" },
+              { id: 3, img: "/site3.webp" },
+              { id: 4, img: "/site4.webp" },
             ].map((item) => (
               <div
                 key={item.id}
