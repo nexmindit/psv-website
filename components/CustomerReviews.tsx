@@ -35,20 +35,16 @@ interface CustomerReviewsProps {
 export default function CustomerReviews({
   reviews = defaultReviews,
 }: CustomerReviewsProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<{
-    src: string;
-    alt: string;
-  } | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null
+  );
 
-  const handleImageClick = (review: Review) => {
-    setSelectedImage(review);
-    setIsModalOpen(true);
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedImage(null);
+    setSelectedImageIndex(null);
   };
 
   return (
@@ -61,7 +57,7 @@ export default function CustomerReviews({
           {reviews.map((review, index) => (
             <div
               key={index}
-              onClick={() => handleImageClick(review)}
+              onClick={() => handleImageClick(index)}
               className="w-full rounded-sm overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer"
             >
               <div className="relative w-full aspect-square">
@@ -78,10 +74,19 @@ export default function CustomerReviews({
       </div>
 
       <ImageModal
-        isOpen={isModalOpen}
+        isOpen={selectedImageIndex !== null}
         onClose={handleCloseModal}
-        imageSrc={selectedImage?.src || null}
-        imageAlt={selectedImage?.alt}
+        imageSrc={
+          selectedImageIndex !== null ? reviews[selectedImageIndex].src : null
+        }
+        imageAlt={
+          selectedImageIndex !== null
+            ? reviews[selectedImageIndex].alt
+            : undefined
+        }
+        images={reviews.map((review) => review.src)}
+        currentIndex={selectedImageIndex ?? 0}
+        onNavigate={(index) => setSelectedImageIndex(index)}
       />
     </section>
   );

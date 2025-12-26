@@ -20,10 +20,9 @@ export default function DeliveryPhotos({
   title = "ภาพการจัดส่ง",
   description = "บริการจัดส่งรวดเร็ว ทั่วกรุงเทพและปริมณฑล",
 }: DeliveryPhotosProps) {
-  const [selectedImage, setSelectedImage] = useState<{
-    src: string;
-    alt: string;
-  } | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null
+  );
 
   return (
     <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
@@ -43,7 +42,7 @@ export default function DeliveryPhotos({
             <div
               key={index}
               className="relative w-full aspect-[3/2] rounded-sm overflow-hidden border-2 border-(--psv-border) hover:border-(--color-primary) transition-colors duration-300 group cursor-pointer"
-              onClick={() => setSelectedImage(photo)}
+              onClick={() => setSelectedImageIndex(index)}
             >
               <Image
                 src={photo.src}
@@ -63,10 +62,19 @@ export default function DeliveryPhotos({
       </div>
 
       <ImageModal
-        isOpen={!!selectedImage}
-        onClose={() => setSelectedImage(null)}
-        imageSrc={selectedImage?.src || null}
-        imageAlt={selectedImage?.alt}
+        isOpen={selectedImageIndex !== null}
+        onClose={() => setSelectedImageIndex(null)}
+        imageSrc={
+          selectedImageIndex !== null ? photos[selectedImageIndex].src : null
+        }
+        imageAlt={
+          selectedImageIndex !== null
+            ? photos[selectedImageIndex].alt
+            : undefined
+        }
+        images={photos.map((photo) => photo.src)}
+        currentIndex={selectedImageIndex ?? 0}
+        onNavigate={(index) => setSelectedImageIndex(index)}
       />
     </section>
   );
