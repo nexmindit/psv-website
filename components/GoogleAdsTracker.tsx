@@ -36,6 +36,9 @@ export default function GoogleAdsTracker() {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${AW_CONVERSION_ID}');
+            
+            // Event snippet for การดูหน้าเว็บ conversion page
+            gtag('event', 'conversion', {'send_to': '${AW_CONVERSION_ID}/${AW_CONVERSION_LABEL}'});
           `,
         }}
       />
