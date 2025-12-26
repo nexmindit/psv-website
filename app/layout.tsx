@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import FacebookSDK from "@/components/FacebookSDK";
 import TikTokEmbed from "@/components/TikTokEmbed";
 import PageTransition from "@/components/PageTransition";
+import GoogleAdsTracker from "@/components/GoogleAdsTracker";
+import { Suspense } from "react";
 
 const kanit = Kanit({
   weight: ["300", "400", "500", "600", "700"],
@@ -32,6 +34,9 @@ export default function RootLayout({
         className={`${kanit.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
+        <Suspense fallback={null}>
+          <GoogleAdsTracker />
+        </Suspense>
         <PageTransition />
         <FacebookSDK />
         <TikTokEmbed />
