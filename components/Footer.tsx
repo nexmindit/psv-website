@@ -46,10 +46,10 @@ export default function Footer() {
             </h4>
             <div className="bg-white rounded-sm overflow-hidden h-[380px] w-full">
               <div
-                className="fb-page w-full"
+                className="fb-page"
                 data-href="https://www.facebook.com/PSVGroup.Sand"
                 data-tabs="timeline"
-                data-width="600"
+                data-width="500"
                 data-height="380"
                 data-small-header="false"
                 data-adapt-container-width="true"

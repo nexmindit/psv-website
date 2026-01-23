@@ -14,49 +14,49 @@ export default function StonePage() {
       name: "หินคลุก",
       description:
         "หินที่มีฝุ่นหินผสม บดอัดได้ดีเยี่ยม สำหรับทำถนน ลานจอดรถ หรือรองพื้นปูทางเดิน",
-      image: "/products/stone/หินคลุก.png",
+      image: "/products/stone/หินคลุก.webp",
     },
     {
       name: "หินเกล็ด",
       description:
         "หินเม็ดเล็กสีขาว/เทา สำหรับงานจัดสวน โรยทางเดิน ทำพื้นที่ระบายน้ำ หรือผสมคอนกรีตที่ต้องการความละเอียด",
-      image: "/products/stone/หินเกล็ด.png",
+      image: "/products/stone/หินเกล็ด.webp",
     },
     {
       name: "หิน 1 หรือหิน 3/4",
       description:
         "หินเบอร์ 1 (3/4 นิ้ว) สำหรับงานผสมคอนกรีต งานเทพื้น และโครงสร้างทั่วไป",
-      image: "/products/stone/หิน1.png",
+      image: "/products/stone/หิน1.webp",
     },
     {
       name: "ลูกรัง",
       description:
         "ดินลูกรังสีแดง สำหรับงานรองพื้นชั้นล่างสุด ถมทำถนนในไซต์งาน หรือบดอัดลานดิน",
-      image: "/products/stone/ลูกรัง.png",
+      image: "/products/stone/ลูกรัง.webp",
     },
     {
       name: "กระสอบหินคลุก",
       description:
         "หินที่มีฝุ่นหินผสม บดอัดได้ดีเยี่ยม สำหรับทำถนน ลานจอดรถ หรือรองพื้นปูทางเดิน",
-      image: "/products/stone/กระสอบหินคลุก.png",
+      image: "/products/stone/กระสอบหินคลุก.webp",
     },
     {
       name: "กระสอบหินเกล็ด",
       description:
         "หินเม็ดเล็กสีขาว/เทา สำหรับงานจัดสวน โรยทางเดิน ทำพื้นที่ระบายน้ำ หรือผสมคอนกรีตที่ต้องการความละเอียด",
-      image: "/products/stone/กระสอบหินเกล็ด.png",
+      image: "/products/stone/กระสอบหินเกล็ด.webp",
     },
     {
       name: "กระสอบหิน 1 หรือหิน 3/4",
       description:
         "หินเบอร์ 1 (3/4 นิ้ว) สำหรับงานผสมคอนกรีต งานเทพื้น และโครงสร้างทั่วไป",
-      image: "/products/stone/กระสอบหิน1.png",
+      image: "/products/stone/กระสอบหิน1.webp",
     },
     {
       name: "กระสอบลูกรัง",
       description:
         "ดินลูกรังสีแดง สำหรับงานรองพื้นชั้นล่างสุด ถมทำถนนในไซต์งาน หรือบดอัดลานดิน",
-      image: "/products/stone/กระสอบลูกรัง.jpg",
+      image: "/products/stone/กระสอบลูกรัง.webp",
     },
   ];
 

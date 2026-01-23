@@ -17,7 +17,7 @@ export default function FacebookSDK() {
     <>
       <div id="fb-root"></div>
       <Script
-        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v24.0&appId=2021653498420708"
+        src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v24.0&appId=2021653498420708"
         strategy="afterInteractive"
         crossOrigin="anonymous"
         onLoad={() => {
