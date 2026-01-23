@@ -44,27 +44,16 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">
               ติดตามเราบน Facebook
             </h4>
-            <div className="bg-white rounded-sm overflow-hidden h-[380px] w-full">
-              <div
-                className="fb-page"
-                data-href="https://www.facebook.com/PSVGroup.Sand"
-                data-tabs="timeline"
-                data-width="500"
-                data-height="380"
-                data-small-header="false"
-                data-adapt-container-width="true"
-                data-hide-cover="false"
-                data-show-facepile="true"
-              >
-                <blockquote
-                  cite="https://www.facebook.com/PSVGroup.Sand"
-                  className="fb-xfbml-parse-ignore"
-                >
-                  <a href="https://www.facebook.com/PSVGroup.Sand">
-                    Psv ศูนย์ขายส่ง ทราย ดิน หิน ลูกรัง
-                  </a>
-                </blockquote>
-              </div>
+            <div className="bg-gray-800 rounded-sm overflow-hidden h-[380px] w-full">
+              <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPSVGroup.Sand&tabs=timeline&width=500&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="100%"
+                height="380"
+                style={{ border: "none", overflow: "hidden" }}
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                loading="lazy"
+                title="PSV Group Facebook Page"
+              />
             </div>
           </div>
 
