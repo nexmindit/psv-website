@@ -14,49 +14,49 @@ export default function StonePage() {
       name: "หินคลุก",
       description:
         "หินที่มีฝุ่นหินผสม บดอัดได้ดีเยี่ยม สำหรับทำถนน ลานจอดรถ หรือรองพื้นปูทางเดิน",
-      image: "/products/stone/หินคลุก.webp",
+      image: "/products/stone/crushed.webp",
     },
     {
       name: "หินเกล็ด",
       description:
         "หินเม็ดเล็กสีขาว/เทา สำหรับงานจัดสวน โรยทางเดิน ทำพื้นที่ระบายน้ำ หรือผสมคอนกรีตที่ต้องการความละเอียด",
-      image: "/products/stone/หินเกล็ด.webp",
+      image: "/products/stone/flake.webp",
     },
     {
       name: "หิน 1 หรือหิน 3/4",
       description:
         "หินเบอร์ 1 (3/4 นิ้ว) สำหรับงานผสมคอนกรีต งานเทพื้น และโครงสร้างทั่วไป",
-      image: "/products/stone/หิน1.webp",
+      image: "/products/stone/no1.webp",
     },
     {
       name: "ลูกรัง",
       description:
         "ดินลูกรังสีแดง สำหรับงานรองพื้นชั้นล่างสุด ถมทำถนนในไซต์งาน หรือบดอัดลานดิน",
-      image: "/products/stone/ลูกรัง.webp",
+      image: "/products/stone/laterite.webp",
     },
     {
       name: "กระสอบหินคลุก",
       description:
         "หินที่มีฝุ่นหินผสม บดอัดได้ดีเยี่ยม สำหรับทำถนน ลานจอดรถ หรือรองพื้นปูทางเดิน",
-      image: "/products/stone/กระสอบหินคลุก.webp",
+      image: "/products/stone/bag-crushed.webp",
     },
     {
       name: "กระสอบหินเกล็ด",
       description:
         "หินเม็ดเล็กสีขาว/เทา สำหรับงานจัดสวน โรยทางเดิน ทำพื้นที่ระบายน้ำ หรือผสมคอนกรีตที่ต้องการความละเอียด",
-      image: "/products/stone/กระสอบหินเกล็ด.webp",
+      image: "/products/stone/bag-flake.webp",
     },
     {
       name: "กระสอบหิน 1 หรือหิน 3/4",
       description:
         "หินเบอร์ 1 (3/4 นิ้ว) สำหรับงานผสมคอนกรีต งานเทพื้น และโครงสร้างทั่วไป",
-      image: "/products/stone/กระสอบหิน1.webp",
+      image: "/products/stone/bag-no1.webp",
     },
     {
       name: "กระสอบลูกรัง",
       description:
         "ดินลูกรังสีแดง สำหรับงานรองพื้นชั้นล่างสุด ถมทำถนนในไซต์งาน หรือบดอัดลานดิน",
-      image: "/products/stone/กระสอบลูกรัง.webp",
+      image: "/products/stone/bag-laterite.webp",
     },
   ];
 
@@ -144,79 +144,79 @@ export default function StonePage() {
   // รูปภาพการจัดส่ง (4x3 = 12 รูป)
   const deliveryPhotos = [
     {
-      src: "/products/stone/deliveryWork/งานลงหินเกล็ด_1.webp",
+      src: "/products/stone/deliveryWork/delivery-flake-01.webp",
       alt: "งานลงหินเกล็ด 1",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินเกล็ด_2.webp",
+      src: "/products/stone/deliveryWork/delivery-flake-02.webp",
       alt: "งานลงหินเกล็ด 2",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินเกล็ด_3.webp",
+      src: "/products/stone/deliveryWork/delivery-flake-03.webp",
       alt: "งานลงหินเกล็ด 3",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินเกล็ด_4.webp",
+      src: "/products/stone/deliveryWork/delivery-flake-04.webp",
       alt: "งานลงหินเกล็ด 4",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินเกล็ด_5.webp",
+      src: "/products/stone/deliveryWork/delivery-flake-05.webp",
       alt: "งานลงหินเกล็ด 5",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินเกล็ด_6.webp",
+      src: "/products/stone/deliveryWork/delivery-flake-06.webp",
       alt: "งานลงหินเกล็ด 6",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_1.webp",
+      src: "/products/stone/deliveryWork/delivery-parking-01.webp",
       alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 1",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_2.webp",
+      src: "/products/stone/deliveryWork/delivery-parking-02.webp",
       alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 2",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_3.webp",
+      src: "/products/stone/deliveryWork/delivery-parking-03.webp",
       alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 3",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_4.webp",
+      src: "/products/stone/deliveryWork/delivery-parking-04.webp",
       alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 4",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_5.webp",
+      src: "/products/stone/deliveryWork/delivery-parking-05.webp",
       alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 5",
     },
     {
-      src: "/products/stone/deliveryWork/งานลงหินทำลานจอดรถบ.อินเตอร์ไทน_6.webp",
+      src: "/products/stone/deliveryWork/delivery-parking-06.webp",
       alt: "งานลงหินทำลานจอดรถบ.อินเตอร์ไทน 6",
     },
     {
-      src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_1.webp",
+      src: "/products/stone/deliveryWork/delivery-border-01.webp",
       alt: "งานทำขอบกั้น 1",
     },
     {
-      src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_2.webp",
+      src: "/products/stone/deliveryWork/delivery-border-02.webp",
       alt: "งานทำขอบกั้น 2",
     },
     {
-      src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_3.webp",
+      src: "/products/stone/deliveryWork/delivery-border-03.webp",
       alt: "งานทำขอบกั้น 3",
     },
     {
-      src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_4.webp",
+      src: "/products/stone/deliveryWork/delivery-border-04.webp",
       alt: "งานทำขอบกั้น 4",
     },
     {
-      src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_5.webp",
+      src: "/products/stone/deliveryWork/delivery-border-05.webp",
       alt: "งานทำขอบกั้น 5",
     },
     {
-      src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_6.webp",
+      src: "/products/stone/deliveryWork/delivery-border-06.webp",
       alt: "งานทำขอบกั้น 6",
     },
     {
-      src: "/products/stone/deliveryWork/ทำขอบกั้นคุณขจรพงษ์_7.webp",
+      src: "/products/stone/deliveryWork/delivery-border-07.webp",
       alt: "งานทำขอบกั้น 7",
     },
   ];
