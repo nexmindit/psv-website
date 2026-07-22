@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import TikTokCreatorCard from "@/components/TikTokCreatorCard";
 
 // Latest articles data
 const latestArticles = [
@@ -62,25 +63,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-[#D4AF37]">
               ติดตามเราบน TikTok
             </h4>
-            <div className="bg-gray-800 rounded-sm overflow-hidden h-[380px] w-full flex items-center justify-center">
-              <blockquote
-                className="tiktok-embed w-full"
-                cite="https://www.tiktok.com/@psv.sand"
-                data-unique-id="psv.sand"
-                data-embed-type="creator"
-                style={{ maxWidth: "100%", minWidth: "100%", margin: 0 }}
-              >
-                <section>
-                  <a
-                    target="_blank"
-                    href="https://www.tiktok.com/@psv.sand?refer=creator_embed"
-                    rel="noopener noreferrer"
-                  >
-                    @psv.sand
-                  </a>
-                </section>
-              </blockquote>
-            </div>
+            <TikTokCreatorCard username="psv.sand" height={380} />
           </div>
 
           {/* Column 3: Latest Articles */}
